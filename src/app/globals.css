@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+} */
+.sidebar{
+  background-color: #12344d;
+}
+.active {
+  background-color: #E5F2FD!important;
+  border-radius: 3px;
+}
+.menu-icon{
+  color:#12344d;
+}
+.menu-icon:hover{
+  color:red!important;
+}
+.primary-btn{
+  background-color: #12344d
+}
+.btn-border{
+  border:1px solid #12344d;
+  border-radius: 4px;
+}
+.btn-text{
+  color:#12344d;
+}
