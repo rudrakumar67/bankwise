@@ -19,8 +19,8 @@ function Sidebar() {
             <div className="py-4 text-gray-500">
               <a className="font-medium px-1.5 font-sm capitalize" style={{color:"#e67300"}} href="#">Bankwise</a>
               <ul className='mt-4'>
-                <li className="relative px-3 py-1">
-                    <div className={"flex flex-col py-1.5 " + (pathname == '/' ? "active" : "")}>
+                <li className="relative px-3 py-1 md:px-2 md:py-0.5">
+                    <div className={"flex flex-col py-1.5 md:py-1 " + (pathname == '/' ? "active" : "")}>
                         <a
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
@@ -30,8 +30,8 @@ function Sidebar() {
                         <span style={{fontSize:'10px', color:'#12344d'}} className='text-center font-semibold'>Dashboard</span>
                     </div>
                 </li>
-                <li className="relative px-3 py-1">
-                    <div className='flex flex-col py-1.5'>
+                <li className="relative px-3 py-1 md:px-2 md:py-0.5">
+                    <div className='flex flex-col py-1.5 md:py-1'>
                         <a
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
@@ -41,8 +41,8 @@ function Sidebar() {
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Leads</span>
                     </div>
                 </li>
-                <li className="relative px-3 py-1">
-                    <div className='flex flex-col py-1.5'>
+                <li className="relative px-3 py-1 md:px-2 md:py-0.5">
+                    <div className='flex flex-col py-1.5 md:py-1'>
                         <a
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
@@ -52,8 +52,8 @@ function Sidebar() {
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Links</span>
                     </div>
                 </li>
-                <li className="relative px-3 py-1">
-                    <div className='flex flex-col py-1.5'>
+                <li className="relative px-3 py-1 md:px-2 md:py-0.5">
+                    <div className='flex flex-col py-1.5 md:py-1'>
                         <a
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
@@ -63,8 +63,8 @@ function Sidebar() {
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Re-Target</span>
                     </div>
                 </li>
-                <li className="relative px-3 py-1">
-                    <div className='flex flex-col py-1.5'>
+                <li className="relative px-3 py-1 md:px-2 md:py-0.5">
+                    <div className='flex flex-col py-1.5 md:py-1'>
                         <a
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
@@ -74,8 +74,8 @@ function Sidebar() {
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Teams</span>
                     </div>
                 </li>
-                <li className="relative px-3 py-1">
-                    <div className='flex flex-col py-1.5'>
+                <li className="relative px-3 py-1 md:px-2 md:py-0.5">
+                    <div className='flex flex-col py-1.5 md:py-1'>
                         <a
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
@@ -85,8 +85,8 @@ function Sidebar() {
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Reports</span>
                     </div>
                 </li>
-                <li className="relative px-3 py-1">
-                    <div className='flex flex-col py-1.5'>
+                <li className="relative px-3 py-1 md:px-2 md:py-0.5">
+                    <div className='flex flex-col py-1.5 md:py-1'>
                         <a
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
@@ -96,8 +96,8 @@ function Sidebar() {
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Accounts</span>
                     </div>
                 </li>
-                <li className="relative px-3 py-1">
-                    <div className='flex flex-col py-1.5'>
+                <li className="relative px-3 py-1 md:px-2 md:py-0.5">
+                    <div className='flex flex-col py-1.5 md:py-1'>
                         <a
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
@@ -107,8 +107,8 @@ function Sidebar() {
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>HR</span>
                     </div>
                 </li>
-                <li className="relative px-3 py-1">
-                    <div className='flex flex-col py-1.5'>
+                <li className="relative px-3 py-1 md:px-2 md:py-0.5">
+                    <div className='flex flex-col py-1.5 md:py-1'>
                         <a
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
