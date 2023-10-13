@@ -21,7 +21,7 @@ export default function Home() {
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 pd:my-1 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 text-xs font-medium text-gray-600">
                                 EMI Calculator
                             </p>
                         </div>
@@ -33,7 +33,7 @@ export default function Home() {
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 pd:my-1 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 text-xs font-medium text-gray-600">
                                 Company Validator
                             </p>
                         </div>
@@ -45,7 +45,7 @@ export default function Home() {
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 pd:my-1 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 text-xs font-medium text-gray-600">
                                 Bank Criterias
                             </p>
                         </div>
@@ -57,7 +57,7 @@ export default function Home() {
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 pd:my-1 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 text-xs font-medium text-gray-600">
                                 Eligibility Checker
                             </p>
                         </div>
@@ -69,7 +69,7 @@ export default function Home() {
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 pd:my-1 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 text-xs font-medium text-gray-600">
                                 CIBIL Report
                             </p>
                         </div>
@@ -81,7 +81,7 @@ export default function Home() {
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 pd:my-1 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 text-xs font-medium text-gray-600">
                                 Import Website Leads
                             </p>
                         </div>
