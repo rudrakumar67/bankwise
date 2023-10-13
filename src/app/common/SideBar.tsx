@@ -27,7 +27,7 @@ function Sidebar() {
                         >
                         <ChartBarIcon className={"h-6 w-6 md:h-5 md:w-5 "}/>
                         </a>
-                        <span style={{color:'#12344d'}} className='text-sm text-center font-semibold'>Dashboard</span>
+                        <span style={{color:'#12344d'}} className='text-sm md:text-xs text-center font-semibold'>Dashboard</span>
                     </div>
                 </li> */}
                 <li className="relative px-3 py-1 md:px-1.5 md:py-0.5">
@@ -36,7 +36,7 @@ function Sidebar() {
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
                         >
-                        <ChartBarIcon className={"h-6 w-6 md:h-5 md:w-5 " + (pathname == '/leads' ? "" : "")} color='#ffffff'/>
+                        <FunnelIcon className={"h-6 w-6 md:h-5 md:w-5 " + (pathname == '/leads' ? "" : "")} color='#ffffff'/>
                         </a>
                         <span style={{color:'#ffffff'}} className='text-sm text-center font-semibold'>Leads</span>
                     </div>
@@ -71,7 +71,7 @@ function Sidebar() {
                         >
                         <ReceiptRefundIcon className={"h-6 w-6 md:h-5 md:w-5 " + (pathname == '/' ? "" : "")} color='#ffffff'/>
                         </a>
-                        <span style={{color:'#ffffff'}} className='text-sm md:te-center font-semibold'>Re-Target</span>
+                        <span style={{color:'#ffffff'}} className='text-sm text-center font-semibold'>Re-Target</span>
                     </div>
                 </li>
                 <li className="relative px-3 py-1 md:px-1.5 md:py-0.5">
@@ -82,7 +82,7 @@ function Sidebar() {
                         >
                         <UserGroupIcon className={"h-6 w-6 md:h-5 md:w-5 " + (pathname == '/' ? "" : "")} color='#ffffff'/>
                         </a>
-                        <span style={{color:'#ffffff'}} className='text-sm md-center font-semibold'>Teams</span>
+                        <span style={{color:'#ffffff'}} className='text-sm text-center font-semibold'>Teams</span>
                     </div>
                 </li>
                 <li className="relative px-3 py-1 md:px-1.5 md:py-0.5">
@@ -104,7 +104,7 @@ function Sidebar() {
                         >
                         <CalculatorIcon className={"h-6 w-6 md:h-5 md:w-5 " + (pathname == '/' ? "" : "")} color='#ffffff'/>
                         </a>
-                        <span style={{color:'#ffffff'}} className='text-sm md-center font-semibold'>Accounts</span>
+                        <span style={{color:'#ffffff'}} className='text-sm text-center font-semibold'>Accounts</span>
                     </div>
                 </li>
                 <li className="relative px-3 py-1 md:px-1.5 md:py-0.5">
@@ -126,7 +126,7 @@ function Sidebar() {
                         >
                         <WrenchScrewdriverIcon className={"h-6 w-6 md:h-5 md:w-5 " + (pathname == '/' ? "" : "")} color='#ffffff'/>
                         </a>
-                        <span style={{color:'#ffffff'}} className='text-sm md:text-xs-semibold'>Settings</span>
+                        <span style={{color:'#ffffff'}} className='text-sm text-center font-semibold'>Settings</span>
                     </div>
                 </li>
               </ul>
