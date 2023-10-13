@@ -89,16 +89,16 @@ export default function Home() {
                     <PlusCircleIcon className={"h-4.5 w-4.5 text-slate-50 mr-1"}/>
                     <span className="text-sm font-semibold">Add New</span>
                 </Link>
-                <Link href="/" className="flex btn-text py-1.5 px-3 btn-border mr-2">
-                    <ArchiveBoxArrowDownIcon className={"h-4.5 w-4.5 mr-2"} style={{color:'#12344d'}}/>
+                <Link href="/" className="flex bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-4 border border-gray-400 rounded shadow mr-2">
+                    <ArchiveBoxArrowDownIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                     <span className="text-sm font-semibold">Archive</span>
                 </Link>
-                <Link href="/" className="flex btn-text py-1.5 px-3 btn-border mr-2">
-                    <TrashIcon className={"h-4.5 w-4.5 mr-2"} style={{color:'#12344d'}}/>
+                <Link href="/" className="flex bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-4 border border-gray-400 rounded shadow mr-2">
+                    <TrashIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                     <span className="text-sm font-semibold">Delete</span>
                 </Link>
-                <Link href="/" className="flex btn-text py-1.5 px-3 btn-border mr-2">
-                    <ArrowDownTrayIcon className={"h-4.5 w-4.5 mr-2"} style={{color:'#12344d'}}/>
+                <Link href="/" className="flex bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-4 border border-gray-400 rounded shadow mr-2">
+                    <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                     <span className="text-sm font-semibold">Import Data</span>
                 </Link>
             </div>

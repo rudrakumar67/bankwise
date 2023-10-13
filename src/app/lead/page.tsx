@@ -8,7 +8,7 @@ export default function Leads() {
         </div>
         <div className="grid gap-6 mb-8 md:grid-cols-4 xl:grid-cols-4 py-4">
             <Link href='/lead/personal-loan'>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -19,7 +19,7 @@ export default function Leads() {
                 </div>
             </div>
             </Link>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -29,7 +29,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -39,7 +39,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -49,7 +49,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -59,7 +59,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -69,7 +69,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -84,7 +84,7 @@ export default function Leads() {
             <h5 className='text-gray-600 uppercase text-sm'>government scheme loans</h5>
         </div>
         <div className="grid gap-6 mb-8 md:grid-cols-4 xl:grid-cols-4 py-4">
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -94,7 +94,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -107,7 +107,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -120,7 +120,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -133,7 +133,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -146,7 +146,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -159,7 +159,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -172,7 +172,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -185,7 +185,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
@@ -198,7 +198,7 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded-lg shadow-xs">
+            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
                 <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
