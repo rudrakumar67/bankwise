@@ -4,7 +4,7 @@ import { ArrowRightCircleIcon , PlusCircleIcon,ArchiveBoxArrowDownIcon, TrashIco
 export default function Home() {
   return (
     <>
-        <div className="wrapper mx-auto">
+        <div className="wrapper">
             <div className="grid gap-4 mb-8 md:grid-cols-6 xl:grid-cols-6 py-4 ">
                 <Link href='/lead/personal-loan'>
                     <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
