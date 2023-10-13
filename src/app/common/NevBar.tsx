@@ -7,7 +7,7 @@ import {
 function Navbar() {
     return (
     <header className="z-10 py-2 border-b border-gray-200">
-      <div className="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
+      <div className="wrapper flex items-center justify-between h-full px-6 mx-auto">
         <div className="flex justify-between flex-0 h-full w-96">
           <div className="relative w-full max-w-xl border-2 border-gray-200 ">
             <div className="absolute inset-y-0 flex items-center pl-2">

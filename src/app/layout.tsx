@@ -29,7 +29,7 @@ export default function RootLayout({children,}: {  children: React.ReactNode}) {
           <div className='flex flex-col flex-1' style={{color:'#ffffff'}}>
           <Navbar/>
             <main className="h-full pb-16 overflow-y-auto">
-              <div className="container px-6 mx-auto grid">
+              <div className="wrapper px-6 mx-auto grid">
                 {children}
               </div>
             </main>

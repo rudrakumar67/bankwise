@@ -3,11 +3,10 @@ import { ArrowRightCircleIcon } from '@heroicons/react/24/outline'
 export default function Leads() {
   return (
     <>
-    <div className="container mx-auto">
         <div className='flex pt-4'>
             <h5 className='text-gray-600 uppercase text-sm'>bank loans</h5>
         </div>
-        <div className="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4 py-4">
+        <div className="grid gap-6 mb-8 md:grid-cols-4 xl:grid-cols-4 py-4">
             <Link href='/lead/personal-loan'>
             <div className="flex items-center p-4 bg-violet-100 rounded-lg shadow-xs">
                 <div className="p-3 mr-4 bg-fuchsia-800 rounded">
@@ -213,7 +212,6 @@ export default function Leads() {
                 </div>
             </div>
         </div>
-    </div>
     </>
   )
 }
