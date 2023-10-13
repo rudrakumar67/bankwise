@@ -40,7 +40,7 @@ function Navbar() {
             <a href="" className='border-2 rounded p-2 border-gray-200'>
               <BellAlertIcon className='h-4 w-4 text-blue-500'/>
             </a>
-            <a href="" className='bg-blue-900 rounded p-2 border-2 border-blue-900'>
+            <a href="" className='rounded p-2' style={{backgroundColor:'#00539c', borderColor: '#00539c'}}>
               <UserIcon className='h-4 w-4 text-slate-50'/>
             </a>
           </ul>
