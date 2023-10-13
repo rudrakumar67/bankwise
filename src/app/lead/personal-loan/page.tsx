@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { ArrowRightCircleIcon , PlusCircleIcon,ArchiveBoxArrowDownIcon, TrashIcon, ArrowDownTrayIcon, ChevronRightIcon, ShareIcon, UserPlusIcon} from "@heroicons/react/24/outline"
-
 export default function Home() {
   return (
     <>
@@ -17,9 +16,9 @@ export default function Home() {
             </div>
             <div className="grid gap-4 mb-4 md:grid-cols-6 xl:grid-cols-6 py-2 ">
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
+                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
+                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
+                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
                             <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
@@ -29,9 +28,9 @@ export default function Home() {
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
+                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
+                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
+                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
                             <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
@@ -41,9 +40,9 @@ export default function Home() {
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
+                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
+                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
+                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
                             <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
@@ -53,9 +52,9 @@ export default function Home() {
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
+                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
+                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
+                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
                             <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
@@ -65,9 +64,9 @@ export default function Home() {
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
+                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
+                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
+                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
                             <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
@@ -77,9 +76,9 @@ export default function Home() {
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
+                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
+                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
+                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
                         </div>
                         <div>
                             <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">

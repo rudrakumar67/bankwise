@@ -15,9 +15,9 @@ import { usePathname} from 'next/navigation';
 function Sidebar() {
     const pathname = usePathname();
     return (
-        <aside className="z-20 hidden w-20 sidebar md:block flex-shrink-0">
-            <div className="py-4 text-gray-500">
-              <a className="font-medium px-1.5 font-sm capitalize" style={{color:"#e67300"}} href="#">Bankwise</a>
+        <aside className="z-20 hidden w-20 md:w-16 sidebar md:block flex-shrink-0">
+            <div className="py-4 text-gray-500 mx-auto text-center">
+              <a className="font-medium md:font-sm capitalize" style={{color:"#e67300"}} href="#">BW</a>
               <ul className='mt-4'>
                 <li className="relative px-3 py-1 md:px-2 md:py-0.5">
                     <div className={"flex flex-col py-1.5 md:py-1 " + (pathname == '/' ? "active" : "")}>
