@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <>
         <div className="wrapper mx-auto">
-            <div className="grid gap-4 mb-8 md:grid-cols-2 xl:grid-cols-6 py-4 ">
+            <div className="grid gap-4 mb-8 md:grid-cols-6 xl:grid-cols-6 py-4 ">
                 <Link href='/lead/personal-loan'>
                     <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 m-3 rounded">
+                        <div className="p-2 md:p-1 m-3 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
                                 EMI Calculator
                             </p>
                         </div>
@@ -20,11 +20,11 @@ export default function Home() {
                 </Link>
                 <Link href='/lead/personal-loan'>
                     <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 m-3 rounded">
+                        <div className="p-2 md:p-1 m-3 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
                                 Company Validator
                             </p>
                         </div>
@@ -32,11 +32,11 @@ export default function Home() {
                 </Link>
                 <Link href='/lead/personal-loan'>
                     <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 m-3 rounded">
+                        <div className="p-2 md:p-1 m-3 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
                                 Bank Criterias
                             </p>
                         </div>
@@ -44,11 +44,11 @@ export default function Home() {
                 </Link>
                 <Link href='/lead/personal-loan'>
                     <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 m-3 rounded">
+                        <div className="p-2 md:p-1 m-3 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
                                 Eligibility Checker
                             </p>
                         </div>
@@ -56,11 +56,11 @@ export default function Home() {
                 </Link>
                 <Link href='/lead/personal-loan'>
                     <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 m-3 rounded">
+                        <div className="p-2 md:p-1 m-3 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
                                 CIBIL Report
                             </p>
                         </div>
@@ -68,11 +68,11 @@ export default function Home() {
                 </Link>
                 <Link href='/lead/personal-loan'>
                     <div className="flex items-center h-12 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 m-3 rounded">
+                        <div className="p-2 md:p-1 m-3 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 text-slate-400"}/>
                         </div>
                         <div>
-                            <p className="my-2 text-sm font-medium text-gray-600">
+                            <p className="my-2 pd:my-1 md:text-xs text-sm font-medium text-gray-600">
                                 Statment Analyzer
                             </p>
                         </div>
