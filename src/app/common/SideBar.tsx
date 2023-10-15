@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import { ChartBarIcon,
     FunnelIcon,
     DocumentCheckIcon,
@@ -10,36 +10,36 @@ import { ChartBarIcon,
     WrenchScrewdriverIcon,
     UserIcon,
 } from '@heroicons/react/24/outline'
-import Link from 'next/link';
-import { usePathname} from 'next/navigation';
+import { usePathname, useRouter} from 'next/navigation';
 
 function Sidebar() {
     const pathname = usePathname();
+    const router = useRouter();
+
     return (
         <aside className="z-20 hidden w-20 md:w-16 sidebar md:block flex-shrink-0">
             <div className="py-4 text-gray-500 mx-auto text-center">
               <a className="font-medium md:font-sm capitalize" style={{color:"#ffffff"}} href="#">BW</a>
               <ul className='mt-4'>
                 <li className="relative px-3 py-1 md:px-2 md:py-0.5">
-                    <div className={"flex flex-col py-1.5 md:py-1 " + (pathname == '/' ? "active" : "")}>
-                        <Link
+                    <div className={"flex flex-col py-1.5 md:py-1 cursor-pointer " + (pathname == '/' ? "active" : "")}>
+                        <a
                             className="inline-flex items-center w-full menu-item justify-center"
-                            href="forms.html"
+                            type="button" onClick={() => router.push('/')}
                         >
                         <ChartBarIcon className={"h-6 w-6 "} color="#ffffff"/>
-                        </Link>
+                        </a>
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Dashboard</span>
                     </div>
                 </li>
                 <li className="relative px-3 py-1 md:px-2 md:py-0.5">
-                    <div className='flex flex-col py-1.5 md:py-1'>
-                        <Link
+                    <div className='flex flex-col py-1.5 md:py-1 cursor-pointer'>
+                        <a
                             className="inline-flex items-center w-full menu-item justify-center"
-                            href="/lead"
-                            as={'/lead'}
+                            type="button" onClick={() => router.push('/lead')}
                         >
                         <FunnelIcon className={"h-6 w-6 " + (pathname == '/lead' ? "" : "")} color='#ffffff'/>
-                        </Link>
+                        </a>
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Leads</span>
                     </div>
                 </li>
