@@ -28,10 +28,10 @@ function Navbar() {
           </a>
           </div>
           <ul className="flex items-center flex-shrink-0 space-x-5">
-            <a href="" className='border-2 rounded p-2 border-gray-200'>
+            <a href="" className='border rounded p-2 border-gray-200'>
               <EnvelopeIcon className='h-4 w-4 text-blue-500'/>
             </a>
-            <a href="" className='border-2 rounded p-2 border-gray-200'>
+            <a href="" className='border rounded p-2 border-gray-200'>
               <BellAlertIcon className='h-4 w-4 text-blue-500'/>
             </a>
             <a href="" className='rounded p-2' style={{backgroundColor:'#00539c', borderColor: '#00539c'}}>
