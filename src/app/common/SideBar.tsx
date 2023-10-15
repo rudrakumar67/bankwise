@@ -10,6 +10,7 @@ import { ChartBarIcon,
     WrenchScrewdriverIcon,
     UserIcon,
 } from '@heroicons/react/24/outline'
+import Link from 'next/link';
 import { usePathname} from 'next/navigation';
 
 function Sidebar() {
@@ -21,23 +22,24 @@ function Sidebar() {
               <ul className='mt-4'>
                 <li className="relative px-3 py-1 md:px-2 md:py-0.5">
                     <div className={"flex flex-col py-1.5 md:py-1 " + (pathname == '/' ? "active" : "")}>
-                        <a
+                        <Link
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="forms.html"
                         >
                         <ChartBarIcon className={"h-6 w-6 "} color="#ffffff"/>
-                        </a>
+                        </Link>
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Dashboard</span>
                     </div>
                 </li>
                 <li className="relative px-3 py-1 md:px-2 md:py-0.5">
                     <div className='flex flex-col py-1.5 md:py-1'>
-                        <a
+                        <Link
                             className="inline-flex items-center w-full menu-item justify-center"
                             href="/lead"
+                            as={'/lead'}
                         >
                         <FunnelIcon className={"h-6 w-6 " + (pathname == '/lead' ? "" : "")} color='#ffffff'/>
-                        </a>
+                        </Link>
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Leads</span>
                     </div>
                 </li>
