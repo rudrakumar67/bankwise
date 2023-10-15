@@ -7,10 +7,10 @@ import {
 function Navbar() {
     return (
       <>
-      <header className="z-10 py-3 border-b border-gray-200">
+      <header className="z-10 py-2 border-b border-gray-200">
         <div className="wrapper flex items-center justify-between h-full px-6 mx-auto">
           <div className="flex justify-between flex-0 h-full w-96">
-          <a href="" className='rounded p-1 my-auto'>
+          <a href="" className='rounded my-auto'>
             <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#00539c">
               <g id="SVGRepo_bgCarrier" stroke-width="0"/>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
