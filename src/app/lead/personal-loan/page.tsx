@@ -1,5 +1,16 @@
 import Link from "next/link"
-import { ArrowRightCircleIcon , PlusCircleIcon,ArchiveBoxArrowDownIcon, TrashIcon, ArrowDownTrayIcon, ChevronRightIcon, ShareIcon, UserPlusIcon} from "@heroicons/react/24/outline"
+import { ArrowRightCircleIcon,
+    PlusCircleIcon,
+    ArchiveBoxArrowDownIcon,
+    TrashIcon,
+    ArrowDownTrayIcon,
+    ChevronRightIcon,
+    ShareIcon,
+    UserPlusIcon,
+    PencilSquareIcon,
+    CalendarDaysIcon
+} from "@heroicons/react/24/outline"
+
 export default function Home() {
   return (
     <>
@@ -100,14 +111,22 @@ export default function Home() {
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Share Link</span>
                 </Link>
                 <Link href="/" className="flex bg-white hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 border border-gray-400 rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
-                    <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
-                    <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Assign To</span>
+                    <PencilSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
+                    <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Add Task</span>
+                </Link>
+                <Link href="/" className="flex bg-white hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 border border-gray-400 rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                    <CalendarDaysIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
+                    <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Set Reminder</span>
                 </Link>
             </div>
             <div className="flex h-8">
                 <Link href="/" className="flex text-white py-1.5 px-3 rounded primary-btn mr-2">
                     <PlusCircleIcon className={"h-4.5 w-4.5 text-slate-50 mr-1"}/>
                     <span className="text-sm md:text-xs font-medium my-auto">Add New</span>
+                </Link>
+                <Link href="/" className="flex bg-white hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 border border-gray-400 rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                    <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
+                    <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Assign To</span>
                 </Link>
                 <Link href="/" className="flex bg-white hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 border border-gray-400 rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
                     <ArchiveBoxArrowDownIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
