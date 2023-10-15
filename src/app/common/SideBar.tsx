@@ -23,23 +23,23 @@ function Sidebar() {
               <ul className='mt-4'>
                 <li className="relative px-3 py-1 md:px-2 md:py-0.5">
                     <div className={"flex flex-col py-1.5 md:py-1 cursor-pointer " + (pathname == '/' ? "active" : "")}>
-                        <a
+                        <button
                             className="inline-flex items-center w-full menu-item justify-center"
                             type="button" onClick={() => router.push('/')}
                         >
                         <ChartBarIcon className={"h-6 w-6 "} color="#ffffff"/>
-                        </a>
+                        </button>
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Dashboard</span>
                     </div>
                 </li>
                 <li className="relative px-3 py-1 md:px-2 md:py-0.5">
                     <div className='flex flex-col py-1.5 md:py-1 cursor-pointer'>
-                        <a
+                        <button
                             className="inline-flex items-center w-full menu-item justify-center"
                             type="button" onClick={() => router.push('/lead')}
                         >
                         <FunnelIcon className={"h-6 w-6 " + (pathname == '/lead' ? "" : "")} color='#ffffff'/>
-                        </a>
+                        </button>
                         <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Leads</span>
                     </div>
                 </li>
