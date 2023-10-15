@@ -8,73 +8,73 @@ export default function Leads() {
         </div>
         <div className="grid gap-6 mb-8 md:grid-cols-4 xl:grid-cols-4 py-4">
             <Link href='/lead/personal-loan'>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
-                    <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
+                    <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"} style={{color:'#ffffff'}}/>
                 </div>
                 <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600">
+                    <p className="mb-2 text-sm font-medium" style={{color:'#00539c'}}>
                         Personal Loan
                     </p>
                 </div>
             </div>
             </Link>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600">
+                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
                         Business Loan
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600">
+                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
                         Property Loan
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600">
+                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
                         Credit Card
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600">
+                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
                         Vehicle Loan
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600">
+                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
                         Education Loan
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600">
+                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
                         Gold Loan
                     </p>
                 </div>
@@ -84,22 +84,22 @@ export default function Leads() {
             <h5 className='text-gray-600 uppercase text-sm'>government scheme loans</h5>
         </div>
         <div className="grid gap-6 mb-8 md:grid-cols-4 xl:grid-cols-4 py-4">
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         Stand Up India Loan Scheme
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         SIDBI Loan (MSME Scheme)
                     </p>
                     <p className="text-gray-700" style={{fontSize:'12px'}}>
@@ -107,12 +107,12 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         CGTMSE Loan (MSME Scheme)
                     </p>
                     <p className="text-gray-700" style={{fontSize:'12px'}}>
@@ -120,12 +120,12 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         PMEGP Loan Scheme
                     </p>
                     <p className="text-gray-700" style={{fontSize:'12px'}}>
@@ -133,12 +133,12 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         PMMY Loan Scheme
                     </p>
                     <p className="text-gray-700" style={{fontSize:'12px'}}>
@@ -146,12 +146,12 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         NSIC Loan Scheme
                     </p>
                     <p className="text-gray-700" style={{fontSize:'12px'}}>
@@ -159,12 +159,12 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         CLCSS Loan Scheme
                     </p>
                     <p className="text-gray-700" style={{fontSize:'12px'}}>
@@ -172,12 +172,12 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         PMJDY Loan Scheme
                     </p>
                     <p className="text-gray-700" style={{fontSize:'12px'}}>
@@ -185,12 +185,12 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         PMJAY Loan Scheme
                     </p>
                     <p className="text-gray-700" style={{fontSize:'12px'}}>
@@ -198,12 +198,12 @@ export default function Leads() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center p-4 md:p-2 bg-violet-100 rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 bg-fuchsia-800 rounded">
+            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                     <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
                 </div>
                 <div>
-                    <p className="font-semibold mb-1 text-sm font-medium text-gray-600">
+                    <p className="font-semibold mb-1 text-sm font-medium" style={{color:'#00539c'}}>
                         PMJAY Loan Scheme
                     </p>
                     <p className="text-gray-700" style={{fontSize:'12px'}}>

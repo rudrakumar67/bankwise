@@ -33,3 +33,7 @@
 .btn-text{
   color:#12344d;
 }
+.lead-card-border{
+  background-color: #fbfcfd!important;
+  border: 0.1px solid #cfd7df!important;
+}
