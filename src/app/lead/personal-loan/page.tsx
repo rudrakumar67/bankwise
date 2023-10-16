@@ -222,13 +222,10 @@ export default function Home() {
                                 Net Salary 
                             </th>
                             <th scope="col" className="px-3 py-2 font-semibold">
-                                Created By
-                            </th>
-                            <th scope="col" className="px-3 py-2 font-semibold">
                                 Status 
                             </th>
-                            <th scope="col" className="px-3 py-2 font-semibold text-center">
-                                Lead Date
+                            <th scope="col" className="px-3 py-2 font-semibold">
+                                Created By
                             </th>
                             <th scope="col" className="px-3 py-2 font-semibold text-center">
                                 Action
@@ -259,13 +256,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
@@ -294,13 +288,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
@@ -329,13 +320,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
@@ -364,13 +352,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
@@ -399,13 +384,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
@@ -434,13 +416,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
@@ -469,13 +448,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
@@ -504,13 +480,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
@@ -539,13 +512,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
@@ -574,13 +544,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                Ajay
-                            </td>
-                            <td className="px-3 py-3">
                                 <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-3 text-center">
-                                19-09-2023
+                            <td className="px-3 py-3">
+                                Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
                                 ar dl
