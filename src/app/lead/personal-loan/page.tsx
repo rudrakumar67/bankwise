@@ -197,7 +197,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="relative overflow-x-auto ">
-                <table className="w-full text-xs text-left text-gray-500">
+                <table className="w-full text-xs text-left text-black">
                     <thead className="text-xs" style={{backgroundColor:'#e0e7ff',color:'#00539c'}}>
                         <tr>
                             <th scope="col" className="px-3 py-3 font-semibold">
@@ -207,7 +207,7 @@ export default function Home() {
                                 Phone No
                             </th>
                             <th scope="col" className="px-3 py-3 font-semibold">
-                                Email Id
+                                Email Address
                             </th>
                             <th scope="col" className="px-3 py-3 font-semibold">
                                 Required Loan 
@@ -219,10 +219,10 @@ export default function Home() {
                                 Net Salary 
                             </th>
                             <th scope="col" className="px-3 py-3 font-semibold">
-                                Status 
-                            </th>
-                            <th scope="col" className="px-3 py-3 font-semibold text-center">
                                 Created By
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold">
+                                Status 
                             </th>
                             <th scope="col" className="px-3 py-3 font-semibold text-center">
                                 Lead Date
@@ -234,7 +234,7 @@ export default function Home() {
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" className="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <th scope="row" className="px-3 py-2 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-2">
@@ -253,10 +253,10 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-2">
-                                <span className="bg-green-600 text-white px-1.5 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
-                            </td>
-                            <td className="px-3 py-2 text-center">
                                 Ajay
+                            </td>
+                            <td className="px-3 py-2">
+                                <span className="bg-green-600 text-white px-1.5 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-2 text-center">
                                 19-09-2023
