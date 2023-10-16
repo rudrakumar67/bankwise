@@ -106,7 +106,7 @@ export default function Home() {
                 </Link>
             </div>
         </div>
-        <div className="flex justify-between border-b border-gray-300 pb-3">
+        <div className="flex justify-between pb-3">
             <div className="text-black flex">
                 <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
                     <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
@@ -148,52 +148,125 @@ export default function Home() {
                 </Link>
             </div>
         </div>
-        
-        <div className="flex flex-wrap mt-3">
-            <div className="w-3/12 px-2 flex-0 my-auto border rounded shadow mr-4" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df', padding:"5px 5px",marginTop:'2px'}}>
-                <div className="flex w-full">
-                    <input type="text" name="" id=""  placeholder="Search" className="text-xs w-full placeholder:text-gray-900"/>
-                    <MagnifyingGlassIcon className="h-4 w-4" color="gray"/>
+        <div className="rounded border border-slate-200 p-3">
+            <div className="flex flex-wrap pb-3">
+                <div className="w-3/12 px-2 flex-0 my-auto border rounded shadow mr-4" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df', padding:"5px 5px",marginTop:'2px'}}>
+                    <div className="flex w-full">
+                        <input type="text" name="" id=""  placeholder="Search" className="text-xs w-full placeholder:text-gray-900"/>
+                        <MagnifyingGlassIcon className="h-4 w-4" color="gray"/>
+                    </div>
+                </div>
+                <div className="w-2/12 px-2 flex-0 my-auto border rounded shadow mr-2" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                    <Datepicker 
+                    placeholder="Select Date Range"
+                    inputClassName={'text-xs mb-1 placeholder:text-gray-900'}
+                    value={{startDate:'15-09-2023', endDate:'15-10-2023'}} onChange={function(){
+                        console.log('date');
+                    }} />
+                </div>
+                <div className="w-2/12 w-36 px-2 flex-0 py-0.5 my-auto">
+                    <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded w-full text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                        <option selected>Select Product</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+                <div className="w-2/12 w-36 px-2 flex-0 py-0.5 my-auto">
+                    <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded px-3 w-full text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                        <option selected>Status</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+                <div className="w-2/12 px-2 flex-0 py-0.5 my-auto">
+                    <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded w-full px-3 text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                        <option selected>Created by</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                    </select>
+                </div>
+                <div className="flex h-6 my-auto m-auto justify-items-end">
+                    <button className="flex text-black py-1 px-5  rounded mr-2 text-xs shadow text-black" style={{backgroundColor:'#9fafca'}}>Filter</button>
+                    <button className="flex text-black bg-red-900 py-1 px-5 sec-btn-border rounded shadow text-xs">Clear</button>
                 </div>
             </div>
-            <div className="w-2/12 px-2 flex-0 my-auto border rounded shadow mr-2" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
-                <Datepicker 
-                placeholder="Select Date Range"
-                inputClassName={'text-xs mb-1 placeholder:text-gray-900'}
-                value={{startDate:'15-09-2023', endDate:'15-10-2023'}} onChange={function(){
-                    console.log('date');
-                }} />
-            </div>
-            <div className="w-2/12 w-36 px-2 flex-0 py-0.5 my-auto">
-                <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded w-full text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
-                    <option selected>Select Product</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="FR">France</option>
-                    <option value="DE">Germany</option>
-                </select>
-            </div>
-            <div className="w-2/12 w-36 px-2 flex-0 py-0.5 my-auto">
-                <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded px-3 w-full text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
-                    <option selected>Status</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="FR">France</option>
-                    <option value="DE">Germany</option>
-                </select>
-            </div>
-            <div className="w-2/12 px-2 flex-0 py-0.5 my-auto">
-                <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded w-full px-3 text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
-                    <option selected>Created by</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="FR">France</option>
-                    <option value="DE">Germany</option>
-                </select>
-            </div>
-            <div className="flex h-6 my-auto m-auto justify-items-end">
-                <button className="flex text-black py-1 px-5  rounded mr-2 text-xs shadow text-white" style={{backgroundColor:'#8a307f'}}>Filter</button>
-                <button className="flex text-black bg-red-900 py-1 px-5 sec-btn-border rounded shadow text-xs">Clear</button>
+            <div className="relative overflow-x-auto ">
+                <table className="w-full text-xs text-left text-gray-500">
+                    <thead className="text-xs" style={{backgroundColor:'#e0e7ff',color:'#00539c'}}>
+                        <tr>
+                            <th scope="col" className="px-3 py-3 font-semibold">
+                                Applicant Name
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold">
+                                Phone No
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold">
+                                Email Id
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold">
+                                Required Loan 
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold">
+                                Company Name
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold">
+                                Net Salary 
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold">
+                                Status 
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold text-center">
+                                Created By
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold text-center">
+                                Lead Date
+                            </th>
+                            <th scope="col" className="px-3 py-3 font-semibold text-center">
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" className="px-3 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-2">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-2">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-2">
+                                500000
+                            </td>
+                            <td className="px-3 py-2">
+                                Company name
+                            </td>
+                            <td className="px-3 py-2">
+                                50000
+                            </td>
+                            <td className="px-3 py-2">
+                                <span className="bg-green-600 text-white px-1.5 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-2 text-center">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-2 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-2 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </>
