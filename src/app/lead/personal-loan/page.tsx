@@ -10,6 +10,8 @@ import { ArrowRightCircleIcon,
     UserPlusIcon,
     PencilSquareIcon,
     CalendarDaysIcon,
+    ArrowUpOnSquareIcon,
+    MagnifyingGlassIcon
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
@@ -140,17 +142,58 @@ export default function Home() {
                     <TrashIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Delete</span>
                 </Link>
+                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                    <ArrowUpOnSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
+                    <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Export</span>
+                </Link>
             </div>
         </div>
         
         <div className="flex flex-wrap mt-3">
-            <div className="w-2/12 px-2 flex-0 py-0.5 my-auto border rounded shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+            <div className="w-2/12 px-2 flex-0 my-auto border rounded shadow mr-4" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                <div className="flex w-full py-1">
+                    <input type="text" name="" id=""  placeholder="Search" className="text-xs w-full placeholder:text-gray-900"/>
+                    <MagnifyingGlassIcon className="h-4 w-4" color="gray"/>
+                </div>
+            </div>
+            <div className="w-2/12 px-2 flex-0 my-auto border rounded shadow mr-2" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
                 <Datepicker 
                 placeholder="Select Date Range"
-                inputClassName={'text-xs mb-1'}
+                inputClassName={'text-xs mb-1 placeholder:text-gray-900'}
                 value={{startDate:'15-09-2023', endDate:'15-10-2023'}} onChange={function(){
                     console.log('date');
                 }} />
+            </div>
+            <div className="w-2/12 w-36 px-2 flex-0 py-0.5 my-auto">
+                <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded w-full text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                    <option selected>Select Product</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div className="w-2/12 w-36 px-2 flex-0 py-0.5 my-auto">
+                <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded px-3 w-full text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                    <option selected>Status</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div className="w-2/12 px-2 flex-0 py-0.5 my-auto">
+                <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded w-full px-3 text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                    <option selected>Created by</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                </select>
+            </div>
+            <div className="flex h-6 my-auto w-60">
+                <button className="flex text-black py-1 px-5 ml-52 rounded mr-2 text-xs shadow text-white" style={{backgroundColor:'#8a307f'}}>Filter</button>
+                <button className="flex text-black bg-red-900 py-1 px-5 sec-btn-border rounded shadow text-xs">Clear</button>
             </div>
         </div>
     </>
