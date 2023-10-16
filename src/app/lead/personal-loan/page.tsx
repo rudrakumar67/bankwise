@@ -11,7 +11,8 @@ import { ArrowRightCircleIcon,
     PencilSquareIcon,
     CalendarDaysIcon,
     ArrowUpOnSquareIcon,
-    MagnifyingGlassIcon
+    MagnifyingGlassIcon,
+    ArchiveBoxXMarkIcon
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
@@ -192,8 +193,8 @@ export default function Home() {
                     </select>
                 </div>
                 <div className="flex h-6 my-auto m-auto justify-items-end">
-                    <button className="flex text-black py-1 px-5  rounded mr-2 text-xs shadow text-black" style={{backgroundColor:'#9fafca'}}>Filter</button>
-                    <button className="flex text-black bg-red-900 py-1 px-5 sec-btn-border rounded shadow text-xs">Clear</button>
+                    <button className="flex text-black py-1 px-5  rounded mr-2 text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Filter</button>
+                    <button className="flex text-black bg-red-900 py-1 px-5 rounded shadow text-xs" style={{backgroundColor:'#9fafca',color:'#ffffff'}}>Clear</button>
                 </div>
             </div>
             <div className="relative overflow-x-auto rounded">
@@ -262,7 +263,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                         <tr className="bg-slate-100">
@@ -294,7 +298,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -326,7 +333,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                         <tr className="bg-slate-100">
@@ -358,7 +368,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -390,7 +403,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                         <tr className="bg-slate-100">
@@ -422,7 +438,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -454,7 +473,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                         <tr className="bg-slate-100">
@@ -486,7 +508,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -518,7 +543,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                         <tr className="bg-slate-100">
@@ -550,7 +578,10 @@ export default function Home() {
                                 Acharya Shivkumar
                             </td>
                             <td className="px-3 py-3 text-center">
-                                ar dl
+                                <div className="flex justify-between">
+                                    <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
