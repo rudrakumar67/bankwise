@@ -106,7 +106,7 @@ export default function Home() {
                 </Link>
             </div>
         </div>
-        <div className="flex justify-between border-b border-gray-200 pb-3">
+        <div className="flex justify-between border-b border-gray-300 pb-3">
             <div className="text-black flex">
                 <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
                     <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
@@ -191,8 +191,8 @@ export default function Home() {
                     <option value="DE">Germany</option>
                 </select>
             </div>
-            <div className="flex h-6 my-auto w-60">
-                <button className="flex text-black py-1 px-5 ml-52 rounded mr-2 text-xs shadow text-white" style={{backgroundColor:'#8a307f'}}>Filter</button>
+            <div className="flex h-6 my-auto m-auto justify-items-end">
+                <button className="flex text-black py-1 px-5  rounded mr-2 text-xs shadow text-white" style={{backgroundColor:'#8a307f'}}>Filter</button>
                 <button className="flex text-black bg-red-900 py-1 px-5 sec-btn-border rounded shadow text-xs">Clear</button>
             </div>
         </div>
