@@ -265,7 +265,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
@@ -300,7 +300,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
@@ -335,7 +335,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
@@ -370,7 +370,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
@@ -405,7 +405,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
@@ -440,7 +440,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
@@ -475,7 +475,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
@@ -510,7 +510,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
@@ -545,7 +545,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
@@ -580,7 +580,7 @@ export default function Home() {
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
-                                    <TrashIcon className="h-4 w-4 mx-auto" color="red"/>
+                                    <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
                             </td>
                         </tr>
