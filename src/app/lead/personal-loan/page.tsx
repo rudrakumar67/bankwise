@@ -234,7 +234,7 @@ export default function Home() {
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" className="px-3 py-2 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-2 font-medium whitespace-nowrap text-sm" style={{color:'#00539c'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-2">
