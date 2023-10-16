@@ -106,7 +106,7 @@ export default function Home() {
                 </Link>
             </div>
         </div>
-        <div className="flex justify-between pb-3">
+        <div className="flex justify-between pb-6 ">
             <div className="text-black flex">
                 <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
                     <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
@@ -148,7 +148,7 @@ export default function Home() {
                 </Link>
             </div>
         </div>
-        <div className="rounded border border-slate-200 p-3">
+        <div className="rounded border border-t-2 border-slate-200 p-3">
             <div className="flex flex-wrap pb-3">
                 <div className="w-3/12 px-2 flex-0 my-auto border rounded shadow mr-4" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df', padding:"5px 5px",marginTop:'2px'}}>
                     <div className="flex w-full">
@@ -196,72 +196,393 @@ export default function Home() {
                     <button className="flex text-black bg-red-900 py-1 px-5 sec-btn-border rounded shadow text-xs">Clear</button>
                 </div>
             </div>
-            <div className="relative overflow-x-auto ">
-                <table className="w-full text-xs text-left text-black">
+            <div className="relative overflow-x-auto rounded">
+                <table className="w-full text-xs text-left text-black border border-slate-200">
                     <thead className="text-xs" style={{backgroundColor:'#e0e7ff',color:'#00539c'}}>
                         <tr>
-                            <th scope="col" className="px-3 py-3 font-semibold">
+                            <th scope="col" className="px-3 py-2">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="col" className="px-3 py-2 font-semibold">
                                 Applicant Name
                             </th>
-                            <th scope="col" className="px-3 py-3 font-semibold">
+                            <th scope="col" className="px-3 py-2 font-semibold">
                                 Phone No
                             </th>
-                            <th scope="col" className="px-3 py-3 font-semibold">
+                            <th scope="col" className="px-3 py-2 font-semibold">
                                 Email Address
                             </th>
-                            <th scope="col" className="px-3 py-3 font-semibold">
+                            <th scope="col" className="px-3 py-2 font-semibold">
                                 Required Loan 
                             </th>
-                            <th scope="col" className="px-3 py-3 font-semibold">
+                            <th scope="col" className="px-3 py-2 font-semibold">
                                 Company Name
                             </th>
-                            <th scope="col" className="px-3 py-3 font-semibold">
+                            <th scope="col" className="px-3 py-2 font-semibold">
                                 Net Salary 
                             </th>
-                            <th scope="col" className="px-3 py-3 font-semibold">
+                            <th scope="col" className="px-3 py-2 font-semibold">
                                 Created By
                             </th>
-                            <th scope="col" className="px-3 py-3 font-semibold">
+                            <th scope="col" className="px-3 py-2 font-semibold">
                                 Status 
                             </th>
-                            <th scope="col" className="px-3 py-3 font-semibold text-center">
+                            <th scope="col" className="px-3 py-2 font-semibold text-center">
                                 Lead Date
                             </th>
-                            <th scope="col" className="px-3 py-3 font-semibold text-center">
+                            <th scope="col" className="px-3 py-2 font-semibold text-center">
                                 Action
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" className="px-3 py-2 font-medium whitespace-nowrap text-sm" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
                                 Vijay Anthony
                             </th>
-                            <td className="px-3 py-2">
+                            <td className="px-3 py-3">
                                 1234567890
                             </td>
-                            <td className="px-3 py-2">
+                            <td className="px-3 py-3">
                                 Admin@gmail.com
                             </td>
-                            <td className="px-3 py-2">
+                            <td className="px-3 py-3">
                                 500000
                             </td>
-                            <td className="px-3 py-2">
+                            <td className="px-3 py-3">
                                 Company name
                             </td>
-                            <td className="px-3 py-2">
+                            <td className="px-3 py-3">
                                 50000
                             </td>
-                            <td className="px-3 py-2">
+                            <td className="px-3 py-3">
                                 Ajay
                             </td>
-                            <td className="px-3 py-2">
-                                <span className="bg-green-600 text-white px-1.5 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
                             </td>
-                            <td className="px-3 py-2 text-center">
+                            <td className="px-3 py-3 text-center">
                                 19-09-2023
                             </td>
-                            <td className="px-3 py-2 text-center">
+                            <td className="px-3 py-3 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                        <tr className="bg-slate-100">
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-3">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-3">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-3">
+                                500000
+                            </td>
+                            <td className="px-3 py-3">
+                                Company name
+                            </td>
+                            <td className="px-3 py-3">
+                                50000
+                            </td>
+                            <td className="px-3 py-3">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-3">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-3">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-3">
+                                500000
+                            </td>
+                            <td className="px-3 py-3">
+                                Company name
+                            </td>
+                            <td className="px-3 py-3">
+                                50000
+                            </td>
+                            <td className="px-3 py-3">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                        <tr className="bg-slate-100">
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-3">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-3">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-3">
+                                500000
+                            </td>
+                            <td className="px-3 py-3">
+                                Company name
+                            </td>
+                            <td className="px-3 py-3">
+                                50000
+                            </td>
+                            <td className="px-3 py-3">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-3">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-3">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-3">
+                                500000
+                            </td>
+                            <td className="px-3 py-3">
+                                Company name
+                            </td>
+                            <td className="px-3 py-3">
+                                50000
+                            </td>
+                            <td className="px-3 py-3">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                        <tr className="bg-slate-100">
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-3">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-3">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-3">
+                                500000
+                            </td>
+                            <td className="px-3 py-3">
+                                Company name
+                            </td>
+                            <td className="px-3 py-3">
+                                50000
+                            </td>
+                            <td className="px-3 py-3">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-3">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-3">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-3">
+                                500000
+                            </td>
+                            <td className="px-3 py-3">
+                                Company name
+                            </td>
+                            <td className="px-3 py-3">
+                                50000
+                            </td>
+                            <td className="px-3 py-3">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                        <tr className="bg-slate-100">
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-3">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-3">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-3">
+                                500000
+                            </td>
+                            <td className="px-3 py-3">
+                                Company name
+                            </td>
+                            <td className="px-3 py-3">
+                                50000
+                            </td>
+                            <td className="px-3 py-3">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-3">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-3">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-3">
+                                500000
+                            </td>
+                            <td className="px-3 py-3">
+                                Company name
+                            </td>
+                            <td className="px-3 py-3">
+                                50000
+                            </td>
+                            <td className="px-3 py-3">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                ar dl
+                            </td>
+                        </tr>
+                        <tr className="bg-slate-100">
+                            <th scope="row" className="px-3 py-3">
+                                <input type="checkbox" name="" id="" />
+                            </th>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                                Vijay Anthony
+                            </th>
+                            <td className="px-3 py-3">
+                                1234567890
+                            </td>
+                            <td className="px-3 py-3">
+                                Admin@gmail.com
+                            </td>
+                            <td className="px-3 py-3">
+                                500000
+                            </td>
+                            <td className="px-3 py-3">
+                                Company name
+                            </td>
+                            <td className="px-3 py-3">
+                                50000
+                            </td>
+                            <td className="px-3 py-3">
+                                Ajay
+                            </td>
+                            <td className="px-3 py-3">
+                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                            </td>
+                            <td className="px-3 py-3 text-center">
+                                19-09-2023
+                            </td>
+                            <td className="px-3 py-3 text-center">
                                 ar dl
                             </td>
                         </tr>
