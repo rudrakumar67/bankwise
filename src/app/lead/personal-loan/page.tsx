@@ -150,8 +150,8 @@ export default function Home() {
         </div>
         
         <div className="flex flex-wrap mt-3">
-            <div className="w-2/12 px-2 flex-0 my-auto border rounded shadow mr-4" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
-                <div className="flex w-full py-1">
+            <div className="w-3/12 px-2 flex-0 my-auto border rounded shadow mr-4" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df', padding:"5px 5px",marginTop:'2px'}}>
+                <div className="flex w-full">
                     <input type="text" name="" id=""  placeholder="Search" className="text-xs w-full placeholder:text-gray-900"/>
                     <MagnifyingGlassIcon className="h-4 w-4" color="gray"/>
                 </div>
