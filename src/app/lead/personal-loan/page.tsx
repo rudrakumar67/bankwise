@@ -1,3 +1,4 @@
+'use client';
 import Link from "next/link"
 import { ArrowRightCircleIcon,
     PlusCircleIcon,
@@ -8,10 +9,13 @@ import { ArrowRightCircleIcon,
     ShareIcon,
     UserPlusIcon,
     PencilSquareIcon,
-    CalendarDaysIcon
-} from "@heroicons/react/24/outline"
+    CalendarDaysIcon,
+} from "@heroicons/react/24/outline";
+import React, { useState } from "react";
+import Datepicker from "react-tailwindcss-datepicker";
 
 export default function Home() {
+
   return (
     <>
         <div className="wrapper">
@@ -100,7 +104,7 @@ export default function Home() {
                 </Link>
             </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between border-b border-gray-200 pb-4">
             <div className="text-black flex">
                 <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
                     <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
@@ -136,6 +140,17 @@ export default function Home() {
                     <TrashIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Delete</span>
                 </Link>
+            </div>
+        </div>
+        
+        <div className="flex flex-wrap mt-4">
+            <div className="w-2/12 px-2 flex-0 py-0.5 my-auto border rounded shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                <Datepicker 
+                placeholder="Select Date Range"
+                inputClassName={'text-xs'}
+                value={{startDate:'15-09-2023', endDate:'15-10-2023'}} onChange={function(){
+                    console.log('date');
+                }} />
             </div>
         </div>
     </>
