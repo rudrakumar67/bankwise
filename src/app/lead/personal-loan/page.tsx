@@ -257,7 +257,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
@@ -292,7 +292,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
@@ -327,7 +327,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
@@ -362,7 +362,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
@@ -397,7 +397,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
@@ -432,7 +432,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
@@ -467,7 +467,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
@@ -502,7 +502,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
@@ -537,7 +537,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
@@ -572,7 +572,7 @@ export default function Home() {
                                 50000
                             </td>
                             <td className="px-3 py-3">
-                                <span className="bg-green-600 text-white px-1 py-0.5 rounded text-xs font-normal my-auto">Approved</span>
+                                <span className="bg-green-100 text-green-600 px-1 py-0.5 rounded text-xs font-semibold my-auto">Approved</span>
                             </td>
                             <td className="px-3 py-3">
                                 Acharya Shivkumar
