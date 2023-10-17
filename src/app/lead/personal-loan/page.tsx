@@ -1,6 +1,6 @@
 'use client';
 import Link from "next/link"
-import { ArrowRightCircleIcon,
+import {
     PlusCircleIcon,
     ArchiveBoxArrowDownIcon,
     TrashIcon,
@@ -16,11 +16,18 @@ import { ArrowRightCircleIcon,
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
+import Tools from "../../common/Widget/Lead/Globals/Tools";
+import AddNewPersonalLoan from "../../common/Widget/Lead/PersonalLoan/Models/AddNew";
 
 export default function Home() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
 
   return (
     <>
+    <AddNewPersonalLoan isOpen={isModalOpen} onClose={closeModal}/>
         <div className="wrapper">
             <div className="flex h-6 justify-between my-1">
                 <div className='text-black font-semibold'>
@@ -32,80 +39,7 @@ export default function Home() {
                 Personal Loan <ChevronRightIcon className='h-2.5 w-2.5 my-auto mx-1' /> List
                 </div>
             </div>
-            <div className="grid gap-4 mb-4 md:grid-cols-6 xl:grid-cols-6 py-2 ">
-                <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
-                        </div>
-                        <div>
-                            <p className="my-2 pd:my-1 text-xs font-semibold text-gray-600">
-                                EMI Calculator
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
-                        </div>
-                        <div>
-                            <p className="my-2 pd:my-1 text-xs font-semibold text-gray-600">
-                                Company Validator
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
-                        </div>
-                        <div>
-                            <p className="my-2 pd:my-1 text-xs font-semibold text-gray-600">
-                                Bank Criterias
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
-                        </div>
-                        <div>
-                            <p className="my-2 pd:my-1 text-xs font-semibold text-gray-600">
-                                Eligibility Checker
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
-                        </div>
-                        <div>
-                            <p className="my-2 pd:my-1 text-xs font-semibold text-gray-600">
-                                CIBIL Report
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border bg-indigo-100 border-slate-300 rounded shadow-xs">
-                        <div className="p-2 md:p-1 m-3 md:m-1 rounded">
-                            <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4 text-slate-400"}/>
-                        </div>
-                        <div>
-                            <p className="my-2 pd:my-1 text-xs font-semibold text-gray-600">
-                                Import Website Leads
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-            </div>
+            <Tools/>
         </div>
         <div className="flex justify-between pb-6 ">
             <div className="text-black flex">
@@ -127,10 +61,10 @@ export default function Home() {
                 </Link>
             </div>
             <div className="flex h-8">
-                <Link href="/" className="flex text-white py-1.5 px-3 rounded primary-btn mr-2">
+                <button onClick={openModal} type="button" className=" block flex text-white py-1.5 px-3 rounded primary-btn mr-2 flex-nowrap" >
                     <PlusCircleIcon className={"h-4.5 w-4.5 text-slate-50 mr-1"}/>
                     <span className="text-sm md:text-xs font-medium my-auto">Add New</span>
-                </Link>
+                </button>
                 <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
                     <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Assign To</span>
@@ -149,24 +83,24 @@ export default function Home() {
                 </Link>
             </div>
         </div>
-        <div className="rounded border border-t-2 border-slate-200 p-3">
-            <div className="flex flex-wrap pb-3">
+        <div className="rounded border border-t-2 border-slate-200">
+            <div className="flex flex-wrap p-3">
                 <div className="w-3/12 px-2 flex-0 my-auto border rounded shadow mr-4" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df', padding:"5px 5px",marginTop:'2px'}}>
                     <div className="flex w-full">
-                        <input type="text" name="" id=""  placeholder="Search" className="text-xs w-full placeholder:text-gray-900"/>
+                        <input type="text" name="" id=""  placeholder="Search" className="text-xs w-full placeholder:text-gray-900 outline-none px-2"/>
                         <MagnifyingGlassIcon className="h-4 w-4" color="gray"/>
                     </div>
                 </div>
                 <div className="w-2/12 px-2 flex-0 my-auto border rounded shadow mr-2" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
                     <Datepicker 
                     placeholder="Select Date Range"
-                    inputClassName={'text-xs mb-1 placeholder:text-gray-900'}
+                    inputClassName={'text-xs mb-1 placeholder:text-gray-900 outline-none px-1'}
                     value={{startDate:'15-09-2023', endDate:'15-10-2023'}} onChange={function(){
                         console.log('date');
                     }} />
                 </div>
                 <div className="w-2/12 w-36 px-2 flex-0 py-0.5 my-auto">
-                    <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded w-full text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                    <select id="countries" className="bg-white text-gray-900 text-sm rounded w-full px-2 text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
                         <option selected>Select Product</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
@@ -175,7 +109,7 @@ export default function Home() {
                     </select>
                 </div>
                 <div className="w-2/12 w-36 px-2 flex-0 py-0.5 my-auto">
-                    <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded px-3 w-full text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                    <select id="countries" className="bg-white text-gray-900 text-sm rounded w-full px-2 text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
                         <option selected>Status</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
@@ -184,7 +118,7 @@ export default function Home() {
                     </select>
                 </div>
                 <div className="w-2/12 px-2 flex-0 py-0.5 my-auto">
-                    <select id="countries" className="bg-gray-50 text-gray-900 text-sm rounded w-full px-3 text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
+                    <select id="countries" className="bg-white text-gray-900 text-sm rounded w-full px-2 text-xs py-1 shadow" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df'}}>
                         <option selected>Created by</option>
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
@@ -587,7 +521,7 @@ export default function Home() {
                     </tbody>
                 </table>
             </div>
-            <div className="flex justify-between pt-3 my-auto">
+            <div className="flex justify-between p-3 my-auto">
                 <div className="text-black text-xs border border-slate-300 my-auto px-2 py-1 rounded">
                     <span className="border-r border-slate-400 px-1">
                         Show 

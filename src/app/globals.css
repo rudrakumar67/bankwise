@@ -10,6 +10,9 @@
     background: black;
   }
 } */
+input {
+    @apply outline-none
+}
 .sidebar{
   background-color: #00539c;
 }
@@ -39,5 +42,5 @@
 }
 .sec-btn-border{
   border:1px solid #cfd7df!important;
-  background-color: #fbfcfd!important;
+  /* background-color: #fbfcfd!important; */
 }
