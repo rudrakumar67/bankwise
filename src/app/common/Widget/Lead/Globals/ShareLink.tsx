@@ -10,7 +10,7 @@ interface ShareLinkProps {
 const ShareLink: NextPage<ShareLinkProps> = ({isOpen , onClose}) => {      
 
     return(
-        <div id="extralarge-modal" className={`flex justify-center fixed z-50 ${isOpen ? ''  : 'hidden'} w-11/12 p-4 overflow-x-hidden overflow-y-auto max-h-full`}>
+        <div id="extralarge-modal" className={`flex justify-center fixed z-50 ${isOpen ? 'animate-fade-down animate-duration-750 animate-delay-100'  : 'hidden'} w-11/12 p-4 overflow-x-hidden overflow-y-auto max-h-full`}>
             <div className="relative w-12/12  max-h-full">
                 <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
                     <div className="flex items-center justify-between py-2 px-5 border-b rounded-t dark:border-gray-600">

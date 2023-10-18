@@ -58,14 +58,12 @@ const Home: NextPage = () => {
 
   return (
     <>
-        <div className="text-black ">
-            <ImportData isOpen={importDataModal} onClose={closeImportDataModal}/>
-            <ShareLink isOpen={shareLink} onClose={closeshareLink}/>
-            <AddTask isOpen={addTaskModal} onClose={closeaddTaskModal}/>
-            <SetReminder isOpen={setReminderModal} onClose={closesetReminderModal}/>
-            <AddNewPersonalLoan isOpen={addNewModal} onClose={closeAddNewModal}/>
-            <AssignTo isOpen={assignToModal} onClose={closeassignToModal}/>
-        </div>
+        <ImportData isOpen={importDataModal} onClose={closeImportDataModal}/>
+        <ShareLink isOpen={shareLink} onClose={closeshareLink}/>
+        <AddTask isOpen={addTaskModal} onClose={closeaddTaskModal}/>
+        <SetReminder isOpen={setReminderModal} onClose={closesetReminderModal}/>
+        <AddNewPersonalLoan isOpen={addNewModal} onClose={closeAddNewModal}/>
+        <AssignTo isOpen={assignToModal} onClose={closeassignToModal}/>
         <div className="wrapper">
             <div className="flex h-6 justify-between my-1">
                 <div className='text-black font-semibold'>
