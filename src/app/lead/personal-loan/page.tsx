@@ -17,17 +17,55 @@ import {
 import React, { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
 import Tools from "../../common/Widget/Lead/Globals/Tools";
-import AddNewPersonalLoan from "../../common/Widget/Lead/PersonalLoan/Models/AddNew";
+import AddNewPersonalLoan from "../../common/Widget/Lead/PersonalLoan/Modals/AddNewPersonalLoan";
+import { NextPage } from "next";
+import ImportData from "../../common/Widget/Lead/Globals/ImoprtData";
+import AddTask from "../../common/Widget/Lead/Globals/AddTask";
+import SetReminder from "../../common/Widget/Lead/Globals/SetReminder";
+import ShareLink from "../../common/Widget/Lead/Globals/ShareLink";
+import AssignTo from "../../common/Widget/Lead/Globals/AssignTo";
 
-export default function Home() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+const Home: NextPage = () => {
+    // Import Data Modal
+    const [importDataModal, setimportDataModal] = useState(false);
+    const importDataModalFun = () => setimportDataModal(true);
+    const closeImportDataModal = () => setimportDataModal(false);
 
-    const openModal = () => setIsModalOpen(true);
-    const closeModal = () => setIsModalOpen(false);
+    // Share link Modal
+    const [shareLink, setshareLink] = useState(false);
+    const shareLinkFun = () => setshareLink(true);
+    const closeshareLink = () => setshareLink(false);
+
+    // Add Task Modal
+    const [addTaskModal, setaddTaskModal] = useState(false);
+    const addTaskModalFun = () => setaddTaskModal(true);
+    const closeaddTaskModal = () => setaddTaskModal(false);
+
+    // Set Reminder Modal
+    const [setReminderModal, setsetReminderModal] = useState(false);
+    const setReminderModalFun = () => setsetReminderModal(true);
+    const closesetReminderModal = () => setsetReminderModal(false);
+
+    // Add New Modal
+    const [addNewModal, setAddNewModal] = useState(false);
+    const addNewModalFun = () => setAddNewModal(true);
+    const closeAddNewModal = () => setAddNewModal(false);
+
+    // Assign to Modal
+    const [assignToModal, setassignToModal] = useState(false);
+    const assignToModalFun = () => setassignToModal(true);
+    const closeassignToModal = () => setassignToModal(false);
 
   return (
     <>
-    <AddNewPersonalLoan isOpen={isModalOpen} onClose={closeModal}/>
+        <div className="text-black ">
+            <ImportData isOpen={importDataModal} onClose={closeImportDataModal}/>
+            <ShareLink isOpen={shareLink} onClose={closeshareLink}/>
+            <AddTask isOpen={addTaskModal} onClose={closeaddTaskModal}/>
+            <SetReminder isOpen={setReminderModal} onClose={closesetReminderModal}/>
+            <AddNewPersonalLoan isOpen={addNewModal} onClose={closeAddNewModal}/>
+            <AssignTo isOpen={assignToModal} onClose={closeassignToModal}/>
+        </div>
         <div className="wrapper">
             <div className="flex h-6 justify-between my-1">
                 <div className='text-black font-semibold'>
@@ -43,32 +81,32 @@ export default function Home() {
         </div>
         <div className="flex justify-between pb-6 ">
             <div className="text-black flex">
-                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Import Data</span>
-                </Link>
-                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                </span>
+                <span onClick={shareLinkFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <ShareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Share Link</span>
-                </Link>
-                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                </span>
+                <span onClick={addTaskModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <PencilSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Add Task</span>
-                </Link>
-                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                </span>
+                <span onClick={setReminderModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <CalendarDaysIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Set Reminder</span>
-                </Link>
+                </span>
             </div>
             <div className="flex h-8">
-                <button onClick={openModal} type="button" className=" block flex text-white py-1.5 px-3 rounded primary-btn mr-2 flex-nowrap" >
+                <span onClick={addNewModalFun} className=" block flex text-white py-1.5 px-3 rounded primary-btn mr-2 flex-nowrap cursor-pointer" >
                     <PlusCircleIcon className={"h-4.5 w-4.5 text-slate-50 mr-1"}/>
                     <span className="text-sm md:text-xs font-medium my-auto">Add New</span>
-                </button>
-                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                </span>
+                <span onClick={assignToModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Assign To</span>
-                </Link>
+                </span>
                 <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
                     <ArchiveBoxArrowDownIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-medium my-auto" style={{color:'#0e387a'}}>Archive</span>
@@ -599,3 +637,4 @@ export default function Home() {
     </>
   )
 }
+export default Home;
