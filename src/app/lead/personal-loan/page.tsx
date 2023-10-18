@@ -171,7 +171,7 @@ const Home: NextPage = () => {
             </div>
             <div className="relative overflow-x-auto rounded">
                 <table className="w-full text-xs text-left text-black border border-slate-200">
-                    <thead className="text-xs" style={{backgroundColor:'#e0e7ff',color:'#00539c'}}>
+                    <thead className="text-xs" style={{backgroundColor:'#e0e7ff',color:'#333'}}>
                         <tr>
                             <th scope="col" className="px-3 py-2">
                                 <input type="checkbox" name="" id="" />
