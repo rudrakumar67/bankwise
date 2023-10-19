@@ -2,45 +2,41 @@
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { NextPage } from "next";
 import React, { useState } from "react";
+import Select from "react-tailwindcss-select";
+
 interface AddTaskProps {
     isOpen: boolean;
     onClose: () => void;
 }
 
-const AddTask: NextPage<AddTaskProps> = ({isOpen , onClose}) => {      
-
+const AddTask: NextPage<AddTaskProps> = ({isOpen , onClose}) => {
     return(
-        <div id="extralarge-modal" className={`flex justify-center fixed z-50 ${isOpen ? 'animate-fade-down animate-duration-500'  : 'hidden'} w-11/12 p-4 overflow-x-hidden overflow-y-auto max-h-full ransition-opacity animated fadeIn`}>
-            <div className="relative w-12/12  max-h-full">
+        <div id="extralarge-modal" className={`${isOpen ? 'animate-fade-down animate-duration-500'  : 'hidden'} max-w-screen p-4 fixed`}>
+            <div className="relative p-4 w-screen max-w-2xl h-full md:h-auto">      
                 <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                    <div className="flex items-center justify-between py-2 px-5 border-b rounded-t dark:border-gray-600">
-                        <h3 className="text-md font-medium text-gray-900 dark:text-white">
-                            Add Task
-                        </h3>
+                    <div className="flex justify-between items-start p-2 px-3 rounded-t border dark:border-gray-600 bg-slate-100">
+                        <h3 className="text-md font-medium text-gray-900 dark:text-white">Add Task</h3>
                         <span onClick={onClose} className="cursor-pointer">
                             <XMarkIcon className="h-5 w-5 text-black"/>
                         </span>
                     </div>
-
-                    <div className="p-6 space-y-6">
-                        <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                            With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                        </p>
-                        <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                            The European Unions General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
-                        </p>
-                        <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                            With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                        </p>
-                        <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                            The European Unions General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
-                        </p>
-                        <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                            With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
-                        </p>
-                        <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                            The European Unions General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
-                        </p>
+                    <div className="p-6 space-y-1 w-full">
+                        <div className="py-1 grid grid-rows">
+                            <label htmlFor="" className="text-black text-xs font-semibold pb-1 ">Due Date</label>
+                            <input type="date" name="" id="" className="rounded w-44 border p-1 placeholder:text-black text-black text-xs"/>
+                        </div>
+                        <div className="py-1">
+                            <label htmlFor="" className="text-black text-xs font-semibold">Title</label>
+                            <input type="text" name="" id="" className="rounded w-full border p-1" />
+                        </div>
+                        <div className="py-1">
+                            <label htmlFor="" className="text-black text-xs font-semibold">Description</label>
+                            <textarea name="" id=""  rows={3} className="border rounded w-full"></textarea>
+                        </div>
+                        <div className="flex justify-end">
+                            <button className="flex text-black py-1.5 px-5  rounded mr-2 text-sm shadow text-white" style={{backgroundColor:'#fd9b4d'}}>Save</button>
+                            <button className="flex text-black bg-red-900 py-1.5 px-5 rounded shadow text-sm text-white" style={{backgroundColor:'#9fafca'}}>Cancel</button>
+                        </div>
                     </div>
                 </div>
             </div>
