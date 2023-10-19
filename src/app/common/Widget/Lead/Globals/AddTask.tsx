@@ -34,8 +34,8 @@ const AddTask: NextPage<AddTaskProps> = ({isOpen , onClose}) => {
                             <textarea name="" id=""  rows={4} className="border rounded w-full"></textarea>
                         </div>
                         <div className="flex justify-end">
-                            <button className="flex text-black py-1.5 px-5  rounded mr-2 text-sm shadow text-white" style={{backgroundColor:'#fd9b4d'}}>Save</button>
-                            <button className="flex text-black bg-red-900 py-1.5 px-5 rounded shadow text-sm text-white" style={{backgroundColor:'#9fafca'}}>Cancel</button>
+                            <button className="flex text-black bg-red-900 py-1.5 px-5 mr-2 rounded shadow text-sm text-white" style={{backgroundColor:'#9fafca'}}>Cancel</button>
+                            <button className="flex text-black py-1.5 px-5  rounded text-sm shadow text-white" style={{backgroundColor:'#fd9b4d'}}>Save</button>
                         </div>
                     </div>
                 </div>
