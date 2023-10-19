@@ -31,7 +31,7 @@ const AddTask: NextPage<AddTaskProps> = ({isOpen , onClose}) => {
                         </div>
                         <div className="py-1">
                             <label htmlFor="" className="text-xs font-semibold" style={{color:'#333'}}>Description</label>
-                            <textarea name="" id=""  rows={4} className="border rounded w-full"></textarea>
+                            <textarea name="" id=""  rows={4} className="border rounded w-full outline-none"></textarea>
                         </div>
                         <div className="flex justify-end">
                             <button className="flex text-black bg-red-900 py-1.5 px-5 mr-2 rounded shadow text-sm text-white" style={{backgroundColor:'#9fafca'}}>Cancel</button>

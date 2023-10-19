@@ -55,3 +55,7 @@ input[type="date"]:focus:before,
 input[type="date"]:valid:before {
   content: "";
 }
+
+input:focus-within, textarea:focus-within {
+  border-color: #9fafca!important;
+}
