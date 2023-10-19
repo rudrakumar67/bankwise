@@ -22,15 +22,15 @@ const AddTask: NextPage<AddTaskProps> = ({isOpen , onClose}) => {
                     </div>
                     <div className="p-6 space-y-1 w-full">
                         <div className="py-1 grid grid-rows">
-                            <label htmlFor="" className="text-black text-xs font-semibold pb-1 ">Due Date</label>
+                            <label htmlFor="" className="text-xs font-semibold pb-1" style={{color:'#333'}}>Due Date</label>
                             <input type="date" name="" id="" className="rounded w-44 border p-1 placeholder:text-black text-black text-xs"/>
                         </div>
                         <div className="py-1">
-                            <label htmlFor="" className="text-black text-xs font-semibold">Title</label>
+                            <label htmlFor="" className="text-xs font-semibold" style={{color:'#333'}}>Title</label>
                             <input type="text" name="" id="" className="rounded w-full border p-1" />
                         </div>
                         <div className="py-1">
-                            <label htmlFor="" className="text-black text-xs font-semibold">Description</label>
+                            <label htmlFor="" className="text-xs font-semibold" style={{color:'#333'}}>Description</label>
                             <textarea name="" id=""  rows={3} className="border rounded w-full"></textarea>
                         </div>
                         <div className="flex justify-end">
