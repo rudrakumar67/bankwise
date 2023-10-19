@@ -169,7 +169,7 @@ const Home: NextPage = () => {
                     <button className="flex text-black bg-red-900 py-1 px-5 rounded shadow text-xs" style={{backgroundColor:'#9fafca',color:'#ffffff'}}>Clear</button>
                 </div>
             </div>
-            <div className="relative overflow-x-auto rounded">
+            <div className="relative overflow-x-auto">
                 <table className="w-full text-xs text-left text-black border border-slate-200">
                     <thead className="text-xs" style={{backgroundColor:'#e0e7ff',color:'#333'}}>
                         <tr>
