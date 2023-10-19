@@ -58,7 +58,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-        <div className="flex justify-center z-50">
+        <div className="flex justify-center z-50 backdrop-blur">
             <ImportData isOpen={importDataModal} onClose={closeImportDataModal}/>
             <ShareLink isOpen={shareLink} onClose={closeshareLink}/>
             <AddTask isOpen={addTaskModal} onClose={closeaddTaskModal}/>
