@@ -24,6 +24,8 @@ import AddTask from "../../common/Widget/Lead/Globals/AddTask";
 import SetReminder from "../../common/Widget/Lead/Globals/SetReminder";
 import ShareLink from "../../common/Widget/Lead/Globals/ShareLink";
 import AssignTo from "../../common/Widget/Lead/Globals/AssignTo";
+import Archive from "../../common/Widget/Lead/Globals/Archive";
+import Delete from "../../common/Widget/Lead/Globals/Delete";
 
 const Home: NextPage = () => {
     // Import Data Modal
@@ -56,6 +58,16 @@ const Home: NextPage = () => {
     const assignToModalFun = () => setassignToModal(true);
     const closeassignToModal = () => setassignToModal(false);
 
+    // Archive Modal
+    const [archiveModal, setarchiveModal] = useState(false);
+    const archiveModalFun = () => setarchiveModal(true);
+    const closearchiveModal = () => setarchiveModal(false);
+
+    // Delete Modal
+    const [deleteModal, setdeleteModal] = useState(false);
+    const deleteModalFun = () => setdeleteModal(true);
+    const closedeleteModal = () => setdeleteModal(false);
+
   return (
     <>
         <div className="flex justify-center z-50 backdrop-blur">
@@ -65,6 +77,8 @@ const Home: NextPage = () => {
             <SetReminder isOpen={setReminderModal} onClose={closesetReminderModal}/>
             <AddNewPersonalLoan isOpen={addNewModal} onClose={closeAddNewModal}/>
             <AssignTo isOpen={assignToModal} onClose={closeassignToModal}/>
+            <Archive isOpen={archiveModal} onClose={closearchiveModal}/>
+            <Delete isOpen={deleteModal} onClose={closedeleteModal}/>
         </div>
         <div className="wrapper">
             <div className="flex h-6 justify-between my-1">
@@ -107,14 +121,14 @@ const Home: NextPage = () => {
                     <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#0e387a'}}>Assign To</span>
                 </span>
-                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                <span onClick={archiveModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <ArchiveBoxArrowDownIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#0e387a'}}>Archive</span>
-                </Link>
-                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                </span>
+                <span onClick={deleteModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <TrashIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#0e387a'}}>Delete</span>
-                </Link>
+                </span>
                 <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
                     <ArrowUpOnSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/>
                     <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#0e387a'}}>Export</span>
