@@ -8,77 +8,89 @@ export default function Leads() {
         </div>
         <div className="grid gap-6 mb-8 md:grid-cols-4 xl:grid-cols-4 py-4">
             <Link href='/lead/personal-loan'>
-            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
-                    <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"} style={{color:'#ffffff'}}/>
+                <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                    <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
+                        <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"} style={{color:'#ffffff'}}/>
+                    </div>
+                    <div>
+                        <p className="mb-2 text-sm font-medium" style={{color:'#00539c'}}>
+                            Personal Loan
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <p className="mb-2 text-sm font-medium" style={{color:'#00539c'}}>
-                        Personal Loan
-                    </p>
-                </div>
-            </div>
             </Link>
-            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
-                    <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+            <Link href='/lead/business-loan'>
+                <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                    <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
+                        <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+                    </div>
+                    <div>
+                        <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
+                            Business Loan
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
-                        Business Loan
-                    </p>
+            </Link>
+            <Link href='/lead/property-loan'>
+                <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                    <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
+                        <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+                    </div>
+                    <div>
+                        <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
+                            Property Loan
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
-                    <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+            </Link>
+            <Link href='/lead/credit-card'>
+                <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                    <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
+                        <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+                    </div>
+                    <div>
+                        <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
+                            Credit Card
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
-                        Property Loan
-                    </p>
+            </Link>
+            <Link href='/lead/vehicle-loan'>
+                <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                    <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
+                        <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+                    </div>
+                    <div>
+                        <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
+                            Vehicle Loan
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
-                    <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+            </Link>
+            <Link href='/lead/education-loan'>
+                <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                    <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
+                        <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+                    </div>
+                    <div>
+                        <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
+                            Education Loan
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
-                        Credit Card
-                    </p>
+            </Link>
+            <Link href='/lead/gold-loan'>
+                <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+                    <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
+                        <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
+                    </div>
+                    <div>
+                        <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
+                            Gold Loan
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
-                    <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
-                </div>
-                <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
-                        Vehicle Loan
-                    </p>
-                </div>
-            </div>
-            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
-                    <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
-                </div>
-                <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
-                        Education Loan
-                    </p>
-                </div>
-            </div>
-            <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
-                <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
-                    <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"}/>
-                </div>
-                <div>
-                    <p className="mb-2 text-sm font-medium text-gray-600" style={{color:'#00539c'}}>
-                        Gold Loan
-                    </p>
-                </div>
-            </div>
+            </Link>
         </div>
         <div className='flex pt-4 border-t border-gray-200'>
             <h5 className='text-gray-600 uppercase text-sm'>government scheme loans</h5>
