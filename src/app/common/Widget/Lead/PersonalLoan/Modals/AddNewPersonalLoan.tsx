@@ -167,7 +167,7 @@ const AddNewPersonalLoan: NextPage<AddNewPersonalLoanProps> = ({isOpen , onClose
 
     return(
       <div id="extralarge-modal" className={`${isOpen ? 'animate-fade-down animate-duration-500'  : 'hidden'} max-w-screen p-4 fixed`}>
-          <div className="relative p-4 w-screen px-20 w-auto h-full pb-60">      
+          <div className="relative p-4 px-20 w-auto sm:w-auto h-full pb-60">      
               <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
                   <div className="flex justify-between items-start p-2 px-3 rounded-t border dark:border-gray-600 bg-slate-100">
                   <h3 className="text-sm font-semibold text-gray-900 dark:text-black flex"><PlusCircleIcon className="h-4 w-4 mr-1 mt-0.5"/>Add New</h3>
