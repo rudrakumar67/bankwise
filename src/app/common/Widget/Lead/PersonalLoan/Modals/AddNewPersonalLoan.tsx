@@ -13,7 +13,7 @@ const Tabs = () => {
       <div className="flex flex-wrap">
         <div className="w-full">
           <ul
-            className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row w-fit"
+            className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row w-full"
             role="tablist"
           >
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -22,7 +22,7 @@ const Tabs = () => {
                   "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
                   (openTab === 1
                     ? "text-white cust-tab-active"
-                    : "text-black bg-slate-300")
+                    : "tab-inactive")
                 }
                 onClick={e => {
                   e.preventDefault();
@@ -40,7 +40,7 @@ const Tabs = () => {
                 className={
                   "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
                   (openTab === 2
-                    ? "text-black bg-white"
+                    ? "text-white cust-tab-active"
                     : "tab-inactive")
                 }
                 onClick={e => {
@@ -58,13 +58,13 @@ const Tabs = () => {
               <a
                 className={
                   "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
-                  (openTab === 2
-                    ? "text-black bg-white"
+                  (openTab === 3
+                    ? "text-white cust-tab-active"
                     : "tab-inactive")
                 }
                 onClick={e => {
                   e.preventDefault();
-                  setOpenTab(2);
+                  setOpenTab(3);
                 }}
                 data-toggle="tab"
                 href="#link2"
@@ -77,13 +77,13 @@ const Tabs = () => {
               <a
                 className={
                   "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
-                  (openTab === 2
-                    ? "text-black bg-white"
+                  (openTab === 4
+                    ? "text-white cust-tab-active"
                     : "tab-inactive")
                 }
                 onClick={e => {
                   e.preventDefault();
-                  setOpenTab(2);
+                  setOpenTab(4);
                 }}
                 data-toggle="tab"
                 href="#link2"
@@ -96,13 +96,13 @@ const Tabs = () => {
               <a
                 className={
                   "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
-                  (openTab === 2
-                    ? "text-black bg-white"
+                  (openTab === 5
+                    ? "text-white cust-tab-active"
                     : "tab-inactive")
                 }
                 onClick={e => {
                   e.preventDefault();
-                  setOpenTab(2);
+                  setOpenTab(5);
                 }}
                 data-toggle="tab"
                 href="#link2"
@@ -115,13 +115,13 @@ const Tabs = () => {
               <a
                 className={
                   "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
-                  (openTab === 2
-                    ? "text-black bg-white"
+                  (openTab === 6
+                    ? "text-white cust-tab-active"
                     : "tab-inactive")
                 }
                 onClick={e => {
                   e.preventDefault();
-                  setOpenTab(2);
+                  setOpenTab(6);
                 }}
                 data-toggle="tab"
                 href="#link2"
@@ -131,28 +131,78 @@ const Tabs = () => {
               </a>
             </li>
           </ul>
-          <div className="relative flex flex-col min-w-0 break-words bg-white text-black w-full mb-6 shadow-lg rounded">
-            <div className="px-4 py-5 flex-auto">
+          <div className="relative flex flex-col min-w-0 break-words bg-white text-black w-full mb-3 ">
+            <div className="py-2 flex-auto border p-3 rounded border-t-0">
+              <h4 className="text-left pb-3">Basic Details</h4>
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  <p>
-                    Collaboratively administrate empowered markets via
-                    plug-and-play networks. Dynamically procrastinate B2C users
-                    after installed base benefits.
-                    <br />
-                    <br /> Dramatically visualize customer directed convergence
-                    without revolutionary ROI.
-                  </p>
+                  <div className="grid grid-cols-4 gap-4">
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Full Name</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Phone Number</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Alt Phone Number</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Email Address</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Date of Birth</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Gender</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Marital Status</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">PAN Number</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Mother Name</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Father Name</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                  </div>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <p>
-                    Completely synergize resource taxing relationships via
-                    premier niche markets. Professionally cultivate one-to-one
-                    customer service with robust ideas.
-                    <br />
-                    <br />
-                    Dynamically innovate resource-leveling customer service for
-                    state of the art customer service.
+                    Loan
+                  </p>
+                </div>
+                <div className={openTab === 3 ? "block" : "hidden"} id="link2">
+                  <p>
+                    Emp
+                  </p>
+                </div>
+                <div className={openTab === 4 ? "block" : "hidden"} id="link2">
+                  <p>
+                    Add
+                  </p>
+                </div>
+                <div className={openTab === 5 ? "block" : "hidden"} id="link2">
+                  <p>
+                    ref
+                  </p>
+                </div>
+                <div className={openTab === 6 ? "block" : "hidden"} id="link2">
+                  <p>
+                    Obg
                   </p>
                 </div>
               </div>
@@ -177,7 +227,7 @@ const AddNewPersonalLoan: NextPage<AddNewPersonalLoanProps> = ({isOpen , onClose
                   </div>
                   <div className="px-6 py-2 space-y-1 w-full text-center">
                       <Tabs/>
-                      <div className="flex justify-end py-1">
+                      <div className="flex justify-end py-1 pt-4">
                           <button className="flex text-black bg-red-900 py-1.5 px-5 mr-2 rounded shadow text-sm text-black" style={{backgroundColor:'#9fafca'}}>Cancel</button>
                           <button className="flex text-black py-1.5 px-5  rounded text-sm shadow text-black" style={{backgroundColor:'#fd9b4d'}}>{"Yes I'm Sure"}</button>
                       </div>
