@@ -1,81 +1,190 @@
 'use client'
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 import { NextPage } from "next";
 import React, { useState } from "react";
 interface AddNewPersonalLoanProps {
     isOpen: boolean;
     onClose: () => void;
 }
-
+const Tabs = () => {
+  const [openTab, setOpenTab] = React.useState(1);
+  return (
+    <>
+      <div className="flex flex-wrap">
+        <div className="w-full">
+          <ul
+            className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row w-fit"
+            role="tablist"
+          >
+            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
+                  (openTab === 1
+                    ? "text-white cust-tab-active"
+                    : "text-black bg-slate-300")
+                }
+                onClick={e => {
+                  e.preventDefault();
+                  setOpenTab(1);
+                }}
+                data-toggle="tab"
+                href="#link1"
+                role="tablist"
+              >
+                <i className="fas fa-space-shuttle text-base mr-1"></i> Applicant Details
+              </a>
+            </li>
+            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
+                  (openTab === 2
+                    ? "text-black bg-white"
+                    : "tab-inactive")
+                }
+                onClick={e => {
+                  e.preventDefault();
+                  setOpenTab(2);
+                }}
+                data-toggle="tab"
+                href="#link2"
+                role="tablist"
+              >
+                <i className="fas fa-cog text-base mr-1"></i>  Loan Requirement
+              </a>
+            </li>
+            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
+                  (openTab === 2
+                    ? "text-black bg-white"
+                    : "tab-inactive")
+                }
+                onClick={e => {
+                  e.preventDefault();
+                  setOpenTab(2);
+                }}
+                data-toggle="tab"
+                href="#link2"
+                role="tablist"
+              >
+                <i className="fas fa-cog text-base mr-1"></i>  Employment Information
+              </a>
+            </li>
+            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
+                  (openTab === 2
+                    ? "text-black bg-white"
+                    : "tab-inactive")
+                }
+                onClick={e => {
+                  e.preventDefault();
+                  setOpenTab(2);
+                }}
+                data-toggle="tab"
+                href="#link2"
+                role="tablist"
+              >
+                <i className="fas fa-cog text-base mr-1"></i>  Address Details
+              </a>
+            </li>
+            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
+                  (openTab === 2
+                    ? "text-black bg-white"
+                    : "tab-inactive")
+                }
+                onClick={e => {
+                  e.preventDefault();
+                  setOpenTab(2);
+                }}
+                data-toggle="tab"
+                href="#link2"
+                role="tablist"
+              >
+                <i className="fas fa-cog text-base mr-1"></i>  Refrences
+              </a>
+            </li>
+            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-semibold px-2 py-1 shadow-lg rounded block leading-normal " +
+                  (openTab === 2
+                    ? "text-black bg-white"
+                    : "tab-inactive")
+                }
+                onClick={e => {
+                  e.preventDefault();
+                  setOpenTab(2);
+                }}
+                data-toggle="tab"
+                href="#link2"
+                role="tablist"
+              >
+                <i className="fas fa-cog text-base mr-1"></i>  Obligations
+              </a>
+            </li>
+          </ul>
+          <div className="relative flex flex-col min-w-0 break-words bg-white text-black w-full mb-6 shadow-lg rounded">
+            <div className="px-4 py-5 flex-auto">
+              <div className="tab-content tab-space">
+                <div className={openTab === 1 ? "block" : "hidden"} id="link1">
+                  <p>
+                    Collaboratively administrate empowered markets via
+                    plug-and-play networks. Dynamically procrastinate B2C users
+                    after installed base benefits.
+                    <br />
+                    <br /> Dramatically visualize customer directed convergence
+                    without revolutionary ROI.
+                  </p>
+                </div>
+                <div className={openTab === 2 ? "block" : "hidden"} id="link2">
+                  <p>
+                    Completely synergize resource taxing relationships via
+                    premier niche markets. Professionally cultivate one-to-one
+                    customer service with robust ideas.
+                    <br />
+                    <br />
+                    Dynamically innovate resource-leveling customer service for
+                    state of the art customer service.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 const AddNewPersonalLoan: NextPage<AddNewPersonalLoanProps> = ({isOpen , onClose}) => {      
 
     return(
-        <div id="extralarge-modal" className={`${isOpen ? 'animate-fade-down animate-duration-500'  : 'hidden'} w-10/12 p-4 overflow-x-hidden overflow-y-auto max-h-full`}>
-            <div className="relative flex flex-col w-full bg-white border border-solid pointer-events-auto dark:bg-grey-950 bg-clip-padding border-black/20 rounded-xl outline-0">
-  <div className="flex items-center justify-between p-4 border-b border-solid shrink-0 border-[#dee2e6] rounded-t-xl">
-    <h5
-      className="text-[#344767] mb-0 leading-normal dark:text-white"
-      id="ModalLabel"
-    >
-      Import CSV
-    </h5>
-    <i className="ml-4 fas fa-upload" aria-hidden="true" />
-    <button
-      type="button"
-      data-toggle="modal"
-      data-target="#import"
-      className="fa fa-close w-4 h-4 ml-auto box-content p-2 text-black dark:text-white border-0 rounded-1.5 opacity-50 cursor-pointer -m-2 "
-      data-dismiss="modal"
-      aria-hidden="true"
-    />
-  </div>
-  <div className="relative flex-auto p-4">
-    <p className="mb-2">You can browse your computer for a file.</p>
-    <input
-    //   action="/file-upload"
-    //   dropzone=""
-      type="text"
-      placeholder="Browse file..."
-      className="dark:bg-grey-950 mb-4 focus:shadow-[0_0_0_2px_#e9aede] dark:placeholder:text-white/80 dark:text-white/80 text-sm leading-5.6 ease block w-full appearance-none rounded-lg border border-solid border-grey-300 bg-white bg-clip-padding px-3 py-2 font-normal text-grey-700 outline-none transition-all placeholder:text-grey-500 focus:border-[#e293d3] focus:outline-none dz-clickable"
-    />
-    <div className="min-h-6 pl-7 mb-0.5 flex items-center">
-      <input
-        id="terms"
-        className="text-base w-[1.23em] h-[1.23em] ease rounded-[.35rem] checked:bg-gradient-to-tl checked:from-[#141727] checked:to-[#3a416f] after:text-[.67rem] after:font-[FontAwesome] after:duration-250 after:ease-in-out duration-250 relative float-left my-auto cursor-pointer appearance-none border border-solid border-[#cbd3da] bg-white bg-contain bg-center bg-no-repeat align-top transition-all after:absolute after:flex after:h-full after:w-full after:items-center after:justify-center after:text-white after:opacity-0 mb-0 after:transition-all after:content-['\f00c'] checked:border-0 checked:border-transparent checked:bg-transparent checked:after:opacity-100"
-        type="checkbox"
-      />
-      <label
-        className="ml-1 font-normal cursor-pointer text-[.875rem] text-[#344767] select-none mb-0"
-        htmlFor="terms"
-      >
-        &nbsp; I agree the{" "}
-        <a href="javascript:;" className="font-bold text-[#344767]">
-          Terms and Conditions
-        </a>{" "}
-      </label>
-    </div>
-  </div>
-  <div className="flex flex-wrap items-center justify-end p-3 border-t border-solid shrink-0 border-[#dee2e6] rounded-b-xl">
-    <button
-      type="button"
-      data-toggle="modal"
-      data-target="#import"
-      className="inline-block px-8 py-2 m-1 mb-4 text-xs font-bold text-center text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer ease-in leading-pro tracking-tight bg-gradient-to-tl from-[#627594] to-[#a8b8d8] shadow-md bg-150 bg-x-25 hover:scale-[1.02] active:opacity-85"
-    >
-      Close
-    </button>
-    <button
-      type="button"
-      data-toggle="modal"
-      data-target="#import"
-      className="inline-block px-8 py-2 m-1 mb-4 text-xs font-bold text-center text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer ease-in leading-pro tracking-tight bg-gradient-to-tl from-[#7928ca] to-[#ff0080] shadow-md bg-150 bg-x-25 hover:scale-[1.02] active:opacity-85"
-    >
-      Upload
-    </button>
-  </div>
-</div>
-
-        </div>
+      <div id="extralarge-modal" className={`${isOpen ? 'animate-fade-down animate-duration-500'  : 'hidden'} max-w-screen p-4 fixed`}>
+          <div className="relative p-4 w-screen px-20 w-auto h-full pb-60">      
+              <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                  <div className="flex justify-between items-start p-2 px-3 rounded-t border dark:border-gray-600 bg-slate-100">
+                  <h3 className="text-sm font-semibold text-gray-900 dark:text-black flex"><PlusCircleIcon className="h-4 w-4 mr-1 mt-0.5"/>Add New</h3>
+                      <span onClick={onClose} className="cursor-pointer">
+                          <XMarkIcon className="h-5 w-5 text-black"/>
+                      </span>
+                  </div>
+                  <div className="px-6 py-2 space-y-1 w-full text-center">
+                      <Tabs/>
+                      <div className="flex justify-end py-1">
+                          <button className="flex text-black bg-red-900 py-1.5 px-5 mr-2 rounded shadow text-sm text-black" style={{backgroundColor:'#9fafca'}}>Cancel</button>
+                          <button className="flex text-black py-1.5 px-5  rounded text-sm shadow text-black" style={{backgroundColor:'#fd9b4d'}}>{"Yes I'm Sure"}</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     );
 }
 export default AddNewPersonalLoan;

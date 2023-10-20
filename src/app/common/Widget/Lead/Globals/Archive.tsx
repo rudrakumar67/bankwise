@@ -2,7 +2,6 @@
 import { XMarkIcon, ArchiveBoxArrowDownIcon } from "@heroicons/react/24/outline";
 import { NextPage } from "next";
 import React, { useState } from "react";
-import Select from "react-tailwindcss-select";
 
 interface ArchiveProps {
     isOpen: boolean;
@@ -10,11 +9,6 @@ interface ArchiveProps {
 }
 
 const Archive: NextPage<ArchiveProps> = ({isOpen , onClose}) => {      
-    const options = [
-        { value: "fox", label: "🦊 Fox" },
-        { value: "Butterfly", label: "🦋 Butterfly" },
-        { value: "Honeybee", label: "🐝 Honeybee" }
-    ];
     return(
         <div id="extralarge-modal" className={`${isOpen ? 'animate-fade-down animate-duration-500'  : 'hidden'} max-w-screen p-4 fixed`}>
             <div className="relative p-4 w-screen px-20 max-w-2xl h-full pb-60">      

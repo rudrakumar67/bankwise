@@ -59,3 +59,10 @@ input[type="date"]:valid:before {
 input:focus-within, textarea:focus-within {
   border-color: #9fafca!important;
 }
+
+.cust-tab-active{
+  background-color: #2058dc!important;
+}
+.tab-inactive{
+  color:#2058dc!important;
+}
