@@ -138,44 +138,44 @@ const Tabs = () => {
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                   <div className="grid grid-cols-4 gap-4">
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Full Name</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Full Name</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Phone Number</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Phone Number</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Alt Phone Number</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Alt Phone Number</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Email Address</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Email Address</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Date of Birth</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Date of Birth</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Gender</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Gender</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Marital Status</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Marital Status</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">PAN Number</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">PAN Number</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Mother Name</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Mother Name</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-semibold pb-1">Father Name</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Father Name</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                   </div>
@@ -228,8 +228,8 @@ const AddNewPersonalLoan: NextPage<AddNewPersonalLoanProps> = ({isOpen , onClose
                   <div className="px-6 py-2 space-y-1 w-full text-center">
                       <Tabs/>
                       <div className="flex justify-end py-1 pt-4">
-                          <button className="flex text-black bg-red-900 py-1.5 px-5 mr-2 rounded shadow text-sm text-black" style={{backgroundColor:'#9fafca'}}>Cancel</button>
-                          <button className="flex text-black py-1.5 px-5  rounded text-sm shadow text-black" style={{backgroundColor:'#fd9b4d'}}>{"Yes I'm Sure"}</button>
+                          <button className="flex bg-red-900 py-1.5 px-5 mr-2 rounded shadow text-sm text-white" style={{backgroundColor:'#9fafca'}}>Cancel</button>
+                          <button className="flex py-1.5 px-5  rounded text-sm shadow text-white" style={{backgroundColor:'#fd9b4d'}}>Save</button>
                       </div>
                   </div>
               </div>
