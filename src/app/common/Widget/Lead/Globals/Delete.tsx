@@ -36,7 +36,7 @@ const Delete: NextPage<DeleteProps> = ({isOpen , onClose}) => {
                         </div>
                         <div className="flex justify-end py-1">
                             <button className="flex text-black bg-red-900 py-1.5 px-5 mr-2 rounded shadow text-sm text-white" style={{backgroundColor:'#9fafca'}}>Cancel</button>
-                            <button className="flex text-black py-1.5 px-5  rounded text-sm shadow text-white bg-red-600">Yes I'm Sure</button>
+                            <button className="flex text-black py-1.5 px-5  rounded text-sm shadow text-white bg-red-600">{"Yes I'm Sure"}</button>
                         </div>
                     </div>
                 </div>
