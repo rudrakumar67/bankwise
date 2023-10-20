@@ -7,7 +7,7 @@ export default function Leads() {
             <h5 className='text-gray-600 uppercase text-sm'>bank loans</h5>
         </div>
         <div className="grid gap-6 mb-8 md:grid-cols-4 xl:grid-cols-4 py-4">
-            <Link href='/lead/personal-loan'>
+            <Link prefetch={true} href='/lead/personal-loan'>
                 <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
                     <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                         <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"} style={{color:'#ffffff'}}/>
