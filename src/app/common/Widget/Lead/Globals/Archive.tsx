@@ -27,9 +27,6 @@ const Archive: NextPage<ArchiveProps> = ({isOpen , onClose}) => {
                     </div>
                     <div className="px-6 py-2 space-y-1 w-full text-center">
                         <div className="py-4">
-                            <div className="flex justify-center">
-                                <ArchiveBoxArrowDownIcon className="h-6 w-6" style={{color:'#333'}}/>
-                            </div>
                             <div className="text-md font-normal" style={{color:'#333'}}>
                                 Are you sure you want to Archive?
                             </div>

@@ -224,7 +224,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
@@ -259,7 +259,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
@@ -294,7 +294,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
@@ -329,7 +329,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
@@ -364,7 +364,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
@@ -399,7 +399,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
@@ -434,7 +434,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
@@ -469,7 +469,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
@@ -504,7 +504,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
@@ -539,7 +539,7 @@ const Home: NextPage = () => {
                             <th scope="row" className="px-3 py-3">
                                 <input type="checkbox" name="" id="" />
                             </th>
-                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap" style={{color:'#00539c'}}>
+                            <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
                                 Vijay Anthony
                             </th>
                             <td className="px-3 py-3">
