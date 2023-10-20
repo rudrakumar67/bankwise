@@ -20,7 +20,7 @@ const Archive: NextPage<ArchiveProps> = ({isOpen , onClose}) => {
             <div className="relative p-4 w-screen px-20 max-w-2xl h-full pb-60">      
                 <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
                     <div className="flex justify-between items-start p-2 px-3 rounded-t border dark:border-gray-600 bg-slate-100">
-                        <h3 className="text-sm font-semibold text-gray-900 dark:text-white">Archive</h3>
+                    <h3 className="text-sm font-semibold text-gray-900 dark:text-white flex"><ArchiveBoxArrowDownIcon className="h-4 w-4 mr-1 mt-0.5"/>Archive</h3>
                         <span onClick={onClose} className="cursor-pointer">
                             <XMarkIcon className="h-5 w-5 text-black"/>
                         </span>
