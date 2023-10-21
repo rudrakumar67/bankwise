@@ -181,6 +181,10 @@ const Tabs = () => {
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Any Obligations</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">CIBIL Score</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>

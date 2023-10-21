@@ -89,7 +89,7 @@ const Tabs = () => {
                 href="#link2"
                 role="tablist"
               >
-                <i className="fas fa-cog text-base mr-1"></i>  Address Details
+                <i className="fas fa-cog text-base mr-1"></i>  Property Details
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -181,6 +181,10 @@ const Tabs = () => {
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Any Obligations</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">CIBIL Score</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
@@ -236,34 +240,46 @@ const Tabs = () => {
                   </div>
                 </div>
                 <div className={openTab === 4 ? "block" : "hidden"} id="link2">
-                  <h4 className="text-left pb-4 font-semibold">Residence Details</h4>
+                  <h4 className="text-left pb-4 font-semibold">Property Details</h4>
                   <div className="grid grid-cols-4 gap-4">
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Resident Type</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Property Type</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Street Address</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Location</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Address 2</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Area Sqft</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Area</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Constructed</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">PinCode</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Market Value</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">City</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Guidelines Value</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Landmark (If any)</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">No of Owners</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Approval Type</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">{"Co Applicant (If any)"}</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">{"Nominee (If any)"}</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                   </div>
