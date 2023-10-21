@@ -17,7 +17,7 @@ import {
 import React, { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
 import Tools from "../../common/Widget/Lead/Globals/Tools";
-import AddNewPersonalLoan from "../../common/Widget/Lead/PersonalLoan/Modals/AddNewPersonalLoan";
+import AddNewPropertyLoan from "../../common/Widget/Lead/PropertyLoan/Modals/AddNewPropertyLoan";
 import { NextPage } from "next";
 import ImportData from "../../common/Widget/Lead/Globals/ImoprtData";
 import AddTask from "../../common/Widget/Lead/Globals/AddTask";
@@ -75,7 +75,7 @@ const Home: NextPage = () => {
             <ShareLink isOpen={shareLink} onClose={closeshareLink}/>
             <AddTask isOpen={addTaskModal} onClose={closeaddTaskModal}/>
             <SetReminder isOpen={setReminderModal} onClose={closesetReminderModal}/>
-            <AddNewPersonalLoan isOpen={addNewModal} onClose={closeAddNewModal}/>
+            <AddNewPropertyLoan isOpen={addNewModal} onClose={closeAddNewModal}/>
             <AssignTo isOpen={assignToModal} onClose={closeassignToModal}/>
             <Archive isOpen={archiveModal} onClose={closearchiveModal}/>
             <Delete isOpen={deleteModal} onClose={closedeleteModal}/>
