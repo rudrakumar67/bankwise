@@ -2,10 +2,11 @@
 import { XMarkIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 import { NextPage } from "next";
 import React, { useState } from "react";
-interface AddNewPropertyLoanProps {
+interface AddNewEducationLoanProps {
     isOpen: boolean;
     onClose: () => void;
 }
+
 const Tabs = () => {
   const [openTab, setOpenTab] = React.useState(1);
   const [isChecked, setIsChecked] = useState(false);
@@ -75,7 +76,7 @@ const Tabs = () => {
                 href="#link2"
                 role="tablist"
               >
-                <i className="fas fa-cog text-base mr-1"></i>  Property Details
+                <i className="fas fa-cog text-base mr-1"></i>  Course Particulars
               </a>
             </li>
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -132,7 +133,7 @@ const Tabs = () => {
                 href="#link2"
                 role="tablist"
               >
-                <i className="fas fa-cog text-base mr-1"></i>  Co-Applicants
+                <i className="fas fa-cog text-base mr-1"></i>  Guarantor
               </a>
             </li>
           </ul>
@@ -160,6 +161,14 @@ const Tabs = () => {
                     </div>
                     <div className="flex flex-col">
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Date of Birth</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Qualification</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Year Passed Out</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
@@ -216,49 +225,41 @@ const Tabs = () => {
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Any CIBIL Issues</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Collateral (If any)</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
                   </div>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link2">
-                <h4 className="text-left pb-4 font-semibold">Property Details</h4>
+                <h4 className="text-left pb-4 font-semibold">Course Particulars</h4>
                 <div className="grid grid-cols-4 gap-4">
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Property Type</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Country of Education</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Location</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Education Type</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Area Sqft</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">University / Institution Name</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Construction Type</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Degree Level</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Approval Type</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Course Name</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Markel Value</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Duration of Course</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Guideline Value</label>
-                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
-                    </div>
-                    <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">No of Owners</label>
-                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
-                    </div>
-                    <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Any Co-Applicant</label>
-                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
-                    </div>
-                    <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">City</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Admision Status</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                   </div>
@@ -410,7 +411,7 @@ const Tabs = () => {
                   </div>
                 </div>
                 <div className={openTab === 6 ? "block" : "hidden"} id="link2">
-                <h4 className="text-left pb-4 font-semibold">Co-Applicant / Nominee Details</h4>
+                <h4 className="text-left pb-4 font-semibold">Guarantor / Co-Applicant / Guardian Details</h4>
                   <div className="grid grid-cols-4 gap-4">
                     <div className="flex flex-col">
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Full Name</label>
@@ -422,10 +423,7 @@ const Tabs = () => {
                     </div>
                     <div className="flex flex-col">
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Relationship to Applicant</label>
-                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
-                    </div>
-                    <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Select Type</label>
+                      {/* Dropdown */}
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                   </div>
@@ -442,10 +440,6 @@ const Tabs = () => {
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Relationship to Applicant</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
-                    <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Select Type</label>
-                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
-                    </div>
                   </div>
                   <div className="grid grid-cols-4 gap-4 pt-2">
                     <div className="flex flex-col">
@@ -458,10 +452,6 @@ const Tabs = () => {
                     </div>
                     <div className="flex flex-col">
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Relationship to Applicant</label>
-                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
-                    </div>
-                    <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Select Type</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                   </div>
@@ -474,7 +464,7 @@ const Tabs = () => {
     </>
   );
 };
-const AddNewPropertyLoan: NextPage<AddNewPropertyLoanProps> = ({isOpen , onClose}) => {      
+const AddNewEducationLoan: NextPage<AddNewEducationLoanProps> = ({isOpen , onClose}) => {      
 
     return(
       <div id="extralarge-modal" className={`${isOpen ? 'animate-fade-down animate-duration-500'  : 'hidden'} max-w-screen p-4 fixed`}>
@@ -503,4 +493,4 @@ const AddNewPropertyLoan: NextPage<AddNewPropertyLoanProps> = ({isOpen , onClose
       </div>
     );
 }
-export default AddNewPropertyLoan;
+export default AddNewEducationLoan;

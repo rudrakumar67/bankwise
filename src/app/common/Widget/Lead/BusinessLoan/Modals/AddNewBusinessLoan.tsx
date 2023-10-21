@@ -8,6 +8,12 @@ interface AddNewBusinessLoanProps {
 }
 const Tabs = () => {
   const [openTab, setOpenTab] = React.useState(1);
+
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked)
+  }
   return (
     <>
       <div className="flex flex-wrap">
@@ -188,15 +194,41 @@ const Tabs = () => {
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Any CIBIL Issues</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Collateral (If any)</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
                   </div>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link2">
-                  <h4 className="text-left pb-4 font-semibold">Income Details</h4>
-                  <div className="grid grid-cols-4 gap-4">
-                    <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Employment Type</label>
-                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
-                    </div>
+                <h4 className="text-left pb-6 font-semibold">Income Details</h4>
+                  <label className='themeSwitcherTwo relative flex cursor-pointer select-none pb-6'>
+                    <input
+                      type='checkbox'
+                      checked={isChecked}
+                      onChange={handleCheckboxChange}
+                      className='sr-only'
+                    />
+                    <span className='label flex items-center text-sm font-medium text-black'>
+                      Salaried
+                    </span>
+                      <span
+                        className={`slider mx-4 flex h-6 w-[40px] items-center rounded-full p-1 duration-200 ${
+                          isChecked ? 'bg-[#212b36]' : 'bg-[#CCCCCE]'
+                        }`}
+                      >
+                      <span
+                        className={`dot h-4 w-4 rounded-full bg-white duration-200 ${
+                          isChecked ? 'translate-x-[16px]' : ''
+                        }`}
+                      ></span>
+                    </span>
+                    <span className='label flex items-center text-sm font-medium text-black'>
+                      Self-Employed
+                    </span>
+                  </label>
+                  
+                  {isChecked ? <div className="grid grid-cols-4 gap-4">
                     <div className="flex flex-col">
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Company Name</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
@@ -233,7 +265,45 @@ const Tabs = () => {
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Collateral (if any)</label>
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
-                  </div>
+                  </div> :
+                  <div className="grid grid-cols-4 gap-4">
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Company Name</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Designation</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Department</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Gross Salary</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Net Salary</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Salary Bank Account</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Working Since</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Total Experience</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Official Email ID</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                  </div>}
                 </div>
                 <div className={openTab === 4 ? "block" : "hidden"} id="link2">
                   <h4 className="text-left pb-4 font-semibold">Residence Details</h4>
