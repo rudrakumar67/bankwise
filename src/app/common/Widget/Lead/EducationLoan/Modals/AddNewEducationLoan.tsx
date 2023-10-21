@@ -426,18 +426,9 @@ const Tabs = () => {
                       {/* Dropdown */}
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
-                  </div>
-                  <div className="grid grid-cols-4 gap-4 pt-2">
                     <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Full Name</label>
-                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
-                    </div>
-                    <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Phone Number</label>
-                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
-                    </div>
-                    <div className="flex flex-col">
-                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Relationship to Applicant</label>
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Select Type</label>
+                      {/* Dropdown */}
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                   </div>
@@ -452,6 +443,30 @@ const Tabs = () => {
                     </div>
                     <div className="flex flex-col">
                       <label htmlFor="" className="text-left text-xs font-normal pb-1">Relationship to Applicant</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Select Type</label>
+                      {/* Dropdown */}
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-4 gap-4 pt-2">
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Full Name</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Phone Number</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Relationship to Applicant</label>
+                      <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
+                    </div>
+                    <div className="flex flex-col">
+                      <label htmlFor="" className="text-left text-xs font-normal pb-1">Select Type</label>
+                      {/* Dropdown */}
                       <input type="text" name="" id=""  className="border rounded w-52 h-8" style={{borderColor:'#cfd7df'}}/>
                     </div>
                   </div>
