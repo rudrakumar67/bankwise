@@ -12,7 +12,10 @@ import {
     CalendarDaysIcon,
     ArrowUpOnSquareIcon,
     MagnifyingGlassIcon,
-    ArchiveBoxXMarkIcon
+    ArchiveBoxXMarkIcon,
+    ArrowLeftCircleIcon,
+    ArrowLongLeftIcon,
+    ChevronLeftIcon
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
@@ -82,8 +85,13 @@ const Home: NextPage = () => {
         </div>
         <div className="wrapper">
             <div className="flex h-6 justify-between my-1">
-                <div className='text-black font-semibold'>
-                Personal Loan
+                <div className='text-black font-semibold flex'>
+                    <div className='flex text-black text-xs my-auto mr-3 font-normal' style={{color:'#2058dc'}}>
+                        <ChevronLeftIcon className='h-2.5 w-2.5 my-auto mx-1' />Go Back
+                    </div>
+                    <span>
+                        Personal Loan
+                    </span>
                 </div>
                 <div className='flex text-black text-xs my-auto'>
                 Home <ChevronRightIcon className='h-2.5 w-2.5 my-auto mx-1' /> 
