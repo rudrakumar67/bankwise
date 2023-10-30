@@ -103,8 +103,8 @@ const Home: NextPage = () => {
             </div>
             <Tools/>
         </div>
-        <div className="text-sm font-medium text-center text-gray-500 mb-0.5 pt-3 flex justify-between">
-            <ul className="flex flex-wrap -mb-px">
+        <div className="font-medium text-center text-gray-500 mb-0.5 pt-3 flex justify-between">
+            <ul className="flex flex-wrap -mb-px text-xs">
                 <li className="mr-2">
                     <a
                         href="#"
