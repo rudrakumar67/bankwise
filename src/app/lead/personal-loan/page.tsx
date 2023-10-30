@@ -88,9 +88,6 @@ const Home: NextPage = () => {
         <div className="wrapper">
             <div className="flex h-6 justify-between my-1">
                 <div className='text-black font-semibold flex'>
-                    {/* <div className='flex text-black text-xs my-auto mr-3 font-normal' style={{color:'#2058dc'}}>
-                        <ChevronLeftIcon className='h-2.5 w-2.5 my-auto mx-1' />Go Back
-                    </div> */}
                     <span style={{color:'#12344d'}}>
                         Personal Loan
                     </span>
@@ -105,27 +102,27 @@ const Home: NextPage = () => {
         </div>
         <div className="flex justify-between pb-6 border-b border-slate-200">
             <div className="text-black flex h-8">
-                <span onClick={importDataModalFun} className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                <span onClick={importDataModalFun} className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>EMI Calculator</span>
                 </span>
-                <span onClick={importDataModalFun} className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                <span onClick={importDataModalFun} className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Bank Criterias</span>
                 </span>
-                <span onClick={importDataModalFun} className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                <span onClick={importDataModalFun} className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Import Data</span>
                 </span>
-                <span onClick={shareLinkFun} className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                <span onClick={shareLinkFun} className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <ShareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Share Link</span>
                 </span>
-                <span onClick={addTaskModalFun} className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                <span onClick={addTaskModalFun} className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <PencilSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Add Task</span>
                 </span>
-                <span onClick={addTaskModalFun} className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                <span onClick={addTaskModalFun} className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <PencilSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Bank Contacts</span>
                 </span>
@@ -333,7 +330,9 @@ const Home: NextPage = () => {
                                 <input type="checkbox" name="" id="" />
                             </th>
                             <th scope="row" className="px-3 py-3 font-medium whitespace-nowrap cursor-pointer" style={{color:'#2058dc'}}>
+                                <Link href={'/lead/personal-loan/view'}>
                                 Vijay Anthony
+                                </Link>
                             </th>
                             <td className="px-3 py-3">
                                 1234567890
