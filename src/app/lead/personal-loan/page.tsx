@@ -196,18 +196,18 @@ const Home: NextPage = () => {
                     <PlusCircleIcon className={"h-4.5 w-4.5 text-slate-50 mr-1"}/>
                     <span className="text-sm md:text-xs font-semibold my-auto">Add New</span>
                 </span>
-                <span onClick={shareLinkFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                {/* <span onClick={shareLinkFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <ShareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Share Link</span>
-                </span>
+                </span> */}
                 <span onClick={addTaskModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <PencilSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Add Task</span>
                 </span>
-                <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                {/* <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Import Data</span>
-                </span>
+                </span> */}
                 <span onClick={assignToModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                     <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
                     <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Assign To</span>
