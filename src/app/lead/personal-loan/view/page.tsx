@@ -27,27 +27,27 @@ const View: NextPage = () => {
                     <div className="flex h-8 my-auto">
                         <span  className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                             <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                            <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#00539c'}}>Call Customer</span>
+                            <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Call Customer</span>
                         </span>
                         <span  className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                             <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                            <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#00539c'}}>Email</span>
+                            <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Email</span>
                         </span>
                         <span  className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                             <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                            <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#00539c'}}>Add Task</span>
+                            <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Add Task</span>
                         </span>
                         <span  className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                             <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                            <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#00539c'}}>Share Link</span>
+                            <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Share Link</span>
                         </span>
                         <span  className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                             <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                            <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#00539c'}}>Notify</span>
+                            <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Notify</span>
                         </span>
                         <span  className="flex bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                             <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                            <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#00539c'}}>Check Eligibility</span>
+                            <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Check Eligibility</span>
                         </span>
                     </div>
                 </div>
