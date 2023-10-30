@@ -293,7 +293,7 @@ const Home: NextPage = () => {
             </div>
             <div className="relative overflow-x-auto">
                 <table className="w-full text-xs text-left text-black border border-slate-200">
-                    <thead className="text-xs" style={{backgroundColor:'##d2e0fb',color:'#12344d'}}>
+                    <thead className="text-xs" style={{backgroundColor:'#d2e0fb',color:'#12344d'}}>
                         <tr>
                             <th scope="col" className="px-3 py-2">
                                 <input type="checkbox" name="" id="" />
