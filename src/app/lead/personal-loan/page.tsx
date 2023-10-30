@@ -131,7 +131,7 @@ const Home: NextPage = () => {
                 </span>
             </div>
         </div>
-        <div className="text-center text-gray-500 pt-1.5 rounded mt-6 flex justify-between" style={{backgroundColor:'#ebeff3'}}>
+        <div className="text-center text-gray-500 pt-1.5 rounded-t mt-6 flex justify-between" style={{backgroundColor:'#ebeff3'}}>
             <ul className="flex flex-wrap text-sm font-semibold">
                 <li className="mr-2">
                     <a
@@ -243,7 +243,7 @@ const Home: NextPage = () => {
             </div>
         </div>
 
-        <div className="rounded border border-t-1 border-slate-200">
+        <div className="rounded-b border border-t-1 border-slate-200">
             <div className="flex flex-wrap p-3">
                 <div className="w-3/12 px-2 flex-0 my-auto border rounded shadow mr-4" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df', padding:"5px 5px",marginTop:'2px'}}>
                     <div className="flex w-full">
