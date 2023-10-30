@@ -47,7 +47,7 @@ function Navbar() {
                         <li>
                             <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
                                 {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
-                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Eligibility Check</span>
+                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Check Eligibility</span>
                             </span>
                         </li>
                         <li>

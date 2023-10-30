@@ -71,6 +71,8 @@ const Home: NextPage = () => {
     const deleteModalFun = () => setdeleteModal(true);
     const closedeleteModal = () => setdeleteModal(false);
 
+    const [openList, setOpenList] = useState(1);
+
   return (
     <>
         <div className="flex justify-center z-50 backdrop-blur">
@@ -89,7 +91,7 @@ const Home: NextPage = () => {
                     {/* <div className='flex text-black text-xs my-auto mr-3 font-normal' style={{color:'#2058dc'}}>
                         <ChevronLeftIcon className='h-2.5 w-2.5 my-auto mx-1' />Go Back
                     </div> */}
-                    <span>
+                    <span style={{color:'#12344d'}}>
                         Personal Loan
                     </span>
                 </div>
@@ -143,7 +145,97 @@ const Home: NextPage = () => {
                 </Link>
             </div>
         </div>
-        <div className="rounded border border-t-2 border-slate-200">
+        <div className="text-sm font-medium text-center text-gray-500 mb-0.5">
+            <ul className="flex flex-wrap -mb-px">
+                <li className="mr-2">
+                    <a
+                        href="#"
+                        className={
+                            "inline-block p-2 rounded-t-lg " +
+                            (openList === 1
+                            ? "text-blue-600 border-b-2 border-blue-600 "
+                            : "hover:text-gray-600 hover:border-gray-300 listing-tab-font-color-default")
+                        }
+                        onClick={e => {
+                            e.preventDefault();
+                            setOpenList(1);
+                        }}
+                    >
+                        All Leads
+                    </a>
+                </li>
+                <li className="mr-2">
+                    <a
+                        href="#"
+                        className={
+                            "inline-block p-2 rounded-t-lg " +
+                            (openList === 2
+                                ? "text-blue-600 border-b-2 border-blue-600"
+                                : "hover:text-gray-600 hover:border-gray-300 listing-tab-font-color-default")
+                        }
+                        onClick={e => {
+                            e.preventDefault();
+                            setOpenList(2);
+                        }}
+                    >
+                        Follow Ups
+                    </a>
+                </li>
+                <li className="mr-2">
+                    <a
+                        href="#"
+                        className={
+                            "inline-block p-2 rounded-t-lg " +
+                            (openList === 3
+                            ? "text-blue-600 border-b-2 border-blue-600 "
+                            : "hover:text-gray-600 hover:border-gray-300 listing-tab-font-color-default")
+                        }
+                        onClick={e => {
+                            e.preventDefault();
+                            setOpenList(3);
+                        }}
+                    >
+                        Logged In
+                    </a>
+                </li>
+                <li className="mr-2">
+                    <a
+                        href="#"
+                        className={
+                            "inline-block p-2 rounded-t-lg " +
+                            (openList === 4
+                            ? "text-blue-600 border-b-2 border-blue-600 "
+                            : "hover:text-gray-600 hover:border-gray-300 listing-tab-font-color-default")
+                        }
+                        onClick={e => {
+                            e.preventDefault();
+                            setOpenList(4);
+                        }}
+                    >
+                        Sanctioned
+                    </a>
+                </li>
+                <li className="mr-2">
+                    <a
+                        href="#"
+                        className={
+                            "inline-block p-2 rounded-t-lg " +
+                            (openList === 5
+                            ? "text-blue-600 border-b-2 border-blue-600 "
+                            : "hover:text-gray-600 hover:border-gray-300 listing-tab-font-color-default")
+                        }
+                        onClick={e => {
+                            e.preventDefault();
+                            setOpenList(5);
+                        }}
+                    >
+                        Disbursed
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div className="rounded border border-t-1 border-slate-200">
             <div className="flex flex-wrap p-3">
                 <div className="w-3/12 px-2 flex-0 my-auto border rounded shadow mr-4" style={{borderColor:'#fbfcfd', border:'1px solid #cfd7df', padding:"5px 5px",marginTop:'2px'}}>
                     <div className="flex w-full">

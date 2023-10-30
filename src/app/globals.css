@@ -65,3 +65,7 @@ input:focus-within, textarea:focus-within {
 .tab-inactive{
   color:#2058dc!important;
 }
+
+.listing-tab-font-color-default{
+  color:#12344d!important
+}

@@ -108,7 +108,7 @@ const Tabs = () => {
                 href="#link2"
                 role="tablist"
               >
-                <i className="fas fa-cog text-base mr-1"></i>  Refrences
+                <i className="fas fa-cog text-base mr-1"></i>  References
               </a>
             </li>
           </ul>
