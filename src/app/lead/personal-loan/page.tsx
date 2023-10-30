@@ -103,49 +103,7 @@ const Home: NextPage = () => {
             </div>
             <Tools/>
         </div>
-        <div className="flex justify-between pb-6 ">
-            <div className="text-black flex">
-                <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                    <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Import Data</span>
-                </span>
-                <span onClick={shareLinkFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                    <ShareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Share Link</span>
-                </span>
-                <span onClick={addTaskModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                    <PencilSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Add Task</span>
-                </span>
-                {/* <span onClick={setReminderModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                    <CalendarDaysIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Set Reminder</span>
-                </span> */}
-            </div>
-            <div className="flex h-8">
-                <span onClick={addNewModalFun} className=" block flex text-white py-1.5 px-3 rounded primary-btn mr-2 flex-nowrap cursor-pointer" >
-                    <PlusCircleIcon className={"h-4.5 w-4.5 text-slate-50 mr-1"}/>
-                    <span className="text-sm md:text-xs font-semibold my-auto">Add New</span>
-                </span>
-                <span onClick={assignToModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                    <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Assign To</span>
-                </span>
-                <span onClick={archiveModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                    <ArchiveBoxArrowDownIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Archive</span>
-                </span>
-                <span onClick={deleteModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                    <TrashIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Delete</span>
-                </span>
-                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
-                    <ArrowUpOnSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
-                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Export</span>
-                </Link>
-            </div>
-        </div>
-        <div className="text-sm font-medium text-center text-gray-500 mb-0.5">
+        <div className="text-sm font-medium text-center text-gray-500 mb-0.5 pt-3 flex justify-between">
             <ul className="flex flex-wrap -mb-px">
                 <li className="mr-2">
                     <a
@@ -233,6 +191,40 @@ const Home: NextPage = () => {
                     </a>
                 </li>
             </ul>
+            <div className="flex h-8">
+                <span onClick={addNewModalFun} className=" block flex text-white py-1.5 px-3 rounded primary-btn mr-2 flex-nowrap cursor-pointer" >
+                    <PlusCircleIcon className={"h-4.5 w-4.5 text-slate-50 mr-1"}/>
+                    <span className="text-sm md:text-xs font-semibold my-auto">Add New</span>
+                </span>
+                <span onClick={shareLinkFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                    <ShareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
+                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Share Link</span>
+                </span>
+                <span onClick={addTaskModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                    <PencilSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
+                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Add Task</span>
+                </span>
+                <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                    <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
+                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Import Data</span>
+                </span>
+                <span onClick={assignToModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                    <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
+                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Assign To</span>
+                </span>
+                <span onClick={archiveModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                    <ArchiveBoxArrowDownIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
+                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Archive</span>
+                </span>
+                <span onClick={deleteModalFun} className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                    <TrashIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
+                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Delete</span>
+                </span>
+                <Link href="/" className="flex hover:bg-gray-100 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2" style={{borderColor:'#0e387a'}}>
+                    <ArrowUpOnSquareIcon className={"h-4.5 w-4 mr-2"} style={{color:'#00539c'}}/>
+                    <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#00539c'}}>Export</span>
+                </Link>
+            </div>
         </div>
 
         <div className="rounded border border-t-1 border-slate-200">
