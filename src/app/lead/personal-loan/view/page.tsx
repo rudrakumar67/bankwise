@@ -56,39 +56,39 @@ const View: NextPage = () => {
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>Phone number</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>1234567890</span>
                     </div>
-                    <div className="flex flex-col my-auto px-6">
+                    <div className="flex flex-col my-auto px-3">
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>Emaiil Address</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>Admin@gmail.com</span>
                     </div>
-                    <div className="flex flex-col my-auto px-6">
+                    <div className="flex flex-col my-auto px-3">
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>Alt Phone number</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>1234567890</span>
                     </div>
-                    <div className="flex flex-col my-auto px-6">
+                    <div className="flex flex-col my-auto px-3">
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>Date of birth</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>30-12-2323</span>
                     </div>
-                    <div className="flex flex-col my-auto px-6">
+                    <div className="flex flex-col my-auto px-3">
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>PAN number</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>ASFA1212A</span>
                     </div>
-                    <div className="flex flex-col my-auto px-6">
+                    <div className="flex flex-col my-auto px-3">
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>Gender</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>Male</span>
                     </div>
-                    <div className="flex flex-col my-auto px-6">
+                    <div className="flex flex-col my-auto px-3">
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>Marital Status</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>Single</span>
                     </div>
-                    <div className="flex flex-col my-auto px-6">
+                    <div className="flex flex-col my-auto px-3">
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>Aadhar Number</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>1234 1244 1234</span>
                     </div>
-                    <div className="flex flex-col my-auto px-6">
+                    <div className="flex flex-col my-auto px-3">
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>Mother Name</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>Single</span>
                     </div>
-                    <div className="flex flex-col my-auto px-6">
+                    <div className="flex flex-col my-auto px-3">
                         <span className="text-xs text-slate-500 pb-1" style={{color:'#00539c'}}>Father Name</span>
                         <span className="text-xs font-semibold" style={{color:'#12344d'}}>Single</span>
                     </div>
