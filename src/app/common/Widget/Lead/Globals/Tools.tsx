@@ -4,7 +4,7 @@ export default function Tools(){
     return(
         <div className="grid gap-4 mb-4 md:grid-cols-6 xl:grid-cols-6 py-2 ">
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#00539c'}}>
+                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#2e4374'}}>
                         <div className="p-2 md:p-1 m-3 md:m-1 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4"} style={{color:'#00539c'}}/>
                         </div>
@@ -17,7 +17,7 @@ export default function Tools(){
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#00539c'}}>
+                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#2e4374'}}>
                         <div className="p-2 md:p-1 m-3 md:m-1 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4"} style={{color:'#00539c'}}/>
                         </div>
@@ -29,7 +29,7 @@ export default function Tools(){
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#00539c'}}>
+                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#2e4374'}}>
                         <div className="p-2 md:p-1 m-3 md:m-1 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4"} style={{color:'#00539c'}}/>
                         </div>
@@ -41,7 +41,7 @@ export default function Tools(){
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#00539c'}}>
+                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#2e4374'}}>
                         <div className="p-2 md:p-1 m-3 md:m-1 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4"} style={{color:'#00539c'}}/>
                         </div>
@@ -53,7 +53,7 @@ export default function Tools(){
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#00539c'}}>
+                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#2e4374'}}>
                         <div className="p-2 md:p-1 m-3 md:m-1 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4"} style={{color:'#00539c'}}/>
                         </div>
@@ -65,7 +65,7 @@ export default function Tools(){
                     </div>
                 </Link>
                 <Link href='/lead/personal-loan'>
-                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#00539c'}}>
+                    <div className="flex items-center h-12 md:h-10 border rounded shadow-xs" style={{borderColor:'#2e4374'}}>
                         <div className="p-2 md:p-1 m-3 md:m-1 rounded">
                             <ArrowRightCircleIcon className={"h-6 w-6 md:h-4 md:w-4"} style={{color:'#00539c'}}/>
                         </div>
