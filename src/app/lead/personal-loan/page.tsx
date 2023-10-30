@@ -131,8 +131,8 @@ const Home: NextPage = () => {
                 </span>
             </div>
         </div>
-        <div className="font-medium text-center text-gray-500 mb-0.5 pt-3 flex justify-between">
-            <ul className="flex flex-wrap -mb-px text-sm">
+        <div className="text-center text-gray-500 mb-0.5 py-1.5 flex justify-between">
+            <ul className="flex flex-wrap text-xs font-semibold">
                 <li className="mr-2">
                     <a
                         href="#"
