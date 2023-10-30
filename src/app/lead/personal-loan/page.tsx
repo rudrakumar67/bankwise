@@ -131,7 +131,7 @@ const Home: NextPage = () => {
                 </span>
             </div>
         </div>
-        <div className="text-center text-gray-500 mb-0.5 pt-6 flex justify-between">
+        <div className="text-center text-gray-500 pt-1.5 rounded mt-6 flex justify-between" style={{backgroundColor:'#ebeff3'}}>
             <ul className="flex flex-wrap text-sm font-semibold">
                 <li className="mr-2">
                     <a
