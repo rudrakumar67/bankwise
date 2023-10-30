@@ -21,37 +21,37 @@ function Navbar() {
                 <div className="flex">
                     <ul className="flex">
                         <li>
-                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
                                 {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
                                 <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>EMI Calculator</span>
                             </span>
                         </li>
                         <li>
-                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
                                 {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
                                 <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Bank Criterias</span>
                             </span>
                         </li>
                         <li>
-                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
                                 {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
                                 <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>CIBIL Report</span>
                             </span>
                         </li>
                         <li>
-                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
                                 {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
                                 <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Company Listing Validator</span>
                             </span>
                         </li>
                         <li>
-                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
                                 {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
                                 <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Eligibility Check</span>
                             </span>
                         </li>
                         <li>
-                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 text-gray-800 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
+                            <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
                                 {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
                                 <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Import Website Leads</span>
                             </span>
