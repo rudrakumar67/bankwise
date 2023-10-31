@@ -43,7 +43,7 @@ const View: NextPage = () => {
                         <div className="text-black">
                             <div className="grid border-b border-slate-300">
                                 <div className=" grid pb-2">
-                                    <span className="font-semibold text-sm" style={{color:'#12344d'}}>Shivkumar Shivkumar Acharya</span>
+                                    <span className="font-semibold" style={{color:'#12344d'}}>Shivkumar Shivkumar Acharya</span>
                                     <span className="text-xs" style={{color:'#12344d'}}>Business Development Manger</span>
                                 </div>
                                 <div className="grid py-3 gap-2">
