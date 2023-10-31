@@ -94,7 +94,7 @@ function Navbar() {
             </Tooltip>
             <Tooltip
               showArrow={false}
-              content="Profile" 
+              content="My Profile" 
               offset={7} 
               closeDelay={0} 
               classNames={{base: "text-white bg-theme rounded text-xs py-0.5 px-2 mt-0.5 m-0", arrow: "bg-blue-900 py-0.5 px-2 mt-0.5 m-0"}}>
