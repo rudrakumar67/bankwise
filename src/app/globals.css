@@ -16,6 +16,9 @@ input {
 .sidebar{
   background-color: #00539c;
 }
+.bg-theme{
+  background-color: #00539c;
+}
 .active {
   /* background-color: #E5F2FD!important;
   border-radius: 3px; */
