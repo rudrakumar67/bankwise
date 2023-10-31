@@ -41,10 +41,10 @@ const View: NextPage = () => {
                         {/* Left Side (Fixed) */}
                         <div className="overflow-y-auto">
                         <div className="text-black">
-                            <div className="grid border-b border-black-800">
+                            <div className="grid border-b border-slate-300">
                                 <div className=" grid pb-2">
-                                    <span className="font-semibold text-lg">Shivkumar Acharya</span>
-                                    <span className="text-xs">Business Development Manger</span>
+                                    <span className="font-semibold text-sm" style={{color:'#12344d'}}>Shivkumar Shivkumar Acharya</span>
+                                    <span className="text-xs" style={{color:'#12344d'}}>Business Development Manger</span>
                                 </div>
                                 <div className="grid py-3 gap-2">
                                     <span className="text-xs flex" style={{color:'#2058dc'}}>
