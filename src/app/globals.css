@@ -17,7 +17,7 @@ input {
   background-color: #2e4374;
 }
 .bg-theme{
-  background-color: #2e4374;
+  background-color: #2e4374!important;
 }
 .active {
   /* background-color: #E5F2FD!important;
