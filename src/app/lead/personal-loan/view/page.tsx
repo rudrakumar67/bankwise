@@ -1,5 +1,6 @@
 
 import { ArrowsRightLeftIcon, BellAlertIcon, BuildingLibraryIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, DocumentDuplicateIcon, EnvelopeIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { Tooltip } from "@nextui-org/tooltip";
 import { NextPage } from "next";
 import Image from "next/image";
 const View: NextPage = () => {
@@ -175,14 +176,38 @@ const View: NextPage = () => {
                     </div>
                     <div className="w-12 bg-gray-100">
                         <ul className="py-3">
-                            <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5">
-                                <PencilSquareIcon className="h-5 mx-auto"/>
+                            <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
+                                <Tooltip
+                                    showArrow={false}
+                                    content="Task" 
+                                    placement="left-start"
+                                    offset={7} 
+                                    closeDelay={0} 
+                                    classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
+                                    <PencilSquareIcon className="h-5 mx-auto"/>
+                                </Tooltip>
                             </li>
-                            <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5">
-                                <ChatBubbleBottomCenterIcon className="h-5 mx-auto"/>
+                            <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
+                                <Tooltip
+                                    showArrow={false}
+                                    content="Comments" 
+                                    placement="left-start"
+                                    offset={7} 
+                                    closeDelay={0} 
+                                    classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
+                                    <ChatBubbleBottomCenterIcon className="h-5 mx-auto"/>
+                                </Tooltip>
                             </li>
-                            <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5">
-                                <BellAlertIcon className="h-5 mx-auto"/>
+                            <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
+                                <Tooltip
+                                    showArrow={false}
+                                    content="Alerts" 
+                                    placement="left-start"
+                                    offset={7} 
+                                    closeDelay={0} 
+                                    classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
+                                    <BellAlertIcon className="h-5 mx-auto"/>
+                                </Tooltip>
                             </li>
                         </ul>
                     </div>
