@@ -79,7 +79,7 @@ function Navbar() {
               closeDelay={0} 
               classNames={{base: "text-white bg-theme rounded text-xs py-0.5 px-2 mt-0.5 m-0", arrow: "bg-blue-900 py-0.5 px-2 mt-0.5 m-0"}}>
               <a href="" className='border rounded p-2 border-gray-200'>
-                <EnvelopeIcon className='h-4 w-4 text-blue-500'/>
+                <EnvelopeIcon className='h-4 w-4' style={{color:'#2e4374'}}/>
               </a>
             </Tooltip>
             <Tooltip
@@ -89,7 +89,7 @@ function Navbar() {
               closeDelay={0} 
               classNames={{base: "text-white bg-theme rounded text-xs py-0.5 px-2 mt-0.5 m-0", arrow: "bg-blue-900 py-0.5 px-2 mt-0.5 m-0"}}>
               <a href="" className='border rounded p-2 border-gray-200'>
-                <BellAlertIcon className='h-4 w-4 text-blue-500'/>
+                <BellAlertIcon className='h-4 w-4' style={{color:'#2e4374'}}/>
               </a>
             </Tooltip>
             <Tooltip
