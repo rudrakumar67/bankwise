@@ -56,7 +56,7 @@ function Navbar() {
               closeDelay={0} 
               classNames={{base: "text-white bg-theme rounded text-xs py-0.5 px-2 mt-0.5 m-0", arrow: "bg-blue-900 py-0.5 px-2 mt-0.5 m-0"}}>
               <a href="" className='rounded my-auto'>
-                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#00539c">
+                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#2e4374">
                   <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                   <g id="SVGRepo_iconCarrier"> 
@@ -98,7 +98,7 @@ function Navbar() {
               offset={7} 
               closeDelay={0} 
               classNames={{base: "text-white bg-theme rounded text-xs py-0.5 px-2 mt-0.5 m-0", arrow: "bg-blue-900 py-0.5 px-2 mt-0.5 m-0"}}>
-              <a href="" className='rounded p-2' style={{backgroundColor:'#00539c', borderColor: '#00539c'}}>
+              <a href="" className='rounded p-2' style={{backgroundColor:'#2e4374', borderColor: '#00539c'}}>
                 <UserIcon className='h-4 w-4 text-slate-50'/>
               </a>
             </Tooltip>

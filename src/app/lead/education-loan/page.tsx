@@ -69,7 +69,7 @@ const Home: NextPage = () => {
     const closedeleteModal = () => setdeleteModal(false);
 
   return (
-    <>
+    <div className='px-6'>
         <div className="flex justify-center z-50 backdrop-blur">
             <ImportData isOpen={importDataModal} onClose={closeImportDataModal}/>
             <ShareLink isOpen={shareLink} onClose={closeshareLink}/>
@@ -648,7 +648,7 @@ const Home: NextPage = () => {
                 </nav>
             </div>
         </div>
-    </>
+    </div>
   )
 }
 export default Home;

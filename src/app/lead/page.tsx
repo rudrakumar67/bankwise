@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline'
 export default function Leads() {
   return (
-    <>
+    <div className='px-6'>
         <div className='flex pt-4'>
             <h5 className='text-gray-600 uppercase text-sm'>bank loans</h5>
         </div>
@@ -225,6 +225,6 @@ export default function Leads() {
                 </div>
             </div>
         </div>
-    </>
+    </div>
   )
 }
