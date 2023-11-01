@@ -10,6 +10,7 @@ import { ChartBarIcon,
     WrenchScrewdriverIcon,
     UserIcon,
 } from '@heroicons/react/24/outline'
+import Link from 'next/link';
 import { usePathname, useRouter} from 'next/navigation';
 
 function Sidebar() {
@@ -33,15 +34,14 @@ function Sidebar() {
                     </div>
                 </li>
                 <li className="relative px-3 py-1 md:px-2 md:py-0.5">
-                    <div className='flex flex-col py-1.5 md:py-1 cursor-pointer'>
-                        <button
-                            className="inline-flex items-center w-full menu-item justify-center"
-                            type="button" onClick={() => router.push('/lead')}
-                        >
-                        <FunnelIcon className={"h-6 w-6 " + (pathname == '/lead' ? "" : "")} color='#ffffff'/>
-                        </button>
-                        <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Leads</span>
-                    </div>
+                    <Link href="/lead">
+                        <div className='flex flex-col py-1.5 md:py-1 cursor-pointer'>
+                            <div className="inline-flex items-center w-full menu-item justify-center">
+                            <FunnelIcon className={"h-6 w-6 " + (pathname == '/lead' ? "" : "")} color='#ffffff'/>
+                            </div>
+                            <span style={{fontSize:'10px', color:'#ffffff'}} className='text-center font-semibold'>Leads</span>
+                        </div>
+                    </Link>
                 </li>
                 <li className="relative px-3 py-1 md:px-2 md:py-0.5">
                     <div className='flex flex-col py-1.5 md:py-1'>
