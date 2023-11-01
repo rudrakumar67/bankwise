@@ -1,5 +1,5 @@
 
-import { EnvelopeIcon, PhoneIcon, UserPlusIcon } from "@heroicons/react/24/outline";
+import { EnvelopeIcon, PhoneIcon, UserCircleIcon, UserPlusIcon } from "@heroicons/react/24/outline";
 import { NextPage } from "next";
 import Image from "next/image";
 const View: NextPage = () => {
@@ -55,9 +55,50 @@ const View: NextPage = () => {
                                     <EnvelopeIcon className="h-4 pr-2" color="#2058dc"/>
                                         acharyashivkumar67@gmail.com
                                     </span>
-
-                                    {/* <span className="text-xs">1234567890</span> */}
                                 </div>
+                            </div>
+                            <div className="grid py-4">
+                                <span className="pb-2 font-medium text-xs">
+                                    Applicant Details
+                                </span>
+                                <ul className="text-black">
+                                    <li className="pb-2">
+                                        <span className="flex">
+                                            <UserCircleIcon className="h-5 my-auto pr-3" />
+                                            Basic Information
+                                        </span>
+                                    </li>
+                                    <li className="pb-2 px-2">
+                                        <span className="flex">
+                                            <UserCircleIcon className="h-5 my-auto pr-3" />
+                                            Basic Information
+                                        </span>
+                                    </li>
+                                    <li className="pb-2 px-2">
+                                        <span className="flex">
+                                            <UserCircleIcon className="h-5 my-auto pr-3" />
+                                            Basic Information
+                                        </span>
+                                    </li>
+                                    <li className="pb-2 px-2">
+                                        <span className="flex">
+                                            <UserCircleIcon className="h-5 my-auto pr-3" />
+                                            Basic Information
+                                        </span>
+                                    </li>
+                                    <li className="pb-2 px-2">
+                                        <span className="flex">
+                                            <UserCircleIcon className="h-5 my-auto pr-3" />
+                                            Basic Information
+                                        </span>
+                                    </li>
+                                    <li className="pb-2 px-2">
+                                        <span className="flex">
+                                            <UserCircleIcon className="h-5 my-auto pr-3" />
+                                            Basic Information
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         </div>

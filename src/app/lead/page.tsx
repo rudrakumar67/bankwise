@@ -1,14 +1,17 @@
+'use client'
 import Link from 'next/link';
+import { useRouter } from 'next/navigation'
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline'
 export default function Leads() {
-  return (
+    const router = useRouter()
+    return (
     <>
         <div className='flex pt-4'>
             <h5 className='text-gray-600 uppercase text-sm'>bank loans</h5>
         </div>
         <div className="grid gap-6 mb-8 md:grid-cols-4 xl:grid-cols-4 py-4">
-            <Link prefetch={true} href='/lead/personal-loan'>
-                <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
+            {/* <Link prefetch={true} href='/lead/personal-loan'> */}
+                <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow" onClick={() => router.push('/lead/personal-loan')}>
                     <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
                         <ArrowRightCircleIcon className={"h-6 w-6 text-slate-50"} style={{color:'#ffffff'}}/>
                     </div>
@@ -18,7 +21,7 @@ export default function Leads() {
                         </p>
                     </div>
                 </div>
-            </Link>
+            {/* </Link> */}
             <Link href='/lead/business-loan'>
                 <div className="flex items-center p-4 md:p-2 lead-card-border rounded shadow">
                     <div className="p-3 md:p-1.5 mr-4 rounded" style={{backgroundColor:'#00539c'}}>
