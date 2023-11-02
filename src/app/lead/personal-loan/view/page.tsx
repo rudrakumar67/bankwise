@@ -44,9 +44,9 @@ const View: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex text-black text-left">
+                <div className="flex text-black h-screen fixed">
                     <div className="w-72">
-                        <div className="sticky bg-gray-100 p-4 w-full">
+                        <div className="sticky bg-gray-100 p-4 w-full h-full">
                             {/* Left Side (Fixed) */}
                             <div className="overflow-y-auto">
                                 <div className="text-black">
@@ -138,8 +138,8 @@ const View: NextPage = () => {
                             </div>
                         </div>    
                     </div>
-                    <div className="w-10/12">
-                        <div className="">
+                    <div className="min-w-full">
+                        <div className="min-w-full">
                             <div>
                                 <h2 className="sr-only">Steps</h2>
 
@@ -234,7 +234,7 @@ const View: NextPage = () => {
                             </div>
                         </div>
                         <div className="p-4">
-                            <div className="h-screen overflow-y-auto w-full">
+                            <div className="h-screen overflow-y-auto min-w-full">
                             <Accordion isCompact itemClasses={itemClasses} variant="splitted" defaultExpandedKeys={["1"]}>
                                 <AccordionItem key="1" aria-label="Basic Details" title="Basic Details">
                                     <div className="grid grid-cols-4 gap-7 py-6 px-3 bg-white">
@@ -480,7 +480,7 @@ const View: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-12 bg-gray-100">
+                    <div className="w-12 bg-gray-100 right-0 fixed h-screen">
                         <ul className="py-3">
                             <Tooltip
                                 showArrow={false}
