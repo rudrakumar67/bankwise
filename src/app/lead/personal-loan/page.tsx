@@ -15,7 +15,8 @@ import {
     ArchiveBoxXMarkIcon,
     ArrowLeftCircleIcon,
     ArrowLongLeftIcon,
-    ChevronLeftIcon
+    ChevronLeftIcon,
+    BellAlertIcon
 } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
@@ -357,6 +358,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
@@ -392,6 +394,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
@@ -427,6 +430,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
@@ -462,6 +466,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
@@ -497,6 +502,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
@@ -532,6 +538,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
@@ -567,6 +574,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
@@ -602,6 +610,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
@@ -637,6 +646,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>
@@ -672,6 +682,7 @@ const Home: NextPage = () => {
                             </td>
                             <td className="px-3 py-3 text-center">
                                 <div className="flex justify-between">
+                                    <BellAlertIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <ArchiveBoxXMarkIcon className="h-4 w-4 mx-auto" color="gray"/>
                                     <TrashIcon className="h-4 w-4 mx-auto" style={{color:'#dc3545'}}/>
                                 </div>

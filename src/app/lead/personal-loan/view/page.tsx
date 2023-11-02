@@ -1,5 +1,5 @@
 
-import { ArrowsRightLeftIcon, BellAlertIcon, BuildingLibraryIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, DocumentDuplicateIcon, EnvelopeIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { ArrowsRightLeftIcon, BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, DocumentDuplicateIcon, EnvelopeIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
 import { Tooltip } from "@nextui-org/tooltip";
 import { NextPage } from "next";
 import Image from "next/image";
@@ -12,27 +12,27 @@ const View: NextPage = () => {
                         <div className="flex h-8 my-auto">
                             <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                                 <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d '}}/>
-                                <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#12344d'}}>Call Customer</span>
+                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Call Customer</span>
                             </span>
                             <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                                 <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
-                                <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#12344d'}}>Email</span>
+                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Email</span>
                             </span>
                             <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                                 <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
-                                <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#12344d'}}>Add Task</span>
+                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Add Task</span>
                             </span>
                             <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                                 <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
-                                <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#12344d'}}>Share Link</span>
+                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Share Link</span>
                             </span>
                             <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                                 <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
-                                <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#12344d'}}>Notify</span>
+                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Notify</span>
                             </span>
                             <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                                 <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
-                                <span className="text-sm md:text-xs font-normal my-auto" style={{color:'#12344d'}}>Check Eligibility</span>
+                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Check Eligibility</span>
                             </span>
                         </div>
                     </div>
@@ -134,81 +134,75 @@ const View: NextPage = () => {
                     <div className="w-10/12">
                         <div className="p-4 w-full">
                             <div className="h-screen overflow-y-auto">
-                                <h2 className="text-xl font-bold mb-4">Right Side (Scrollable)</h2>
-                                <div className="bg-gray-100 rounded p-2">
-                                    <span className="text-sm font-semibold pb-2">Heading</span>
-                                    <p>
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                                    </p>
-                                </div>
-                                <div className="bg-gray-100 rounded p-2">
-                                    <span className="text-sm font-semibold pb-2">Heading</span>
-                                    <p>
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                                    </p>
-                                </div>
-                                <div className="bg-gray-100 rounded p-2">
-                                    <span className="text-sm font-semibold pb-2">Heading</span>
-                                    <p>
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                                    </p>
-                                </div>
-                                <div className="bg-gray-100 rounded p-2">
-                                    <span className="text-sm font-semibold pb-2">Heading</span>
-                                    <p>
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                                    </p>
-                                </div>
-                                <div className="bg-gray-100 rounded p-2">
-                                    <span className="text-sm font-semibold pb-2">Heading</span>
-                                    <p>
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                                    </p>
-                                </div>
-                                <div className="bg-gray-100 rounded p-2">
-                                    <span className="text-sm font-semibold pb-2">Heading</span>
-                                    <p>
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                                    </p>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div className="bg-gray-100 rounded">
+                                        <div className="text-sm font-semibold rounded p-2 bg-slate-200 flex justify-between">
+                                            <span>Heading</span>
+                                            <PencilIcon className="h-3.5 my-auto mx-1"/>
+                                        </div>
+                                        <p className="p-2">
+                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                                        </p>
+                                    </div>
+                                    <div className="bg-gray-100 rounded">
+                                        <div className="text-sm font-semibold rounded p-2 bg-slate-200 flex justify-between">
+                                            <span>Heading</span>
+                                            <PencilIcon className="h-3.5 my-auto mx-1"/>
+                                        </div>
+                                        <p className="p-2">
+                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="w-12 bg-gray-100">
                         <ul className="py-3">
-                            <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
-                                <Tooltip
-                                    showArrow={false}
-                                    content="Task" 
-                                    placement="left-start"
-                                    offset={7} 
-                                    closeDelay={0} 
-                                    classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
+                            <Tooltip
+                                showArrow={false}
+                                content="Task" 
+                                placement="left-start"
+                                offset={7} 
+                                closeDelay={0} 
+                                classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
+                                <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
                                     <PencilSquareIcon className="h-5 mx-auto"/>
-                                </Tooltip>
-                            </li>
-                            <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
-                                <Tooltip
-                                    showArrow={false}
-                                    content="Comments" 
-                                    placement="left-start"
-                                    offset={7} 
-                                    closeDelay={0} 
-                                    classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
-                                    <ChatBubbleBottomCenterIcon className="h-5 mx-auto"/>
-                                </Tooltip>
-                            </li>
-                            <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
-                                <Tooltip
-                                    showArrow={false}
-                                    content="Alerts" 
-                                    placement="left-start"
-                                    offset={7} 
-                                    closeDelay={0} 
-                                    classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
-                                    <BellAlertIcon className="h-5 mx-auto"/>
-                                </Tooltip>
-                            </li>
+                                </li>
+                            </Tooltip>
+                            <Tooltip
+                                showArrow={false}
+                                content="Comments" 
+                                placement="left-start"
+                                offset={7} 
+                                closeDelay={0} 
+                                classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
+                                    <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
+                                        <ChatBubbleBottomCenterIcon className="h-5 mx-auto"/>                                
+                                    </li>
+                            </Tooltip>
+                            <Tooltip
+                                showArrow={false}
+                                content="Alerts" 
+                                placement="left-start"
+                                offset={7} 
+                                closeDelay={0} 
+                                classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
+                                    <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
+                                        <BellAlertIcon className="h-5 mx-auto"/>                                
+                                    </li>
+                            </Tooltip>
+                            <Tooltip
+                                showArrow={false}
+                                content="EMI Calculator" 
+                                placement="left-start"
+                                offset={7} 
+                                closeDelay={0} 
+                                classNames={{base: "text-white bg-theme rounded text-xs mr-2 py-0.5 px-2", arrow: "bg-blue-900 mr-2"}}>
+                                    <li className="hover:bg-slate-300 mx-1.5 p-2 rounded my-1.5 cursor-pointer">
+                                        <CalculatorIcon className="h-5 mx-auto"/>                                
+                                    </li>
+                            </Tooltip>
                         </ul>
                     </div>
                 </div>
