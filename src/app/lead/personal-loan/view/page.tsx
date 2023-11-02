@@ -282,149 +282,142 @@ const View: NextPage = () => {
                                 <AccordionItem key="2" aria-label="Loan Requirements" title="Loan Requirements">
                                     <div className="grid grid-cols-4 gap-7 py-6 px-3 bg-white">
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Full Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar acharya</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Loan Type</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Personal Loan</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Phone Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>+91 9313536582</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Product Type</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Fresh Loan</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Alt Phone Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>+91 9313536582</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Required Loan</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>500000</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Email Address</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>acharyashivkumar67@gmail.com</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Loan Purpose</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Marriage</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Date of Birth</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>CIBIL Score</span>
                                             <span className="text-xs font-medium" style={{color:'#12344d'}}>89-96-2001</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Gender</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Male</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Marital Status</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Single</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>PAN Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>ASSD1212A</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Mother Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Mother Name</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Father Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Father Name</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>City of Residence</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>City Name</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Any CIBIL Issues </span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Yes/no</span>
                                         </p>
                                     </div>
                                 </AccordionItem>
                                 <AccordionItem key="3" aria-label="Employment Information" title="Employment Information">
                                     <div className="grid grid-cols-4 gap-7 py-6 px-3 bg-white">
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Full Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar acharya</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Employment Type</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Full Time</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Phone Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>+91 9313536582</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Company Name</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Abc pvt ltd.</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Alt Phone Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>+91 9313536582</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Designation</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>BDM</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Email Address</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>acharyashivkumar67@gmail.com</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Department</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Admin</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Date of Birth</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>89-96-2001</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Gross Salary</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>25000</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Gender</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Male</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Net Salary</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>30000</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Marital Status</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Single</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Salary Bank Account</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>HDFC</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>PAN Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>ASSD1212A</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Working Since</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>2021</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Mother Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Mother Name</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Total Experince</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>5 yr</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Father Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Father Name</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>City of Residence</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>City Name</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Official Email Id</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Admin@gmail.com</span>
                                         </p>
                                     </div>
                                 </AccordionItem>
                                 <AccordionItem key="4" aria-label="Address Details" title="Address Details">
+                                    <span className="text-sm font-semibold px-4">Residence Address</span>
                                     <div className="grid grid-cols-4 gap-7 py-6 px-3 bg-white">
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Full Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar acharya</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Resident Type</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Own House</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Phone Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>+91 9313536582</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Street Address</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Block 1 </span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Alt Phone Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>+91 9313536582</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Address 2</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Main road</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Email Address</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>acharyashivkumar67@gmail.com</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Area</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>HRBR Layout</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Date of Birth</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>89-96-2001</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Pincode</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>560022</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Gender</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Male</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>City</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>BLR</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Marital Status</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Single</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Landmark </span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>NONE</span>
+                                        </p>
+                                    </div>
+                                    <span className="text-sm font-semibold px-4">Office Address</span>
+                                    <div className="grid grid-cols-4 gap-7 py-6 px-3 bg-white">
+                                        <p className="font-normal flex flex-col">
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Resident Type</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Own House</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>PAN Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>ASSD1212A</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Street Address</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Block 1 </span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Mother Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Mother Name</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Address 2</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Main road</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Father Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Father Name</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Area</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>HRBR Layout</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>City of Residence</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>City Name</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Pincode</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>560022</span>
+                                        </p>
+                                        <p className="font-normal flex flex-col">
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>City</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>BLR</span>
+                                        </p>
+                                        <p className="font-normal flex flex-col">
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Landmark </span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>NONE</span>
                                         </p>
                                     </div>
                                 </AccordionItem>
                                 <AccordionItem key="5" aria-label="References" title="References">
-                                    <div className="grid grid-cols-4 gap-7 py-6 px-3 bg-white">
+                                    <span></span>
+                                    <div className="grid grid-cols-3 gap-7 py-6 px-3 bg-white">
                                         <p className="font-normal flex flex-col">
                                             <span className="text-xs pb-1" style={{color:'#12344d'}}>Full Name</span>
                                             <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar acharya</span>
@@ -434,40 +427,20 @@ const View: NextPage = () => {
                                             <span className="text-xs font-medium" style={{color:'#12344d'}}>+91 9313536582</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Alt Phone Number</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Address</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>No 71, 8th Block, Babusapalya, Bangalore, 560073</span>
+                                        </p>
+                                        <p className="font-normal flex flex-col">
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Full Name</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar acharya</span>
+                                        </p>
+                                        <p className="font-normal flex flex-col">
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Phone Number</span>
                                             <span className="text-xs font-medium" style={{color:'#12344d'}}>+91 9313536582</span>
                                         </p>
                                         <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Email Address</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>acharyashivkumar67@gmail.com</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Date of Birth</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>89-96-2001</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Gender</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Male</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Marital Status</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Single</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>PAN Number</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>ASSD1212A</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Mother Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Mother Name</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Father Name</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>Father Name</span>
-                                        </p>
-                                        <p className="font-normal flex flex-col">
-                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>City of Residence</span>
-                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>City Name</span>
+                                            <span className="text-xs pb-1" style={{color:'#12344d'}}>Address</span>
+                                            <span className="text-xs font-medium" style={{color:'#12344d'}}>No 71, 8th Block, Babusapalya, Bangalore, 560073</span>
                                         </p>
                                     </div>
                                 </AccordionItem>
