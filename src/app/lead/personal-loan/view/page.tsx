@@ -71,22 +71,22 @@ const View: NextPage = () => {
                                         <ul className="text-black text-xs">
                                             <li className="pb-0.5">
                                                 <div className="flex justify-between">
-                                                    <span>Product Type :</span> <span className="font-semibold">Top Up</span>
+                                                    <span>CIBIL Score :</span> <span className="font-semibold">760</span>
                                                 </div>
                                             </li>
                                             <li className="pb-0.5">
                                                 <div className="flex justify-between">
-                                                    <span>Loan Type :</span> <span className="font-semibold">Personal Loan</span> 
+                                                    <span>Lead Date</span> <span className="font-semibold">02-11-2023</span> 
                                                 </div>
                                             </li>
                                             <li className="pb-0.5">
                                                 <div className="flex justify-between">
-                                                    <span>Required Loan Amount :</span> <span className="font-semibold">500000</span>
+                                                    <span>Created By :</span> <span className="font-semibold">Admin</span>
                                                 </div>
                                             </li>
                                             <li className="pb-0.5">
                                                 <div className="flex justify-between">
-                                                    <span>Monthly Income :</span> <span className="font-semibold">25000</span>
+                                                    <span>Referred By :</span> <span className="font-semibold">None</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -112,12 +112,6 @@ const View: NextPage = () => {
                                                 <span className="flex" style={{color:'#2e4374'}}>
                                                     <QueueListIcon className="h-5 my-auto pr-3 pl-1" />
                                                     Obligation
-                                                </span>
-                                            </li>
-                                            <li className="py-3 border-b border-slate-300">
-                                                <span className="flex" style={{color:'#2e4374'}}>
-                                                    <ArrowsRightLeftIcon className="h-5 my-auto pr-3 pl-1" />
-                                                    Follow Ups
                                                 </span>
                                             </li>
                                             <li className="py-3 border-b border-slate-300">
