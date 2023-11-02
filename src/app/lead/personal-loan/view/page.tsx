@@ -138,8 +138,8 @@ const View: NextPage = () => {
                             </div>
                         </div>    
                     </div>
-                    <div className="min-w-full">
-                        <div className="min-w-full">
+                    <div className="w-auto lg:w-fit">
+                        <div className="w-auto">
                             <div>
                                 <h2 className="sr-only">Steps</h2>
 
@@ -234,7 +234,7 @@ const View: NextPage = () => {
                             </div>
                         </div>
                         <div className="p-4">
-                            <div className="h-screen overflow-y-auto min-w-full">
+                            <div className="h-screen overflow-y-auto">
                             <Accordion isCompact itemClasses={itemClasses} variant="splitted" defaultExpandedKeys={["1"]}>
                                 <AccordionItem key="1" aria-label="Basic Details" title="Basic Details">
                                     <div className="grid grid-cols-4 gap-7 py-6 px-3 bg-white">
