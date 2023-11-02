@@ -1,5 +1,5 @@
 'use client'
-import { BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, DocumentDuplicateIcon, EnvelopeIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { ArchiveBoxXMarkIcon, BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, DocumentDuplicateIcon, EnvelopeIcon, GiftIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
 import { Tooltip } from "@nextui-org/tooltip";
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import { NextPage } from "next";
@@ -384,7 +384,140 @@ const View: NextPage = () => {
                                 </div>
                                 <div className={sideMenuItem == 5 ? 'block' : 'hidden'}>
                                     <div className="text-black">
-                                        Bank Logins
+                                        <span className="text-md font-medium" style={{color:'#2e4374'}}>
+                                            <div className="flex ">
+                                                <GiftIcon className="h-6 my-auto mr-3"/>
+                                                Eligible Bank Offers
+                                            </div>
+                                        </span>
+                                        <div className="py-6">
+                                            <table className="w-full text-xs text-left border border-slate-200 py-4">
+                                                <thead className="text-sm bg-gray-100 rounded" style={{color:'#2e4374'}}>
+                                                    <tr>
+                                                        <th scope="col" className="px-3 py-2 font-semibold">
+                                                            Bank Name
+                                                        </th>
+                                                        <th scope="col" className="px-3 py-2 font-semibold">
+                                                            Max Loan Amount
+                                                        </th>
+                                                        <th scope="col" className="px-3 py-2 font-semibold">
+                                                            Rate of Interest
+                                                        </th>
+                                                        <th scope="col" className="px-3 py-2 font-semibold">
+                                                            Monthly EMI
+                                                        </th>
+                                                        <th scope="col" className="px-3 py-2 font-semibold">
+                                                            Max Tenure
+                                                        </th>
+                                                        <th scope="col" className="px-3 py-2 font-semibold text-center">
+                                                            Action
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody style={{color:'#2e4374'}}>
+                                                    <tr className="text-sm font-medium">
+                                                        <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
+                                                            ICICI Bank
+                                                        </th>
+                                                        <td className="px-3 py-3">
+                                                            900000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            16%
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            15000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            5yr
+                                                        </td>
+                                                        <td className="px-3 py-3 text-center">
+                                                            <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr className="text-sm font-medium bg-slate-100">
+                                                        <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
+                                                            ICICI Bank
+                                                        </th>
+                                                        <td className="px-3 py-3">
+                                                            900000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            16%
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            15000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            5yr
+                                                        </td>
+                                                        <td className="px-3 py-3 text-center">
+                                                            <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr className="text-sm font-medium">
+                                                        <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
+                                                            ICICI Bank
+                                                        </th>
+                                                        <td className="px-3 py-3">
+                                                            900000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            16%
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            15000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            5yr
+                                                        </td>
+                                                        <td className="px-3 py-3 text-center">
+                                                            <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr className="text-sm font-medium bg-slate-100">
+                                                        <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
+                                                            ICICI Bank
+                                                        </th>
+                                                        <td className="px-3 py-3">
+                                                            900000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            16%
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            15000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            5yr
+                                                        </td>
+                                                        <td className="px-3 py-3 text-center">
+                                                            <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr className="text-sm font-medium">
+                                                        <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
+                                                            ICICI Bank
+                                                        </th>
+                                                        <td className="px-3 py-3">
+                                                            900000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            16%
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            15000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            5yr
+                                                        </td>
+                                                        <td className="px-3 py-3 text-center">
+                                                            <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
