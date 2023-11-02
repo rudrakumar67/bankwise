@@ -1,5 +1,5 @@
 'use client'
-import { ArchiveBoxXMarkIcon, BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, DocumentDuplicateIcon, EnvelopeIcon, GiftIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { ArchiveBoxXMarkIcon, ArrowLeftIcon, ArrowLeftOnRectangleIcon, BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, ChevronLeftIcon, DocumentDuplicateIcon, EnvelopeIcon, GiftIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
 import { Tooltip } from "@nextui-org/tooltip";
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import { NextPage } from "next";
@@ -15,7 +15,13 @@ const View: NextPage = () => {
         <>
             <div className="bg-white h-screen">
                 <div className="text-black w-full static">
-                    <div className="flex justify-end  bg-slate-200 py-2 rounded-t px-3">
+                    <div className="flex justify-between bg-slate-200 py-2 rounded-t px-3">
+                        <div className="my-auto" style={{color:'#2058dc'}}>
+                            <div className="flex">
+                                <ChevronLeftIcon className="h-3 my-auto mr-1"/>
+                                <span className="text-sm font-semibold">Go Back</span>
+                            </div>
+                        </div>
                         <div className="flex h-8 my-auto">
                             <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                                 <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d '}}/>
@@ -229,6 +235,10 @@ const View: NextPage = () => {
                                                 </p>
                                                 <p className="font-normal flex flex-col">
                                                     <span className="text-xs pb-1" style={{color:'#12344d'}}>Any CIBIL Issues </span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>Yes/no</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Any Obligations</span>
                                                     <span className="text-xs font-medium" style={{color:'#12344d'}}>Yes/no</span>
                                                 </p>
                                             </div>
