@@ -152,12 +152,49 @@ const View: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full p-3 h-full">
-                        <div className="py-3">
+                    <div className="w-full px-3 py-1 h-full">
+                        <div className="py-2">
                             <div className="overflow-y-auto">
                                 <div className={sideMenuItem == 1 ? 'block' : 'hidden'}>
                                     <div className="text-black">
-                                        Overview
+                                    <div className="font-semibold py-2">Overview</div>
+                                        <ul className="flex gap-4">
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-[#d2e0fb] rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-[#d2e0fb]">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-[#d2e0fb] rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-[#d2e0fb]">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-slate-200 rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-slate-200">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-slate-200 rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-slate-200">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-slate-200 rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-slate-200">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div className={sideMenuItem == 2 ? 'block' : 'hidden'}>

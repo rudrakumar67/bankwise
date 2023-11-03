@@ -18,7 +18,7 @@ function Sidebar() {
     const router = useRouter();
 
     return (
-        <aside className="z-50 bg-white hidden w-20 md:w-16 sidebar md:block flex-shrink-0 h-screen">
+        <aside className="z-50 bg-white hidden w-20 md:w-16 sidebar md:block flex-shrink-0 h-screen fixed top-0">
             <div className="py-4 text-gray-500 mx-auto text-center">
               <a className="font-medium md:font-sm capitalize" style={{color:"#ffffff"}} href="#">BW</a>
               <ul className='mt-4'>
