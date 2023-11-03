@@ -100,49 +100,49 @@ const View: NextPage = () => {
                                         <span className="pb-2 font-medium text-xs">
                                             Applicant Details
                                         </span>
-                                        <ul className="text-black">
-                                            <li className={`py-2.5 px-2 `+(
+                                        <ul className="text-black text-sm">
+                                            <li className={`py-1.5 px-2 `+(
                                                 sideMenuItem === 1
                                                 ? "bg-gray-100 rounded"
                                                 : "")} onClick={()=>{setsideMenuItem(1)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
-                                                    <ChartPieIcon className="h-5 my-auto pr-3 pl-1" />
+                                                    <ChartPieIcon className="h-4 my-auto pr-3 pl-1" />
                                                     Overview
                                                 </span>
                                             </li>
-                                            <li className={`py-2.5 px-2 `+(
+                                            <li className={`py-1.5 px-2 `+(
                                                 sideMenuItem === 2
                                                 ? "bg-gray-100 rounded"
                                                 : "")} onClick={()=>{setsideMenuItem(2)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
-                                                    <UserIcon className="h-5 my-auto pr-3 pl-1" />
+                                                    <UserIcon className="h-4 my-auto pr-3 pl-1" />
                                                     Applicant Details
                                                 </span>
                                             </li>
-                                            <li className={`py-2.5 px-2 `+(
+                                            <li className={`py-1.5 px-2 `+(
                                                 sideMenuItem === 3
                                                 ? "bg-gray-100 rounded"
                                                 : "")} onClick={()=>{setsideMenuItem(3)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
-                                                    <QueueListIcon className="h-5 my-auto pr-3 pl-1" />
+                                                    <QueueListIcon className="h-4 my-auto pr-3 pl-1" />
                                                     Obligation
                                                 </span>
                                             </li>
-                                            <li className={`py-2.5 px-2 `+(
+                                            <li className={`py-1.5 px-2 `+(
                                                 sideMenuItem === 4
                                                 ? "bg-gray-100 rounded"
                                                 : "")} onClick={()=>{setsideMenuItem(4)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
-                                                    <DocumentDuplicateIcon className="h-5 my-auto pr-3 pl-1" />
+                                                    <DocumentDuplicateIcon className="h-4 my-auto pr-3 pl-1" />
                                                     Documents
                                                 </span>
                                             </li>
-                                            <li className={`py-2.5 px-2 `+(
+                                            <li className={`py-1.5 px-2 `+(
                                                 sideMenuItem === 5
                                                 ? "bg-gray-100 rounded"
                                                 : "")} onClick={()=>{setsideMenuItem(5)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
-                                                    <BuildingLibraryIcon className="h-5 my-auto pr-3 pl-1" />
+                                                    <BuildingLibraryIcon className="h-4 my-auto pr-3 pl-1" />
                                                     Bank Logins
                                                 </span>
                                             </li>
