@@ -13,9 +13,9 @@ const View: NextPage = () => {
     const [sideMenuItem, setsideMenuItem] = useState(1);
     return (
         <>
-            <div className="bg-white h-screen">
+            <div className="bg-white h-full overflow-hidden">
                 <div className="text-black w-full static">
-                    <div className="flex justify-between bg-slate-200 py-2 rounded-t px-3">
+                    <div className="flex justify-between bg-slate-200 py-2 rounded-t px-3 static">
                         <div className="my-auto" style={{color:'#2058dc'}}>
                             <div className="flex">
                                 <ChevronLeftIcon className="h-3 my-auto mr-1"/>
@@ -50,10 +50,9 @@ const View: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex text-black">
-                    <div className="w-80">
-                        <div className="sticky bg-gray-100 p-4 w-full h-screen">
-                            {/* Left Side (Fixed) */}
+                <div className="flex text-black h-screen max-h-fit">
+                    <div className="w-80 bg-gray-100">
+                        <div className="sticky p-4 w-full">
                             <div className="overflow-y-auto">
                                 <div className="text-black">
                                     <div className="grid border-b border-slate-300">
@@ -153,7 +152,7 @@ const View: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full p-3" id="content">
+                    <div className="w-full p-3 h-full">
                         <div className="py-3">
                             <div className="overflow-y-auto">
                                 <div className={sideMenuItem == 1 ? 'block' : 'hidden'}>

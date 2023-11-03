@@ -23,17 +23,22 @@ export const metadata: Metadata = {
 export default function RootLayout({children,}: {  children: React.ReactNode}) {
   return (
     <html lang="en">
+      <head>
+      <meta name="viewport" 
+          content="width=device-width,  
+                   initial-scale=1.0" />
+      </head>
       <body>
-        <div className='flex h-screen'>
-          <SideBar/>
-          <div className='flex flex-col flex-1' style={{color:'#ffffff'}}>
-          <Navbar/>
-            <main className="h-full pb-16 overflow-y-auto">
-              <div className="wrapper mx-auto grid">
-                {children}
-              </div>
-            </main>
-          </div>
+        <div className='flex'>
+          <aside className="fixed top-0">
+            <SideBar/>
+          </aside>
+          <main className="h-screen w-full">
+            <Navbar/>
+            <div className="wrapper pl-16 pt-12 h-screen">
+              {children}
+            </div>
+          </main>
         </div>
       </body>
     </html>
