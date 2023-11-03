@@ -1,5 +1,5 @@
 'use client'
-import { ArchiveBoxXMarkIcon, ArrowLeftIcon, ArrowLeftOnRectangleIcon, BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, ChevronLeftIcon, DocumentDuplicateIcon, EnvelopeIcon, GiftIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, ChevronLeftIcon, DocumentDuplicateIcon, DocumentTextIcon, EnvelopeIcon, GiftIcon, InboxArrowDownIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
 import { Tooltip } from "@nextui-org/tooltip";
 import {Accordion, AccordionItem} from "@nextui-org/react";
 import { NextPage } from "next";
@@ -424,8 +424,242 @@ const View: NextPage = () => {
                                     </div>
                                 </div>
                                 <div className={sideMenuItem == 4 ? 'block' : 'hidden'}>
-                                    <div className="text-black">
-                                        Documents
+                                    <div className="text-black flex" >
+                                        <div className="w-[52rem] px-4 py-2 border-r h-[22rem] overflow-y-scroll">
+                                            <div className="font-semibold pb-4 sticky">Documents Received</div>
+                                            <div className="grid justify-center grid-cols-4 gap-y-6">
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">PAN Card</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Aadhar Card</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Statment</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Salary Slip</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Voter ID</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Passbook</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Rent Agreement</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Salary Slip</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Voter ID</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Passbook</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">PAN Card</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Aadhar Card</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Statment</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Salary Slip</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Voter ID</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Passbook</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Rent Agreement</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Salary Slip</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Voter ID</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Passbook</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">PAN Card</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Aadhar Card</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Statment</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Salary Slip</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Voter ID</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Passbook</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Rent Agreement</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Salary Slip</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Voter ID</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Passbook</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Rent Agreement</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Salary Slip</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Voter ID</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Bank Passbook</span>
+                                                </div>
+                                                <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
+                                                    <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
+                                                    <DocumentTextIcon className="h-12"/>
+                                                    </div><span className="text-center text-xs font-normal pt-2">Rent Agreement</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="w-80 px-4 py-4">
+                                            <div className="grid gap-y-5 my-auto">
+                                                <label
+                                                    htmlFor="dropzone-file"
+                                                    className="h-60 flex flex-col items-center justify-center w-full border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                                                >
+                                                    <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                                                    <svg
+                                                        className="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                                                        aria-hidden="true"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        fill="none"
+                                                        viewBox="0 0 20 16"
+                                                    >
+                                                        <path
+                                                        stroke="currentColor"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        strokeWidth={2}
+                                                        d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                                                        />
+                                                    </svg>
+                                                    <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                                                        <span className="font-semibold">Click to upload</span> or drag and drop
+                                                    </p>
+                                                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                                                        SVG, PNG, JPG or GIF (MAX. 800x400px)
+                                                    </p>
+                                                    </div>
+                                                    <input id="dropzone-file" type="file" className="hidden" />
+                                                </label>
+                                                <button className="py-3 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50">
+                                                    <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
+                                                        <div className="flex justify-center ">   
+                                                            <InboxArrowDownIcon className="h-6 my-auto pr-4"/>
+                                                            <div className="my-auto"><span className="font-semibold mr-1 ">Request</span> Documents</div>
+                                                        </div>
+                                                    </p>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="py-4 border-t">
+                                        <div className="text-black">
+                                            <div className="flex">
+                                                <div className="flex-1 text-center">
+                                                    <div className="flex items-center justify-center w-full mx-auto">
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div className="flex-1 text-center">
+                                                    text
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={sideMenuItem == 5 ? 'block' : 'hidden'}>
