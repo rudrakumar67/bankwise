@@ -613,7 +613,7 @@ const View: NextPage = () => {
                                             <Tab key="Upload" title="Upload">
                                                 <Card>
                                                     <CardBody>
-                                                        Test
+                                                        
                                                     </CardBody>
                                                 </Card>
                                             </Tab>
@@ -636,16 +636,19 @@ const View: NextPage = () => {
                                                             Bank Name
                                                         </th>
                                                         <th scope="col" className="px-3 py-2 font-semibold">
-                                                            Max Loan Amount
+                                                            Listed
                                                         </th>
                                                         <th scope="col" className="px-3 py-2 font-semibold">
-                                                            Rate of Interest
+                                                            Max Loan
                                                         </th>
                                                         <th scope="col" className="px-3 py-2 font-semibold">
-                                                            Monthly EMI
+                                                            ROI
                                                         </th>
                                                         <th scope="col" className="px-3 py-2 font-semibold">
-                                                            Max Tenure
+                                                            Approx EMI
+                                                        </th>
+                                                        <th scope="col" className="px-3 py-2 font-semibold">
+                                                            Tenure
                                                         </th>
                                                         <th scope="col" className="px-3 py-2 font-semibold text-center">
                                                             Action
@@ -658,30 +661,13 @@ const View: NextPage = () => {
                                                             ICICI Bank
                                                         </th>
                                                         <td className="px-3 py-3">
-                                                            900000
+                                                            CAT A
                                                         </td>
-                                                        <td className="px-3 py-3">
-                                                            16%
-                                                        </td>
-                                                        <td className="px-3 py-3">
-                                                            15000
-                                                        </td>
-                                                        <td className="px-3 py-3">
-                                                            5yr
-                                                        </td>
-                                                        <td className="px-3 py-3 text-center">
-                                                            <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr className="text-sm font-medium bg-slate-100">
-                                                        <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
-                                                            ICICI Bank
-                                                        </th>
                                                         <td className="px-3 py-3">
                                                             900000
                                                         </td>
                                                         <td className="px-3 py-3">
-                                                            16%
+                                                            16-20%
                                                         </td>
                                                         <td className="px-3 py-3">
                                                             15000
@@ -698,30 +684,13 @@ const View: NextPage = () => {
                                                             ICICI Bank
                                                         </th>
                                                         <td className="px-3 py-3">
-                                                            900000
+                                                            CAT A
                                                         </td>
-                                                        <td className="px-3 py-3">
-                                                            16%
-                                                        </td>
-                                                        <td className="px-3 py-3">
-                                                            15000
-                                                        </td>
-                                                        <td className="px-3 py-3">
-                                                            5yr
-                                                        </td>
-                                                        <td className="px-3 py-3 text-center">
-                                                            <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr className="text-sm font-medium bg-slate-100">
-                                                        <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
-                                                            ICICI Bank
-                                                        </th>
                                                         <td className="px-3 py-3">
                                                             900000
                                                         </td>
                                                         <td className="px-3 py-3">
-                                                            16%
+                                                            16-20%
                                                         </td>
                                                         <td className="px-3 py-3">
                                                             15000
@@ -738,10 +707,13 @@ const View: NextPage = () => {
                                                             ICICI Bank
                                                         </th>
                                                         <td className="px-3 py-3">
+                                                            CAT A
+                                                        </td>
+                                                        <td className="px-3 py-3">
                                                             900000
                                                         </td>
                                                         <td className="px-3 py-3">
-                                                            16%
+                                                            16-20%
                                                         </td>
                                                         <td className="px-3 py-3">
                                                             15000
@@ -753,6 +725,53 @@ const View: NextPage = () => {
                                                             <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
                                                         </td>
                                                     </tr>
+                                                    <tr className="text-sm font-medium">
+                                                        <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
+                                                            ICICI Bank
+                                                        </th>
+                                                        <td className="px-3 py-3">
+                                                            CAT A
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            900000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            16-20%
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            15000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            5yr
+                                                        </td>
+                                                        <td className="px-3 py-3 text-center">
+                                                            <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr className="text-sm font-medium">
+                                                        <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
+                                                            ICICI Bank
+                                                        </th>
+                                                        <td className="px-3 py-3">
+                                                            CAT A
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            900000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            16-20%
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            15000
+                                                        </td>
+                                                        <td className="px-3 py-3">
+                                                            5yr
+                                                        </td>
+                                                        <td className="px-3 py-3 text-center">
+                                                            <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
+                                                        </td>
+                                                    </tr>
+
                                                 </tbody>
                                             </table>
                                         </div>
