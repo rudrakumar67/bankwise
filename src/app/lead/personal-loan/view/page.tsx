@@ -655,29 +655,29 @@ const View: NextPage = () => {
                                             <div className="py-6">
                                                 <table className="w-full text-xs text-left border border-slate-200 py-4">
                                                     <thead className="text-sm bg-gray-100 rounded" style={{color:'#2e4374'}}>
-                                                        <tr>
+                                                        <tr className="font-normal">
                                                             <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
                                                                 Select
                                                             </th>
-                                                            <th className="px-3 py-3">
+                                                            <th className="p-3 font-medium">
                                                                 Document Name
                                                             </th>
-                                                            <th className="px-3 py-3">
+                                                            <th className="p-3 font-medium">
                                                                 Document Type
                                                             </th>
-                                                            <th className="px-3 py-3">
+                                                            <th className="p-3 font-medium">
                                                                 Format
                                                             </th>
-                                                            <th className="px-3 py-3">
+                                                            <th className="p-3 font-medium">
                                                                 Status
                                                             </th>
-                                                            <th className="px-3 py-3">
+                                                            <th className="p-3 font-medium">
                                                                 Link Shared
                                                             </th>
-                                                            <th className="px-3 py-3">
+                                                            <th className="p-3 font-medium">
                                                                 Uploaded By
                                                             </th>
-                                                            <th className="px-3 py-3">
+                                                            <th className="p-3 font-medium">
                                                                 Last Modified
                                                             </th>
                                                         </tr>
