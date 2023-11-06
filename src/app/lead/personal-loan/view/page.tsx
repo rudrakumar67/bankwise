@@ -428,7 +428,7 @@ const View: NextPage = () => {
                                 </div>
                                 <div className={sideMenuItem == 4 ? 'block' : 'hidden'}>
                                     <div className="text-[#12344d] flex w-full flex-col" >
-                                        <Tabs aria-label="Options" variant="underlined" radius="full" classNames={{
+                                        {/* <Tabs aria-label="Options" variant="underlined" radius="full" classNames={{
                                             tabList: "gap-6 w-full relative rounded-none p-0 border-b border-divider",
                                             cursor: "w-full",
                                             tab: "max-w-fit px-0 text-[#12344d] font-semibold",
@@ -596,28 +596,304 @@ const View: NextPage = () => {
                                                 </Accordion>  
                                             </Tab>
                                             <Tab key="Upload" title="Upload / Request">
-                                                <div className="grid grid-cols-2 gap-x-5">
+                                                <div className="grid grid-cols-2 gap-x-5 text-[#2e4374]">
                                                     <div className="rounded p-4 bg-gray-100 border-dashed border-2 border-slate-300 flex items-center justify-center cursor-pointer">
                                                         <div className="grid text-center">
-                                                            <CloudArrowUpIcon className="h-14 mx-auto"/>
+                                                            <CloudArrowUpIcon className="h-12 mx-auto"/>
                                                             <span className="text-sm font-bold">
-                                                                Upload Document
+                                                                Upload Documents
                                                             </span>
-                                                            <span className="text-xs font-semibold">Upload Aplicant Documnets</span>
+                                                            <span className="text-xs font-semibold">Upload Applicant Documnets</span>
                                                         </div>
                                                     </div>
                                                     <div className="rounded p-4 bg-gray-100 border-dashed border-2 border-slate-300 flex items-center justify-center cursor-pointer">
                                                         <div className="grid text-center">
-                                                            <InboxArrowDownIcon className="h-14 mx-auto"/>
+                                                            <InboxArrowDownIcon className="h-12 mx-auto"/>
                                                             <span className="text-sm font-bold">
-                                                                Request Document
+                                                                Request Documents
                                                             </span>
-                                                            <span className="text-xs font-semibold">Request Documnets From Aplicant</span>
+                                                            <span className="text-xs font-semibold">Request Documents From Applicant</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </Tab>
-                                        </Tabs>
+                                        </Tabs> */}
+                                        <div className="text-black">
+                                            <span className="text-md font-medium" style={{color:'#2e4374'}}>
+                                                <div className="flex">
+                                                    Documents
+                                                </div>
+                                            </span>
+                                            <div className="grid grid-cols-2 gap-x-5 text-[#2e4374] pt-3">
+                                                <div className="rounded p-4 bg-gray-100 border-dashed border-2 border-slate-300 cursor-pointer">
+                                                    <div className="flex justify-center">
+                                                        <div className="pr-4">
+                                                        <CloudArrowUpIcon className="h-8"/>
+                                                        </div>
+                                                        <div className="grid">
+                                                            <span className="text-sm font-bold">
+                                                                Upload Documents
+                                                            </span>
+                                                            <span className="text-xs font-semibold">Upload Applicant Documnets</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="rounded p-4 bg-gray-100 border-dashed border-2 border-slate-300 cursor-pointer">
+                                                    <div className="flex justify-center">
+                                                        <div className="pr-4">
+                                                        <InboxArrowDownIcon className="h-8"/>
+                                                        </div>
+                                                        <div className="grid">
+                                                            <span className="text-sm font-bold">
+                                                            Request Documents
+                                                            </span>
+                                                            <span className="text-xs font-semibold">Request Documents From Applicant</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="py-6">
+                                                <table className="w-full text-xs text-left border border-slate-200 py-4">
+                                                    <thead className="text-sm bg-gray-100 rounded" style={{color:'#2e4374'}}>
+                                                        <tr>
+                                                            <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
+                                                                Select
+                                                            </th>
+                                                            <th className="px-3 py-3">
+                                                                Document Name
+                                                            </th>
+                                                            <th className="px-3 py-3">
+                                                                Document Type
+                                                            </th>
+                                                            <th className="px-3 py-3">
+                                                                Format
+                                                            </th>
+                                                            <th className="px-3 py-3">
+                                                                Status
+                                                            </th>
+                                                            <th className="px-3 py-3">
+                                                                Link Shared
+                                                            </th>
+                                                            <th className="px-3 py-3">
+                                                                Uploaded By
+                                                            </th>
+                                                            <th className="px-3 py-3">
+                                                                Last Modified
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody style={{color:'#2e4374'}}>
+                                                        <tr className="text-xs font-medium">
+                                                            <td scope="row" className="px-3 py-3 px-auto">
+                                                                <input type="checkbox" name="" id="" />
+                                                            </td>
+                                                            <td className="px-3 py-3 underline cursor-pointer" style={{color:'#2058dc'}}>
+                                                                PAN Card
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                KYC Document
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                PDF
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Received
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                YES
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Shivkumar
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                02-11-2023
+                                                            </td>
+                                                        </tr>
+                                                        <tr className="text-xs font-medium bg-gray-100">
+                                                            <td scope="row" className="px-3 py-3 px-auto">
+                                                                <input type="checkbox" name="" id="" />
+                                                            </td>
+                                                            <td className="px-3 py-3 underline cursor-pointer" style={{color:'#2058dc'}}>
+                                                                PAN Card
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                KYC Document
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                PDF
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Received
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                YES
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Shivkumar
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                02-11-2023
+                                                            </td>
+                                                        </tr>
+                                                        <tr className="text-xs font-medium">
+                                                            <td scope="row" className="px-3 py-3 px-auto">
+                                                                <input type="checkbox" name="" id="" />
+                                                            </td>
+                                                            <td className="px-3 py-3 underline cursor-pointer" style={{color:'#2058dc'}}>
+                                                                PAN Card
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                KYC Document
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                PDF
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Received
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                YES
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Shivkumar
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                02-11-2023
+                                                            </td>
+                                                        </tr>
+                                                        <tr className="text-xs font-medium bg-gray-100">
+                                                            <td scope="row" className="px-3 py-3 px-auto">
+                                                                <input type="checkbox" name="" id="" />
+                                                            </td>
+                                                            <td className="px-3 py-3 underline cursor-pointer" style={{color:'#2058dc'}}>
+                                                                PAN Card
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                KYC Document
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                PDF
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Received
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                YES
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Shivkumar
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                02-11-2023
+                                                            </td>
+                                                        </tr>
+                                                        <tr className="text-xs font-medium">
+                                                            <td scope="row" className="px-3 py-3 px-auto">
+                                                                <input type="checkbox" name="" id="" />
+                                                            </td>
+                                                            <td className="px-3 py-3 underline cursor-pointer" style={{color:'#2058dc'}}>
+                                                                PAN Card
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                KYC Document
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                PDF
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Received
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                YES
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Shivkumar
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                02-11-2023
+                                                            </td>
+                                                        </tr>
+                                                        <tr className="text-xs font-medium bg-gray-100">
+                                                            <td scope="row" className="px-3 py-3 px-auto">
+                                                                <input type="checkbox" name="" id="" />
+                                                            </td>
+                                                            <td className="px-3 py-3 underline cursor-pointer" style={{color:'#2058dc'}}>
+                                                                PAN Card
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                KYC Document
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                PDF
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Received
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                YES
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Shivkumar
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                02-11-2023
+                                                            </td>
+                                                        </tr><tr className="text-xs font-medium">
+                                                            <td scope="row" className="px-3 py-3 px-auto">
+                                                                <input type="checkbox" name="" id="" />
+                                                            </td>
+                                                            <td className="px-3 py-3 underline cursor-pointer" style={{color:'#2058dc'}}>
+                                                                PAN Card
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                KYC Document
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                PDF
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Received
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                YES
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Shivkumar
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                02-11-2023
+                                                            </td>
+                                                        </tr>
+                                                        <tr className="text-xs font-medium bg-gray-100">
+                                                            <td scope="row" className="px-3 py-3 px-auto">
+                                                                <input type="checkbox" name="" id="" />
+                                                            </td>
+                                                            <td className="px-3 py-3 underline cursor-pointer" style={{color:'#2058dc'}}>
+                                                                PAN Card
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                KYC Document
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                PDF
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Received
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                YES
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                Shivkumar
+                                                            </td>
+                                                            <td className="px-3 py-3">
+                                                                02-11-2023
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={sideMenuItem == 5 ? 'block' : 'hidden'}>
