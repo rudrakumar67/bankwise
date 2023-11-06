@@ -9,7 +9,7 @@ import { useState } from "react";
 const View: NextPage = () => {
     const itemClasses = {
         heading:'bg-gray-100 px-3 rounded m-1',
-        title: 'text-sm font-semibold'
+        title: 'text-sm font-semibold text-[#12344d]'
       };
     const [sideMenuItem, setsideMenuItem] = useState(1);
 
@@ -426,19 +426,20 @@ const View: NextPage = () => {
                                     </div>
                                 </div>
                                 <div className={sideMenuItem == 4 ? 'block' : 'hidden'}>
-                                    <div className="text-black flex w-full flex-col" >
+                                    <div className="text-[#12344d] flex w-full flex-col" >
                                         <Tabs aria-label="Options" variant="underlined" radius="full" classNames={{
                                             tabList: "gap-6 w-full relative rounded-none p-0 border-b border-divider",
                                             cursor: "w-full",
-                                            tab: "max-w-fit px-0 h-12 text-gray-300 font-semibold",
-                                            tabContent: "group-data-[selected=true]:text-[#000] font-semibold"
+                                            tab: "max-w-fit px-0 text-[#12344d] font-semibold",
+                                            tabContent: "group-data-[selected=true]:text-[#2058dc] font-semibold",
+                                            base:'pt-0'
                                             }}>
-                                            <Tab key="Docs" title="Docs">
+                                            <Tab key="Documents" title="Documents">
                                                 <Card>
                                                     <CardBody>
-                                                        <div className=" text-black w-full overflow-scroll max-h-full h-[35rem]">
+                                                        <div className="w-full overflow-scroll max-h-full h-[35rem]">
                                                             <div>
-                                                                <div className="bg-gray-200 py-1 px-2 rounded text-sm font-semibold">
+                                                                <div className="bg-gray-200 py-2 px-2 rounded text-sm font-semibold">
                                                                     KYC Documents
                                                                 </div>
                                                                 <div className="grid justify-center grid-cols-6 gap-y-6 py-3">
@@ -481,7 +482,7 @@ const View: NextPage = () => {
                                                             </div>
                                                             <div>
                                                                 <div className="bg-gray-200 py-1 px-2 rounded text-sm font-semibold">
-                                                                    KYC Documents
+                                                                    Income Proof Documents
                                                                 </div>
                                                                 <div className="grid justify-center grid-cols-6 gap-y-6 py-3">
                                                                     <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
@@ -523,7 +524,7 @@ const View: NextPage = () => {
                                                             </div>
                                                             <div>
                                                                 <div className="bg-gray-200 py-1 px-2 rounded text-sm font-semibold">
-                                                                    KYC Documents
+                                                                    Address Proof Documents
                                                                 </div>
                                                                 <div className="grid justify-center grid-cols-6 gap-y-6 py-3">
                                                                     <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
@@ -565,49 +566,7 @@ const View: NextPage = () => {
                                                             </div>
                                                             <div>
                                                                 <div className="bg-gray-200 py-1 px-2 rounded text-sm font-semibold">
-                                                                    KYC Documents
-                                                                </div>
-                                                                <div className="grid justify-center grid-cols-6 gap-y-6 py-3">
-                                                                    <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
-                                                                        <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
-                                                                        <DocumentTextIcon className="h-12"/>
-                                                                        </div><span className="text-center text-xs font-normal pt-2">PAN Card</span>
-                                                                    </div>
-                                                                    <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
-                                                                        <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
-                                                                        <DocumentTextIcon className="h-12"/>
-                                                                        </div><span className="text-center text-xs font-normal pt-2">Aadhar Card</span>
-                                                                    </div>
-                                                                    <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
-                                                                        <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
-                                                                        <DocumentTextIcon className="h-12"/>
-                                                                        </div><span className="text-center text-xs font-normal pt-2">Bank Statment</span>
-                                                                    </div>
-                                                                    <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
-                                                                        <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
-                                                                        <DocumentTextIcon className="h-12"/>
-                                                                        </div><span className="text-center text-xs font-normal pt-2">Salary Slip</span>
-                                                                    </div>
-                                                                    <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
-                                                                        <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
-                                                                        <DocumentTextIcon className="h-12"/>
-                                                                        </div><span className="text-center text-xs font-normal pt-2">Aadhar Card</span>
-                                                                    </div>
-                                                                    <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
-                                                                        <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
-                                                                        <DocumentTextIcon className="h-12"/>
-                                                                        </div><span className="text-center text-xs font-normal pt-2">Bank Statment</span>
-                                                                    </div>
-                                                                    <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
-                                                                        <div className="inline-flex items-center cursor-pointer w-full menu-item justify-center">
-                                                                        <DocumentTextIcon className="h-12"/>
-                                                                        </div><span className="text-center text-xs font-normal pt-2">Salary Slip</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div>
-                                                                <div className="bg-gray-200 py-1 px-2 rounded text-sm font-semibold">
-                                                                    KYC Documents
+                                                                    Balance Transfer + Top Up Documents
                                                                 </div>
                                                                 <div className="grid justify-center grid-cols-6 gap-y-6 py-3">
                                                                     <div className="flex flex-col py-1.5 md:py-1 w-36 hover:bg-slate-100 hover:rounded">
