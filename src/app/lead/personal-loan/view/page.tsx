@@ -7,6 +7,7 @@ import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
 import { NextPage } from "next";
 import Image from "next/image";
 import { useState } from "react";
+import Select from "react-tailwindcss-select";
 const View: NextPage = () => {
     const itemClasses = {
         heading:'bg-gray-100 px-3 rounded m-1',
@@ -463,6 +464,28 @@ const View: NextPage = () => {
                                                 </div>
                                             </div>
                                             <div className="py-6">
+                                                <div className="grid pb-3 grid-cols-10 gap-x-3">
+                                                    <div className="col-span-3">
+                                                        <input type="text" className="w-full border border-slate-200 rounded py-0.5 placeholder:text-xs placeholder:px-1 " placeholder="Search Document"/>
+                                                    </div>
+                                                    <div className="col-span-2">
+                                                        <select className="rounded border border-slate-200 w-full py-1 text-xs h-full">
+                                                            <option value="" disabled selected>Select Document</option>
+                                                            <option value="">KYC Documents</option>
+                                                            <option value="">Income Proof</option>
+                                                            <option value="">Address Proof</option>
+                                                        </select>
+                                                    </div>
+                                                    <div className="col-span-2">
+                                                        <select className="rounded border border-slate-200 w-full py-1 text-xs h-full">
+                                                            <option value="" disabled selected>Status</option>
+                                                            <option value="">Received</option>
+                                                            <option value="">Pending</option>
+                                                            <option value="">Rejected</option>
+                                                            <option value="">Accepted</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                                 <table className="w-full text-xs text-left border border-slate-200 py-4">
                                                     <thead className="text-sm bg-gray-100 rounded" style={{color:'#2e4374'}}>
                                                         <tr className="font-normal">
