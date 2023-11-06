@@ -1,5 +1,6 @@
 'use client'
-import { BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, ChevronLeftIcon, DocumentDuplicateIcon, DocumentTextIcon, EnvelopeIcon, GiftIcon, InboxArrowDownIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, ChevronLeftIcon, CloudArrowUpIcon, DocumentDuplicateIcon, DocumentTextIcon, EnvelopeIcon, GiftIcon, InboxArrowDownIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
+// import {CloudArrowUpIcon } from '@heroicons/react/solid'
 import { Tooltip } from "@nextui-org/tooltip";
 import {Accordion, AccordionItem, Chip} from "@nextui-org/react";
 import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
@@ -431,7 +432,7 @@ const View: NextPage = () => {
                                             tabList: "gap-6 w-full relative rounded-none p-0 border-b border-divider",
                                             cursor: "w-full",
                                             tab: "max-w-fit px-0 text-[#12344d] font-semibold",
-                                            tabContent: "group-data-[selected=true]:text-[#2058dc] font-semibold",
+                                            tabContent: "group-data-[selected=true]:text-[#2058dc] group-data-[selected=true]:py-1 group-data-[selected=true]:px-2 group-data-[selected=true]:bg-slate-200 group-data-[selected=true]:rounded-t font-semibold",
                                             base:'pt-0'
                                             }}>
                                             <Tab key="Documents" title="Documents">
@@ -594,12 +595,27 @@ const View: NextPage = () => {
                                                     </AccordionItem>
                                                 </Accordion>  
                                             </Tab>
-                                            <Tab key="Upload" title="Upload">
-                                                <Card>
-                                                    <CardBody>
-                                                        
-                                                    </CardBody>
-                                                </Card>
+                                            <Tab key="Upload" title="Upload / Request">
+                                                <div className="grid grid-cols-2 gap-x-5">
+                                                    <div className="rounded p-4 bg-gray-100 border-dashed border-2 border-slate-300 flex items-center justify-center cursor-pointer">
+                                                        <div className="grid text-center">
+                                                            <CloudArrowUpIcon className="h-14 mx-auto"/>
+                                                            <span className="text-sm font-bold">
+                                                                Upload Document
+                                                            </span>
+                                                            <span className="text-xs font-semibold">Upload Aplicant Documnets</span>
+                                                        </div>
+                                                    </div>
+                                                    <div className="rounded p-4 bg-gray-100 border-dashed border-2 border-slate-300 flex items-center justify-center cursor-pointer">
+                                                        <div className="grid text-center">
+                                                            <InboxArrowDownIcon className="h-14 mx-auto"/>
+                                                            <span className="text-sm font-bold">
+                                                                Request Document
+                                                            </span>
+                                                            <span className="text-xs font-semibold">Request Documnets From Aplicant</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </Tab>
                                         </Tabs>
                                     </div>
