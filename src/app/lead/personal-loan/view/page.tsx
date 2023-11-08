@@ -375,10 +375,10 @@ const View: NextPage = () => {
                                                 <span className="text-xs pb-1" style={{color:'#12344d'}}>Login Date</span>
                                             </div>
                                             <div className="font-normal flex flex-col">
-                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Relationship Manager</span>
+                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Bank RSM</span>
                                             </div>
                                             <div className="font-normal flex flex-col">
-                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>LOS #</span>
+                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Loan Application #</span>
                                             </div>
                                             <div className="font-normal flex flex-col">
                                                 <span className="text-xs pb-1" style={{color:'#12344d'}}>Status</span>
