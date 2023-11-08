@@ -211,8 +211,8 @@ const View: NextPage = () => {
                     </div>
                     <div className="w-full px-3 py-1 h-full">
                         <div className="py-2">
-                            <div className="overflow-y-auto">
-                                <div className={sideMenuItem == 1 ? 'block' : 'hidden'}>
+                            <div className="">
+                                <div className={sideMenuItem == 1 ? 'block h-screen max-h-max overflow-y-scroll pb-32' : 'hidden'}>
                                     <div className="text-black">
                                         <div className="font-semibold py-2">Overview</div>
                                         <ul className="flex gap-4">
@@ -286,7 +286,7 @@ const View: NextPage = () => {
                                                 <span className="text-xs font-medium" style={{color:'#12344d'}}>TCL Technologies Pvt Ltd</span>
                                             </p>
                                             <p className="font-normal flex flex-col">
-                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Company Category</span>
+                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Company Listing</span>
                                                 <span className="text-xs font-medium" style={{color:'#12344d'}}>Listed</span>
                                             </p>
                                             <p className="font-normal flex flex-col">
@@ -362,6 +362,62 @@ const View: NextPage = () => {
                                                 <span className="py-1 px-4 bg-slate-100 rounded text-xs font-semibold">
                                                     More Follow Ups
                                                 </span>
+                                            </div>
+                                        </div>
+                                        <div className="grid grid-cols-6 border border-slate-200 gap-y-4 rounded mt-4 py-6 px-3">
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Bank Name</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Loan Amount</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Login Date</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Relationship Manager</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>LOS #</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1" style={{color:'#12344d'}}>Status</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>HDFC Bank</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>500000</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>08-02-2023</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>Shivkumar</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>LOS12345</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>IN PROCESS</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>HDFC Bank</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>500000</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>08-02-2023</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>Shivkumar</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>LOS12345</span>
+                                            </div>
+                                            <div className="font-normal flex flex-col">
+                                                <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>IN PROCESS</span>
                                             </div>
                                         </div>
                                     </div>
