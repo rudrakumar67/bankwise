@@ -16,6 +16,7 @@
     "@heroicons/react": "^2.0.18",
     "@inovua/reactdatagrid-community": "^5.10.1",
     "@nextui-org/accordion": "^2.0.23",
+    "@nextui-org/modal": "^2.0.26",
     "@nextui-org/react": "^2.1.13",
     "@nextui-org/tabs": "^2.0.21",
     "@nextui-org/tooltip": "^2.0.24",

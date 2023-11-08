@@ -218,7 +218,7 @@ const Home: NextPage = () => {
                 </li>
             </ul>
             <div className="flex h-8">
-                <span onClick={addNewModalFun} className=" block flex text-white py-1.5 px-3 rounded primary-btn mr-2 flex-nowrap cursor-pointer" >
+                <span onClick={addNewModalFun} className=" block flex text-white py-1.5 px-3 rounded-full primary-btn mr-2 flex-nowrap cursor-pointer" >
                     <PlusCircleIcon className={"h-4.5 w-4.5 text-slate-50 mr-1"}/>
                     <span className="text-sm md:text-xs font-semibold my-auto">Add New</span>
                 </span>

@@ -1,23 +1,62 @@
 'use client'
-import { BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, ChevronLeftIcon, CloudArrowUpIcon, DocumentDuplicateIcon, DocumentTextIcon, EnvelopeIcon, GiftIcon, InboxArrowDownIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { ArrowUpOnSquareIcon, BanknotesIcon, BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, ChevronLeftIcon, CloudArrowUpIcon, DocumentDuplicateIcon, DocumentTextIcon, EnvelopeIcon, GiftIcon, InboxArrowDownIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
 // import {CloudArrowUpIcon } from '@heroicons/react/solid'
 import { Tooltip } from "@nextui-org/tooltip";
 import {Accordion, AccordionItem, Chip} from "@nextui-org/react";
-import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
+import {  Modal,   ModalContent,   ModalHeader, Button,  ModalBody,   ModalFooter, useDisclosure} from "@nextui-org/react";
 import { NextPage } from "next";
 import Image from "next/image";
 import { useState } from "react";
 import Select from "react-tailwindcss-select";
+import Link from "next/link";
 const View: NextPage = () => {
     const itemClasses = {
         heading:'bg-gray-100 px-3 rounded m-1',
         title: 'text-sm font-semibold text-[#12344d]'
       };
     const [sideMenuItem, setsideMenuItem] = useState(1);
+    const [openList, setOpenList] = useState(1);
+    const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
     return (
-        <>
+        <>            
             <div className="bg-white h-full overflow-hidden">
+                <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+                    <ModalContent>
+                    {(onClose) => (
+                        <>
+                        <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+                        <ModalBody>
+                            <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam pulvinar risus non risus hendrerit venenatis.
+                            Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                            </p>
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam pulvinar risus non risus hendrerit venenatis.
+                            Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                            </p>
+                            <p>
+                            Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
+                            dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
+                            Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
+                            Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
+                            proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
+                            </p>
+                        </ModalBody>
+                        <ModalFooter>
+                            <Button color="danger" variant="light" onPress={onClose}>
+                            Close
+                            </Button>
+                            <Button color="primary" onPress={onClose}>
+                            Action
+                            </Button>
+                        </ModalFooter>
+                        </>
+                    )}
+                    </ModalContent>
+                </Modal>
                 <div className="text-black w-full static">
                     <div className="flex justify-between bg-slate-200 py-2 rounded-t px-3 static">
                         <div className="my-auto" style={{color:'#2058dc'}}>
@@ -148,6 +187,15 @@ const View: NextPage = () => {
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
                                                     <BuildingLibraryIcon className="h-4 my-auto pr-3 pl-1" />
                                                     Bank Logins
+                                                </span>
+                                            </li>
+                                            <li className={`py-1.5 px-2 `+(
+                                                sideMenuItem === 5
+                                                ? "bg-gray-100 rounded"
+                                                : "")} onClick={()=>{setsideMenuItem(5)}}>
+                                                <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
+                                                    <BanknotesIcon className="h-4 my-auto pr-3 pl-1" />
+                                                    Payout
                                                 </span>
                                             </li>
                                         </ul>
@@ -423,8 +471,51 @@ const View: NextPage = () => {
                                     </Accordion>
                                 </div>
                                 <div className={sideMenuItem == 3 ? 'block' : 'hidden'}>
-                                    <div className="text-black">
-                                        Obligation
+                                    <div className="text-[#12344d] flex w-full flex-col" >
+                                        <div>
+                                            <div className="text-md font-medium" style={{color:'#2e4374'}}>
+                                                    Obligations
+                                            </div>
+                                        </div>
+                                        <Button onPress={onOpen}>Open Modal</Button>
+                                    </div>
+                                    <div>
+                                        <div className="text-sm font-semibold py-2">
+                                            Add Obligation
+                                        </div>
+                                        <div className="grid grid-cols-4 gap-2">
+                                            <div className="grid">
+                                                <input type="text" className="rounded border border-slate-200 placeholder:px-1" placeholder="Bank Name"/>
+                                            </div>
+                                            <div className="grid">
+                                                <select name="" id="" className="w-full rounded border border-slate-200 text-sm">
+                                                    <option value="">Loan Type</option>
+                                                    <option value="">Personal Loan</option>
+                                                    <option value="">Business Loan</option>
+                                                </select>
+                                            </div>
+                                            <div className="grid">
+                                                <input type="text" className="rounded border border-slate-200 placeholder:px-2" placeholder="Loan Amount"/>
+                                            </div>
+                                            <div className="grid">
+                                                <input type="text" className="rounded border border-slate-200 placeholder:px-2" placeholder="ROI"/>
+                                            </div>
+                                            <div className="grid">
+                                                <input type="text" className="rounded border border-slate-200 placeholder:px-1" placeholder="EMI"/>
+                                            </div>
+                                            <div className="grid">
+                                                <input type="text" className="rounded border border-slate-200 placeholder:px-1" placeholder="Tenure"/>
+                                            </div>
+                                            <div className="grid">
+                                                <input type="text" className="rounded border border-slate-200 placeholder:px-2" placeholder="EMI Paid"/>
+                                            </div>
+                                            <div className="grid">
+                                                <input type="text" className="rounded border border-slate-200 placeholder:px-2" placeholder="Loan Outstanding"/>
+                                            </div>
+                                        </div>
+                                        <div className="flex justify-end py-2">
+                                            <button className="px-3 bg-[#fd9b4d] rounded text-white">Add Obligation</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={sideMenuItem == 4 ? 'block' : 'hidden'}>
@@ -733,12 +824,67 @@ const View: NextPage = () => {
                                     <div className="text-black">
                                         <span className="text-md font-medium" style={{color:'#2e4374'}}>
                                             <div className="flex ">
-                                                <GiftIcon className="h-6 my-auto mr-3"/>
-                                                Eligible Bank Offers
+                                                <BuildingLibraryIcon className="h-6 my-auto mr-3"/>
+                                                Bank Logins
                                             </div>
                                         </span>
-                                        <div className="py-6">
-                                            <table className="w-full text-xs text-left border border-slate-200 py-4">
+                                        <div className="text-center text-slate-300 pt-1.5 rounded-t mt-2 flex justify-between">
+                                            <ul className="flex flex-wrap text-sm font-semibold border-b border-slate-200 w-full">
+                                                <li className="mr-2">
+                                                    <a
+                                                        href="#"
+                                                        className={
+                                                            "inline-block p-2 rounded-t-lg " +
+                                                            (openList === 1
+                                                            ? "text-blue-600 bg-gray-100 "
+                                                            : "hover:text-gray-600 hover:border-gray-300 listing-tab-font-color-default")
+                                                        }
+                                                        onClick={e => {
+                                                            e.preventDefault();
+                                                            setOpenList(1);
+                                                        }}
+                                                    >
+                                                        Eligible Bank Offers
+                                                    </a>
+                                                </li>
+                                                <li className="mr-2">
+                                                    <a
+                                                        href="#"
+                                                        className={
+                                                            "inline-block p-2 rounded-t-lg " +
+                                                            (openList === 2
+                                                                ? "text-blue-600 bg-gray-100"
+                                                                : "hover:text-gray-600 hover:border-gray-300 listing-tab-font-color-default")
+                                                        }
+                                                        onClick={e => {
+                                                            e.preventDefault();
+                                                            setOpenList(2);
+                                                        }}
+                                                    >
+                                                        Manual Login
+                                                    </a>
+                                                </li>
+                                                <li className="mr-2">
+                                                    <a
+                                                        href="#"
+                                                        className={
+                                                            "inline-block p-2 rounded-t-lg " +
+                                                            (openList === 3
+                                                            ? "text-blue-600 bg-gray-100 "
+                                                            : "hover:text-gray-600 hover:border-gray-300 listing-tab-font-color-default")
+                                                        }
+                                                        onClick={e => {
+                                                            e.preventDefault();
+                                                            setOpenList(3);
+                                                        }}
+                                                    >
+                                                        Logged In
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div className="pt-4">
+                                            <table className="w-full text-xs text-left border border-gray-200">
                                                 <thead className="text-sm bg-gray-100 rounded" style={{color:'#2e4374'}}>
                                                     <tr>
                                                         <th scope="col" className="px-3 py-2 font-semibold">
@@ -788,7 +934,7 @@ const View: NextPage = () => {
                                                             <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
                                                         </td>
                                                     </tr>
-                                                    <tr className="text-sm font-medium">
+                                                    <tr className="text-sm font-medium bg-gray-100">
                                                         <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
                                                             ICICI Bank
                                                         </th>
@@ -834,7 +980,7 @@ const View: NextPage = () => {
                                                             <span className="text-black py-1 px-4 rounded text-xs shadow text-black" style={{backgroundColor:'#fd9b4d',color:'#ffffff'}}>Login Now</span>
                                                         </td>
                                                     </tr>
-                                                    <tr className="text-sm font-medium">
+                                                    <tr className="text-sm font-medium bg-gray-100">
                                                         <th scope="row" className="px-3 py-3 font-medium" style={{color:'#2e4374'}}>
                                                             ICICI Bank
                                                         </th>
