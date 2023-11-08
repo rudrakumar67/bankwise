@@ -3,7 +3,12 @@ import {
   UserIcon,
   EnvelopeIcon,
   BellAlertIcon,
-  ArrowDownTrayIcon
+  ArrowDownTrayIcon,
+  CheckCircleIcon,
+  MapPinIcon,
+  CalendarDaysIcon,
+  ClockIcon,
+  PhoneArrowUpRightIcon
  } from '@heroicons/react/24/outline'
 import { useState } from 'react';
 import {Tooltip} from "@nextui-org/tooltip";
@@ -17,30 +22,28 @@ function Navbar() {
       <nav className="z-50 bg-white py-2 border-b border-gray-200 fixed min-w-full ml-16">
         <div className="wrapper flex justify-between px-6 mx-auto mr-16">
           <div className="flex justify-between flex-0 w-fit">
-            <ul className="flex">
-              <li>
-                  <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
-                      {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
-                      <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>CIBIL Report</span>
+            <ul className="flex py-auto text-xs font-semibold my-auto">
+              <li className='mr-4 py-1 px-2 bg-[#d2e0fb] rounded'>
+                <div className="flex py-auto item-center">
+                  <CheckCircleIcon className='h-4 my-auto pr-1'/>
+                  <span className='my-auto'>
+                    Active
                   </span>
+                </div>
               </li>
-              <li>
-                  <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
-                      {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
-                      <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Company Listing Validator</span>
+              <li className='mr-4 py-1 px-2 bg-[#d2e0fb] rounded'>
+                <div className="flex py-auto item-center">
+                <MapPinIcon className='h-4 my-auto pr-1'/>
+                    <span className='my-auto'>
+                    Bangalore
                   </span>
+                </div>
               </li>
-              <li>
-                  <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
-                      {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
-                      <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Check Eligibility</span>
-                  </span>
-              </li>
-              <li>
-                  <span onClick={importDataModalFun} className="flex hover:bg-gray-100 md:py-1.5 md:px-2 w-fit sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a', backgroundColor:'#d2e0fb'}}>
-                      {/* <ArrowDownTrayIcon className={"h-4.5 w-4 mr-2"} style={{color:'#0e387a'}}/> */}
-                      <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Import Website Leads</span>
-                  </span>
+              <li className='mr-4 py-1 px-2 bg-[#d2e0fb] rounded'>
+                <div className="flex my-auto">
+                  <ClockIcon className='h-4 my-auto pr-1'/>
+                  10:00 AM
+                </div>
               </li>
             </ul>    
           </div>
@@ -66,6 +69,16 @@ function Navbar() {
                     <path d="M14 19C14 20.1046 13.1046 21 12 21C10.8954 21 10 20.1046 10 19C10 17.8954 10.8954 17 12 17C13.1046 17 14 17.8954 14 19Z" fill="#00539c"/> 
                     <path d="M19 21C20.1046 21 21 20.1046 21 19C21 17.8954 20.1046 17 19 17C17.8954 17 17 17.8954 17 19C17 20.1046 17.8954 21 19 21Z" fill="#00539c"/> </g>
                 </svg>
+              </a>
+            </Tooltip>
+            <Tooltip
+              showArrow={false}
+              content="Auto Dial" 
+              offset={7} 
+              closeDelay={0} 
+              classNames={{base: "text-white bg-theme rounded text-xs py-0.5 px-2 mt-0.5 m-0", arrow: "bg-blue-900 py-0.5 px-2 mt-0.5 m-0"}}>
+              <a href="" className='border rounded p-2 border-gray-200'>
+                <PhoneArrowUpRightIcon className='h-4 w-4' style={{color:'#2e4374'}}/>
               </a>
             </Tooltip>
             <Tooltip
