@@ -339,7 +339,7 @@ const View: NextPage = () => {
                                                 </div>
                                                 <div className="col-span-4">
                                                     <p className="font-normal flex flex-col">
-                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>{"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}</span>
                                                     </p>
                                                 </div>
                                                 <div className="col-span-2">
@@ -354,7 +354,7 @@ const View: NextPage = () => {
                                                 </div>
                                                 <div className="col-span-4">
                                                     <p className="font-normal flex flex-col">
-                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>{"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}</span>
                                                     </p>
                                                 </div>
                                             </div>
