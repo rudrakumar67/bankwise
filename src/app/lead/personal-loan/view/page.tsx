@@ -94,7 +94,7 @@ const View: NextPage = () => {
                     </div>
                 </div>
                 <div className="flex text-black h-screen max-h-fit">
-                    <div className="w-80 bg-gray-100">
+                    <div className="w-80 bg-gray-100 overflow-y-scroll">
                         <div className="sticky p-4 w-full">
                             <div className="overflow-y-auto">
                                 <div className="text-black">
@@ -195,9 +195,9 @@ const View: NextPage = () => {
                                                 </span>
                                             </li>
                                             <li className={`py-1.5 px-2 `+(
-                                                sideMenuItem === 5
+                                                sideMenuItem === 6
                                                 ? "bg-gray-100 rounded"
-                                                : "")} onClick={()=>{setsideMenuItem(5)}}>
+                                                : "")} onClick={()=>{setsideMenuItem(6)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
                                                     <BanknotesIcon className="h-4 my-auto pr-3 pl-1" />
                                                     Payout
@@ -1216,6 +1216,230 @@ const View: NextPage = () => {
 
                                                 </tbody>
                                             </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={sideMenuItem == 6 ? 'block' : 'hidden'}>
+                                <div className="text-black">
+                                        <div className="font-semibold py-2">Overview</div>
+                                        <ul className="flex gap-4">
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-[#d2e0fb] rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-[#d2e0fb]">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-[#d2e0fb] rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-[#d2e0fb]">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-slate-200 rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-slate-200">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-slate-200 rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-slate-200">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="flex">
+                                                    <div className="pt-[4px] p-[10] px-14 bg-slate-200 rounded-l rounded-r-0 text-xs font-semibold">Step </div>
+                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-slate-200">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div className="pt-6 px-3 bg-white border border-slate-200 mt-4 rounded">
+                                            <div className="grid grid-cols-4 gap-5">
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Lead Date</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>07-23-2023</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Created By</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar Acharya</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Referred By</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Lead Age</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>180 Days</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Applicant Age</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>24 Years</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Marital Status</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>Single</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Employment Type</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>Full Time</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Company Name</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>TCL Technologies Pvt Ltd</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Company Listing</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>Listed</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Gross Salary</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>24000</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Total Experience</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>5 Years</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Residence Type</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>Own House</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>No. of Obligations</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>3 Loans</span>
+                                                </p>
+                                                <p className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Any CIBIL Issues</span>
+                                                    <span className="text-xs font-medium" style={{color:'#12344d'}}>Yes</span>
+                                                </p>
+                                            </div>
+                                            <div className="flex justify-end px-3 py-3 text-[#2058dc]">
+                                                <span className="py-1 px-4 bg-slate-100 rounded text-xs font-semibold">
+                                                    More Details
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="border border-slate-200 mt-4 rounded">
+                                            <div className="grid grid-cols-8 gap-x-7 py-6 px-3 bg-white gap-y-2">
+                                                <div className="col-span-2">
+                                                    <p className="font-normal flex flex-col">
+                                                        <span className="text-xs pb-1" style={{color:'#12344d'}}>Last Follow Up</span>
+                                                    </p>
+                                                </div>
+                                                <div className="col-span-2">
+                                                    <p className="font-normal flex flex-col">
+                                                        <span className="text-xs pb-1" style={{color:'#12344d'}}>Follow Up By</span>
+                                                    </p>
+                                                </div>
+                                                <div className="col-span-4">
+                                                    <p className="font-normal flex flex-col">
+                                                        <span className="text-xs pb-1" style={{color:'#12344d'}}>Comments</span>
+                                                    </p>
+                                                </div>
+                                                <div className="col-span-2">
+                                                    <p className="font-normal flex flex-col">
+                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>08-11-2022/12:22 AM</span>
+                                                    </p>
+                                                </div>
+                                                <div className="col-span-2">
+                                                    <p className="font-normal flex flex-col">                                            
+                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar Acharya</span>
+                                                    </p>
+                                                </div>
+                                                <div className="col-span-4">
+                                                    <p className="font-normal flex flex-col">
+                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>{"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}</span>
+                                                    </p>
+                                                </div>
+                                                <div className="col-span-2">
+                                                    <p className="font-normal flex flex-col">
+                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>08-11-2022/12:22 AM</span>
+                                                    </p>
+                                                </div>
+                                                <div className="col-span-2">
+                                                    <p className="font-normal flex flex-col">                                            
+                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar Acharya</span>
+                                                    </p>
+                                                </div>
+                                                <div className="col-span-4">
+                                                    <p className="font-normal flex flex-col">
+                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>{"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="flex justify-end px-3 pb-3 text-[#2058dc]">
+                                                <span className="py-1 px-4 bg-slate-100 rounded text-xs font-semibold">
+                                                    More Follow Ups
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="border border-slate-200 mt-4 pt-6 px-3">
+                                            <div className="grid grid-cols-6 gap-y-4 rounded">
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Bank Name</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Loan Amount</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Login Date</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Bank RSM</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Loan Application #</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1" style={{color:'#12344d'}}>Status</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>HDFC Bank</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>500000</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>08-02-2023</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>Shivkumar</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>LOS12345</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>IN PROCESS</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>HDFC Bank</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>500000</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>08-02-2023</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>Shivkumar</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>LOS12345</span>
+                                                </div>
+                                                <div className="font-normal flex flex-col">
+                                                    <span className="text-xs pb-1 font-semibold" style={{color:'#12344d'}}>IN PROCESS</span>
+                                                </div>
+                                            </div>
+                                            <div className="flex justify-end px-3 py-3 text-[#2058dc]">
+                                                <span className="py-1 px-4 bg-slate-100 rounded text-xs font-semibold">
+                                                    More Details
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
