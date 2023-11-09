@@ -94,7 +94,7 @@ const View: NextPage = () => {
                     </div>
                 </div>
                 <div className="flex text-black h-screen max-h-fit">
-                    <div className="w-80 bg-gray-100 overflow-y-scroll">
+                    <div className="w-80 bg-gray-100 overflow-y-scroll h-screen">
                         <div className="sticky p-4 w-full">
                             <div className="overflow-y-auto">
                                 <div className="text-black">
