@@ -1262,7 +1262,7 @@ const View: NextPage = () => {
                                         <div className="grid grid-cols-12 gap-x-4 mt-6 border-t border-slate-200 mt-4">
                                             <div className="col-span-5 sm:col-span-5 md:col-span-5 lg:col-span-8  border-r border-slate-200">
                                                 <div className="px-3 bg-white mt-4 border-b border-slate-200">
-                                                    <div className="grid grid-cols-4 gap-5">
+                                                    <div className="grid grid-cols-3 gap-5">
                                                         <p className="font-normal flex flex-col">
                                                             <span className="text-xs pb-1" style={{color:'#12344d'}}>Lead Date</span>
                                                             <span className="text-xs font-medium" style={{color:'#12344d'}}>07-23-2023</span>
