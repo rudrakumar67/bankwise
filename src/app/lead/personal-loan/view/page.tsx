@@ -214,45 +214,15 @@ const View: NextPage = () => {
                             <div className="">
                                 <div className={sideMenuItem == 1 ? 'block h-screen max-h-max overflow-y-scroll pb-32' : 'hidden'}>
                                     <div className="text-black">
-                                        <div className="font-semibold py-2">Overview</div>
-                                        <ul className="flex gap-4">
-                                            <li>
-                                                <div className="flex">
-                                                    <div className="pt-[4px] p-[10] px-14 bg-[#d2e0fb] rounded-l rounded-r-0 text-xs font-semibold">Step </div>
-                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-[#d2e0fb]">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="flex">
-                                                    <div className="pt-[4px] p-[10] px-14 bg-[#d2e0fb] rounded-l rounded-r-0 text-xs font-semibold">Step </div>
-                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-[#d2e0fb]">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="flex">
-                                                    <div className="pt-[4px] p-[10] px-14 bg-slate-200 rounded-l rounded-r-0 text-xs font-semibold">Step </div>
-                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-slate-200">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="flex">
-                                                    <div className="pt-[4px] p-[10] px-14 bg-slate-200 rounded-l rounded-r-0 text-xs font-semibold">Step </div>
-                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-slate-200">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="flex">
-                                                    <div className="pt-[4px] p-[10] px-14 bg-slate-200 rounded-l rounded-r-0 text-xs font-semibold">Step </div>
-                                                    <div className="h-0 w-0 border-t-[12px] border-l-[15px] border-b-[12px] border-solid border-t-transparent border-b-transparent border-l-slate-200">
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div className="pt-6 px-3 bg-white border border-slate-200 mt-4 rounded">
+                                        <div className="flex justify-between h-8">
+                                            <div className="font-semibold">
+                                                Case Overview
+                                            </div>
+                                            <div className="flex text-xs px-12 border-slate-200 border rounded h-full mr-4">
+                                                <div className="my-auto pr-2">Status:</div><div className="my-auto font-semibold"> Approved</div>
+                                            </div>
+                                        </div>
+                                        <div className="pt-6 px-3 bg-white border border-slate-200 mt-4 rounded pr-12">
                                             <div className="grid grid-cols-4 gap-5">
                                                 <p className="font-normal flex flex-col">
                                                     <span className="text-xs pb-1" style={{color:'#12344d'}}>Lead Date</span>
@@ -317,7 +287,7 @@ const View: NextPage = () => {
                                                 </span>
                                             </div>
                                         </div>
-                                        <div className="border border-slate-200 mt-4 rounded">
+                                        {/* <div className="border border-slate-200 mt-4 rounded">
                                             <div className="grid grid-cols-8 gap-x-7 py-6 px-3 bg-white gap-y-2">
                                                 <div className="col-span-2">
                                                     <p className="font-normal flex flex-col">
@@ -370,7 +340,7 @@ const View: NextPage = () => {
                                                     More Follow Ups
                                                 </span>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className="border border-slate-200 mt-4 pt-6 px-3">
                                             <div className="grid grid-cols-6 gap-y-4 rounded">
                                                 <div className="font-normal flex flex-col">
