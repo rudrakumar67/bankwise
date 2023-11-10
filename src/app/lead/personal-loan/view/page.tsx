@@ -218,7 +218,7 @@ const View: NextPage = () => {
                                             <div className="font-semibold">
                                                 Case Overview
                                             </div>
-                                            <div className="flex text-xs px-12 border-slate-200 border rounded h-full mr-4">
+                                            <div className="flex text-xs px-12 border-slate-200 border rounded h-full mr-4 bg-gray-100">
                                                 <div className="my-auto pr-2">Status:</div><div className="my-auto font-semibold"> Approved</div>
                                             </div>
                                         </div>
