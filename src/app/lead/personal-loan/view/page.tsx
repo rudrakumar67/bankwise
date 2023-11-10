@@ -1260,7 +1260,7 @@ const View: NextPage = () => {
                                             </li>
                                         </ul>
                                         <div className="grid grid-cols-12 gap-x-4 mt-6 border-t border-slate-200 mt-4">
-                                            <div className="md:col-span-9 sm:col-span-8 border-r border-slate-200">
+                                            <div className="md:col-span-9 sm:col-span-8 border-r border-slate-200 md:bg-red-900 sm:bg-green-900">
                                                 <div className="px-3 bg-white mt-4 border-b border-slate-200">
                                                     <div className="grid grid-cols-4 gap-5">
                                                         <p className="font-normal flex flex-col">
