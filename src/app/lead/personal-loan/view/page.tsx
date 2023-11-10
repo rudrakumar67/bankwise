@@ -172,8 +172,8 @@ const View: NextPage = () => {
                                                 ? "bg-gray-100 rounded"
                                                 : "")} onClick={()=>{setsideMenuItem(3)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
-                                                    <QueueListIcon className="h-4 my-auto pr-3 pl-1" />
-                                                    Obligation
+                                                    <UserIcon className="h-4 my-auto pr-3 pl-1" />
+                                                    Follow Ups
                                                 </span>
                                             </li>
                                             <li className={`py-1.5 px-2 `+(
@@ -181,8 +181,8 @@ const View: NextPage = () => {
                                                 ? "bg-gray-100 rounded"
                                                 : "")} onClick={()=>{setsideMenuItem(4)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
-                                                    <DocumentDuplicateIcon className="h-4 my-auto pr-3 pl-1" />
-                                                    Documents
+                                                    <QueueListIcon className="h-4 my-auto pr-3 pl-1" />
+                                                    Obligation
                                                 </span>
                                             </li>
                                             <li className={`py-1.5 px-2 `+(
@@ -190,14 +190,23 @@ const View: NextPage = () => {
                                                 ? "bg-gray-100 rounded"
                                                 : "")} onClick={()=>{setsideMenuItem(5)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
-                                                    <BuildingLibraryIcon className="h-4 my-auto pr-3 pl-1" />
-                                                    Bank Logins
+                                                    <DocumentDuplicateIcon className="h-4 my-auto pr-3 pl-1" />
+                                                    Documents
                                                 </span>
                                             </li>
                                             <li className={`py-1.5 px-2 `+(
                                                 sideMenuItem === 6
                                                 ? "bg-gray-100 rounded"
                                                 : "")} onClick={()=>{setsideMenuItem(6)}}>
+                                                <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
+                                                    <BuildingLibraryIcon className="h-4 my-auto pr-3 pl-1" />
+                                                    Bank Logins
+                                                </span>
+                                            </li>
+                                            <li className={`py-1.5 px-2 `+(
+                                                sideMenuItem === 7
+                                                ? "bg-gray-100 rounded"
+                                                : "")} onClick={()=>{setsideMenuItem(7)}}>
                                                 <span className="flex cursor-pointer" style={{color:'#2e4374'}}>
                                                     <BanknotesIcon className="h-4 my-auto pr-3 pl-1" />
                                                     Payout
@@ -287,60 +296,6 @@ const View: NextPage = () => {
                                                 </span>
                                             </div>
                                         </div>
-                                        {/* <div className="border border-slate-200 mt-4 rounded">
-                                            <div className="grid grid-cols-8 gap-x-7 py-6 px-3 bg-white gap-y-2">
-                                                <div className="col-span-2">
-                                                    <p className="font-normal flex flex-col">
-                                                        <span className="text-xs pb-1" style={{color:'#12344d'}}>Last Follow Up</span>
-                                                    </p>
-                                                </div>
-                                                <div className="col-span-2">
-                                                    <p className="font-normal flex flex-col">
-                                                        <span className="text-xs pb-1" style={{color:'#12344d'}}>Follow Up By</span>
-                                                    </p>
-                                                </div>
-                                                <div className="col-span-4">
-                                                    <p className="font-normal flex flex-col">
-                                                        <span className="text-xs pb-1" style={{color:'#12344d'}}>Comments</span>
-                                                    </p>
-                                                </div>
-                                                <div className="col-span-2">
-                                                    <p className="font-normal flex flex-col">
-                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>08-11-2022/12:22 AM</span>
-                                                    </p>
-                                                </div>
-                                                <div className="col-span-2">
-                                                    <p className="font-normal flex flex-col">                                            
-                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar Acharya</span>
-                                                    </p>
-                                                </div>
-                                                <div className="col-span-4">
-                                                    <p className="font-normal flex flex-col">
-                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>{"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}</span>
-                                                    </p>
-                                                </div>
-                                                <div className="col-span-2">
-                                                    <p className="font-normal flex flex-col">
-                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>08-11-2022/12:22 AM</span>
-                                                    </p>
-                                                </div>
-                                                <div className="col-span-2">
-                                                    <p className="font-normal flex flex-col">                                            
-                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>Shivkumar Acharya</span>
-                                                    </p>
-                                                </div>
-                                                <div className="col-span-4">
-                                                    <p className="font-normal flex flex-col">
-                                                        <span className="text-xs font-medium" style={{color:'#12344d'}}>{"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"}</span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="flex justify-end px-3 pb-3 text-[#2058dc]">
-                                                <span className="py-1 px-4 bg-slate-100 rounded text-xs font-semibold">
-                                                    More Follow Ups
-                                                </span>
-                                            </div>
-                                        </div> */}
                                         <div className="border border-slate-200 mt-4 pt-6 px-3">
                                             <div className="grid grid-cols-6 gap-y-4 rounded">
                                                 <div className="font-normal flex flex-col">
@@ -629,6 +584,13 @@ const View: NextPage = () => {
                                 </div>
                                 <div className={sideMenuItem == 3 ? 'block' : 'hidden'}>
                                     <div className="text-[#12344d] flex w-full flex-col" >
+                                        <div className="text-md font-medium" style={{color:'#2e4374'}}>
+                                            Follow Ups
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={sideMenuItem == 4 ? 'block' : 'hidden'}>
+                                    <div className="text-[#12344d] flex w-full flex-col" >
                                         <div>
                                             <div className="text-md font-medium" style={{color:'#2e4374'}}>
                                                     Obligations
@@ -675,7 +637,7 @@ const View: NextPage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className={sideMenuItem == 4 ? 'block' : 'hidden'}>
+                                <div className={sideMenuItem == 5 ? 'block' : 'hidden'}>
                                     <div className="text-[#12344d] flex w-full flex-col" >
                                         <div className="text-black">
                                             <span className="text-md font-medium" style={{color:'#2e4374'}}>
@@ -977,7 +939,7 @@ const View: NextPage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className={sideMenuItem == 5 ? 'block' : 'hidden'}>
+                                <div className={sideMenuItem == 6 ? 'block' : 'hidden'}>
                                     <div className="text-black">
                                         <span className="text-md font-medium" style={{color:'#2e4374'}}>
                                             <div className="flex ">
@@ -1189,7 +1151,7 @@ const View: NextPage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className={sideMenuItem == 6 ? 'block' : 'hidden'}>
+                                <div className={sideMenuItem == 7 ? 'block' : 'hidden'}>
                                 <div className="text-black">
                                     <div className="font-semibold py-2">Overview</div>
                                         <ul className="flex gap-4">
