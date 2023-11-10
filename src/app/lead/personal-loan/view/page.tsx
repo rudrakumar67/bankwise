@@ -21,42 +21,6 @@ const View: NextPage = () => {
     return (
         <>            
             <div className="bg-white h-full overflow-hidden">
-                <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
-                    <ModalContent>
-                    {(onClose) => (
-                        <>
-                        <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
-                        <ModalBody>
-                            <p> 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nullam pulvinar risus non risus hendrerit venenatis.
-                            Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                            </p>
-                            <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Nullam pulvinar risus non risus hendrerit venenatis.
-                            Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                            </p>
-                            <p>
-                            Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
-                            dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. 
-                            Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. 
-                            Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur 
-                            proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
-                            </p>
-                        </ModalBody>
-                        <ModalFooter>
-                            <Button color="danger" variant="light" onPress={onClose}>
-                            Close
-                            </Button>
-                            <Button color="primary" onPress={onClose}>
-                            Action
-                            </Button>
-                        </ModalFooter>
-                        </>
-                    )}
-                    </ModalContent>
-                </Modal>
                 <div className="text-black w-full static">
                     <div className="flex justify-between bg-slate-200 py-2 rounded-t px-3 static">
                         <div className="my-auto" style={{color:'#2058dc'}}>
@@ -583,9 +547,22 @@ const View: NextPage = () => {
                                     </Accordion>
                                 </div>
                                 <div className={sideMenuItem == 3 ? 'block' : 'hidden'}>
-                                    <div className="text-[#12344d] flex w-full flex-col" >
-                                        <div className="text-md font-medium" style={{color:'#2e4374'}}>
-                                            Follow Ups
+                                    <div className="grid grid-cols-2 gap-x-4 divide-x h-screen text-black">
+                                        <div>
+                                            <div className="py-1 px-2 text-sm font-semibold">
+                                                Follow Ups
+                                            </div>
+                                            <div className="pt-2">
+                                                <textarea name="" id="" rows={5} className="bg-gray-100 w-full rounded placeholder:text-xs placeholder:p-2" placeholder="Type here follow up notes"></textarea>
+                                                <div className="flex justify-end">
+                                                    <span className="py-1 px-2 bg-slate-200 rounded text-xs">Save</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>   
+                                            <div className="py-1 px-2 text-sm font-semibold">
+                                                Tasks
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1340,7 +1317,7 @@ const View: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-16 bg-gray-100">
+                    {/* <div className="w-16 bg-gray-100">
                         <ul className="py-3">
                             <Tooltip
                                 showArrow={false}
@@ -1387,7 +1364,7 @@ const View: NextPage = () => {
                                     </li>
                             </Tooltip>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>
