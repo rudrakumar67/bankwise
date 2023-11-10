@@ -1260,7 +1260,7 @@ const View: NextPage = () => {
                                             </li>
                                         </ul>
                                         <div className="grid grid-cols-12 gap-x-4 mt-6 border-t border-slate-200 mt-4">
-                                            <div className="col-span-9 border-r border-slate-200">
+                                            <div className="md:col-span-9 sm:col-span-8 border-r border-slate-200">
                                                 <div className="px-3 bg-white mt-4 border-b border-slate-200">
                                                     <div className="grid grid-cols-4 gap-5">
                                                         <p className="font-normal flex flex-col">
@@ -1390,7 +1390,7 @@ const View: NextPage = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-span-3 pt-4">
+                                            <div className="md:col-span-3 sm:col-span-4 pt-4">
                                                 <div className="">
                                                     <div>
                                                         <textarea name="" className="w-full rounded border border-slate-200 placeholder:p-1 placeholder:text-sm bg-gray-100" rows={4} placeholder="Comments"></textarea>
