@@ -538,7 +538,7 @@ const View: NextPage = () => {
                                 </div>
                                 <div className={sideMenuItem == 3 ? 'block' : 'hidden'}>
                                     <div>
-                                        <ul className="text-sm font-semibold flex border-b-2 border-gray-100">
+                                        <ul className="text-xs font-semibold flex border-b border-[#2e4374]">
                                             <li className={`px-4 py-2 cursor-pointer ${followUpTab == 1 ? 'bg-[#2e4374] text-white rounded rounded-b-none' : ''}`} onClick={()=>{setfollowUpTab(1)}}>Follow Ups</li>
                                             <li className={`px-4 py-2 cursor-pointer ${followUpTab == 2 ? 'bg-[#2e4374] text-white rounded rounded-b-none' : ''}`} onClick={()=>{setfollowUpTab(2)}}>Tasks</li>
                                         </ul>
@@ -644,7 +644,7 @@ const View: NextPage = () => {
                                             </div>
                                             <div className="col-span-8">
                                                 <div className="pt-2 pl-4">
-                                                    <span className="text-xs font-semibold">Upcomming Task</span>
+                                                    <span className="text-xs font-semibold">Upcoming Task</span>
                                                 </div>
                                                 <ol className="relative mt-3">
                                                     <li className="mb-4 ms-4 border border-gray-200 rounded p-2">
