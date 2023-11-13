@@ -650,7 +650,7 @@ const View: NextPage = () => {
                                                 </div>
                                                 <div className="pt-2">
                                                     <div className="flex justify-end">
-                                                    <span className="py-1 px-2 bg-slate-300 rounded">Save</span> 
+                                                    <span className="py-1 px-2 bg-[#fd9b4d] text-white rounded">Add Task</span> 
                                                     </div>
                                                 </div>
                                             </div>
