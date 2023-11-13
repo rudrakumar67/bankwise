@@ -1,5 +1,5 @@
 'use client'
-import { ArrowUpOnSquareIcon, BanknotesIcon, BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, ChevronLeftIcon, CloudArrowUpIcon, DocumentDuplicateIcon, DocumentTextIcon, EnvelopeIcon, GiftIcon, InboxArrowDownIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon, ArrowUpOnSquareIcon, BanknotesIcon, BellAlertIcon, BuildingLibraryIcon, CalculatorIcon, ChartPieIcon, ChatBubbleBottomCenterIcon, ChevronLeftIcon, CloudArrowUpIcon, DocumentDuplicateIcon, DocumentTextIcon, EnvelopeIcon, GiftIcon, InboxArrowDownIcon, PencilIcon, PencilSquareIcon, PhoneIcon, QueueListIcon, TrashIcon, UserCircleIcon, UserIcon, UserPlusIcon, UsersIcon } from "@heroicons/react/24/outline";
 // import {CloudArrowUpIcon } from '@heroicons/react/solid'
 import { Tooltip } from "@nextui-org/tooltip";
 import {Accordion, AccordionItem, Chip} from "@nextui-org/react";
@@ -555,7 +555,7 @@ const View: NextPage = () => {
                                             <li className={`px-4 py-2 cursor-pointer ${followUpTab == 2 ? 'bg-gray-100 rounded rounded-b-none' : ''}`} onClick={()=>{setfollowUpTab(2)}}>Tasks</li>
                                         </ul>
                                     </div>
-                                    <div>
+                                    <div className={` ${followUpTab == 1 ? '' : 'hidden'} `}>
                                         <div className="pt-4">
                                             <textarea name="" id="" rows={5} className="bg-amber-50 w-full rounded placeholder:text-xs placeholder:p-2" placeholder="Type here follow up notes"></textarea>
                                             <div className="flex justify-end">
@@ -564,7 +564,6 @@ const View: NextPage = () => {
                                         </div>
                                         <ol className="relative border-s border-gray-200 dark:border-gray-700 mt-3">
                                             <li className="mb-4 ms-4 border border-gray-200 rounded p-2">
-                                                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
                                                 <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
                                                 February 2022
                                                 </time>
@@ -630,6 +629,102 @@ const View: NextPage = () => {
                                             </li>
 
                                         </ol>
+                                    </div>
+                                    <div className={` ${followUpTab == 2 ? '' : 'hidden'} `}>
+                                        <div className="grid text-xs grid-cols-10 w-full py-1 px-2 rounded mt-2 min-h-max">
+                                            <div className="col-span-3 border-r h-screen pr-3">
+                                                <div className="pt-2">
+                                                    <span className="text-xs font-semibold">Add New Task</span>
+                                                </div>
+                                                <div className="pt-6">
+                                                    <div className="text-xs font-medium pb-1">Due Date</div>
+                                                    <input type="date" name="" id="" className="border py-1 px-2 w-full rounded"/>
+                                                </div>
+                                                <div  className="pt-2">
+                                                    <div className="text-xs font-medium pb-1">Title</div>
+                                                    <input type="text" name="" placeholder="Add Title" id="" className="border py-1 px-2 w-full rounded"/>
+                                                </div>
+                                                <div className="pt-2">
+                                                    <div className="text-xs font-medium pb-1">Description</div>
+                                                    <textarea name="" id="" cols={10} rows={5} className="border py-1 px-2 w-full rounded"></textarea>
+                                                </div>
+                                                <div className="pt-2">
+                                                    <div className="flex justify-end">
+                                                    <span className="py-1 px-2 bg-slate-300 rounded">Save</span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-span-7">
+                                                <div className="pt-2 pl-4">
+                                                    <span className="text-xs font-semibold">Upcomming Task</span>
+                                                </div>
+                                                <ol className="relative mt-3">
+                                                    <li className="mb-4 ms-4 border border-gray-200 rounded p-2">
+                                                        <div className="flex justify-between">
+                                                            <time className="mb-1 text-xs font-normal leading-none text-gray-400 flex">
+                                                                <div>
+                                                                    
+                                                                </div>
+                                                                <ArrowRightIcon className="h-3 my-auto mr-2 text-blue-900 bg-green-300 rounded-full p-3"/>
+                                                                <span className="my-auto">February 2022</span>
+                                                            </time>
+                                                            <div className="mb-1">
+                                                                <select name="" id="" className="border rounded px-2 py-1 bg">
+                                                                    <option value="">
+                                                                        Not Started
+                                                                    </option>
+                                                                    <option value="">In Process</option>
+                                                                    <option value="">Completed</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                        Application UI code in Tailwind CSS
+                                                        </h3>
+                                                        <p className="mb-4 text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                        Get access to over 20+ pages including a dashboard layout, charts, kanban
+                                                        board, calendar, and pre-order E-commerce &amp; Marketing pages.
+                                                        </p>
+                                                    </li>
+                                                    <li className="mb-4 ms-4 border border-gray-200 rounded p-2">
+                                                        <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                                                        February 2022
+                                                        </time>
+                                                        <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                        Application UI code in Tailwind CSS
+                                                        </h3>
+                                                        <p className="mb-4 text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                        Get access to over 20+ pages including a dashboard layout, charts, kanban
+                                                        board, calendar, and pre-order E-commerce &amp; Marketing pages.
+                                                        </p>
+                                                    </li>
+                                                    <li className="mb-4 ms-4 border border-gray-200 rounded p-2">
+                                                        <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                                                        February 2022
+                                                        </time>
+                                                        <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                        Application UI code in Tailwind CSS
+                                                        </h3>
+                                                        <p className="mb-4 text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                        Get access to over 20+ pages including a dashboard layout, charts, kanban
+                                                        board, calendar, and pre-order E-commerce &amp; Marketing pages.
+                                                        </p>
+                                                    </li>
+                                                    <li className="mb-4 ms-4 border border-gray-200 rounded p-2">
+                                                        <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                                                        February 2022
+                                                        </time>
+                                                        <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                        Application UI code in Tailwind CSS
+                                                        </h3>
+                                                        <p className="mb-4 text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                        Get access to over 20+ pages including a dashboard layout, charts, kanban
+                                                        board, calendar, and pre-order E-commerce &amp; Marketing pages.
+                                                        </p>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={sideMenuItem == 4 ? 'block' : 'hidden'}>
