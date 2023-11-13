@@ -40,19 +40,7 @@ const View: NextPage = () => {
                             </span>
                             <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
                                 <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
-                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Add Task</span>
-                            </span>
-                            <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                                <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
-                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Share Link</span>
-                            </span>
-                            <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                                <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
                                 <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Notify</span>
-                            </span>
-                            <span  className="flex bg-gray-50 text-gray-800 py-1 px-4 md:py-0.5 md:px-2 sec-btn-border rounded shadow mr-2 cursor-pointer" style={{borderColor:'#0e387a'}}>
-                                <UserPlusIcon className={"h-4.5 w-4 mr-2"} style={{color:'#12344d'}}/>
-                                <span className="text-sm md:text-xs font-semibold my-auto" style={{color:'#12344d'}}>Check Eligibility</span>
                             </span>
                         </div>
                     </div>
@@ -191,7 +179,7 @@ const View: NextPage = () => {
                                             <div className="font-semibold">
                                                 Case Overview
                                             </div>
-                                            <div className="flex text-xs px-12 border-amber-50 border rounded h-full mr-4 bg-purple-100">
+                                            <div className="flex text-xs px-12 border-amber-50 border rounded h-full mr-4 bg-amber-100">
                                                 <div className="my-auto pr-2">Status:</div><div className="my-auto font-semibold"> Approved</div>
                                             </div>
                                         </div>
@@ -551,8 +539,8 @@ const View: NextPage = () => {
                                 <div className={sideMenuItem == 3 ? 'block' : 'hidden'}>
                                     <div>
                                         <ul className="text-sm font-semibold flex border-b-2 border-gray-100">
-                                            <li className={`px-4 py-2 cursor-pointer ${followUpTab == 1 ? 'bg-gray-100 rounded rounded-b-none' : ''}`} onClick={()=>{setfollowUpTab(1)}}>Follow Ups</li>
-                                            <li className={`px-4 py-2 cursor-pointer ${followUpTab == 2 ? 'bg-gray-100 rounded rounded-b-none' : ''}`} onClick={()=>{setfollowUpTab(2)}}>Tasks</li>
+                                            <li className={`px-4 py-2 cursor-pointer ${followUpTab == 1 ? 'bg-[#2e4374] text-white rounded rounded-b-none' : ''}`} onClick={()=>{setfollowUpTab(1)}}>Follow Ups</li>
+                                            <li className={`px-4 py-2 cursor-pointer ${followUpTab == 2 ? 'bg-[#2e4374] text-white rounded rounded-b-none' : ''}`} onClick={()=>{setfollowUpTab(2)}}>Tasks</li>
                                         </ul>
                                     </div>
                                     <div className={` ${followUpTab == 1 ? '' : 'hidden'} `}>
@@ -646,7 +634,7 @@ const View: NextPage = () => {
                                                 </div>
                                                 <div className="pt-2">
                                                     <div className="text-xs font-medium pb-1">Description</div>
-                                                    <textarea name="" id="" cols={10} rows={5} className="border py-1 px-2 w-full rounded"></textarea>
+                                                    <textarea name="" id="" cols={10} rows={5} className="border py-1 px-2 w-full rounded bg-amber-50"></textarea>
                                                 </div>
                                                 <div className="pt-2">
                                                     <div className="flex justify-end">
