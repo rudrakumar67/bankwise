@@ -558,6 +558,86 @@ const View: NextPage = () => {
                                                     <span className="py-1 px-2 bg-slate-200 rounded text-xs">Save</span>
                                                 </div>
                                             </div>
+                                            <ol className="relative border-s border-gray-200 dark:border-gray-700">
+                                                <li className="mb-4 ms-4">
+                                                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
+                                                    <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                                                    February 2022
+                                                    </time>
+                                                    <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                    Application UI code in Tailwind CSS
+                                                    </h3>
+                                                    <p className="mb-4 text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                    Get access to over 20+ pages including a dashboard layout, charts, kanban
+                                                    board, calendar, and pre-order E-commerce &amp; Marketing pages.
+                                                    </p>
+                                                </li>
+                                                <li className="mb-4 ms-4">
+                                                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
+                                                    <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                                                    March 2022
+                                                    </time>
+                                                    <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                    Marketing UI design in Figma
+                                                    </h3>
+                                                    <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                    All of the pages and components are first designed in Figma and we keep a
+                                                    parity between the two versions even as we update the project.
+                                                    </p>
+                                                </li>
+                                                <li className="mb-4 ms-4">
+                                                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
+                                                    <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                                                    March 2022
+                                                    </time>
+                                                    <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                    Marketing UI design in Figma
+                                                    </h3>
+                                                    <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                    All of the pages and components are first designed in Figma and we keep a
+                                                    parity between the two versions even as we update the project.
+                                                    </p>
+                                                </li>
+                                                <li className="mb-4 ms-4">
+                                                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
+                                                    <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                                                    March 2022
+                                                    </time>
+                                                    <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                    Marketing UI design in Figma
+                                                    </h3>
+                                                    <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                    All of the pages and components are first designed in Figma and we keep a
+                                                    parity between the two versions even as we update the project.
+                                                    </p>
+                                                </li>
+                                                <li className="mb-4 ms-4">
+                                                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
+                                                    <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                                                    March 2022
+                                                    </time>
+                                                    <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                    Marketing UI design in Figma
+                                                    </h3>
+                                                    <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                    All of the pages and components are first designed in Figma and we keep a
+                                                    parity between the two versions even as we update the project.
+                                                    </p>
+                                                </li>
+                                                <li className="mb-4 ms-4">
+                                                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700" />
+                                                    <time className="mb-1 text-xs font-normal leading-none text-gray-400 dark:text-gray-500">
+                                                    March 2022
+                                                    </time>
+                                                    <h3 className="text-xs font-semibold text-gray-900 dark:text-white">
+                                                    Marketing UI design in Figma
+                                                    </h3>
+                                                    <p className="text-xs font-normal text-gray-500 dark:text-gray-400">
+                                                    All of the pages and components are first designed in Figma and we keep a
+                                                    parity between the two versions even as we update the project.
+                                                    </p>
+                                                </li>
+                                            </ol>
                                         </div>
                                         <div>   
                                             <div className="py-1 px-2 text-sm font-semibold">
