@@ -558,8 +558,8 @@ const View: NextPage = () => {
                                     <div className={` ${followUpTab == 1 ? '' : 'hidden'} `}>
                                         <div className="pt-4">
                                             <textarea name="" id="" rows={5} className="bg-amber-50 w-full rounded placeholder:text-xs placeholder:p-2" placeholder="Type here follow up notes"></textarea>
-                                            <div className="flex justify-end">
-                                                <span className="py-1 px-2 bg-slate-200 rounded text-xs">Save</span>
+                                            <div className="flex justify-end mt-2">
+                                                <span className="py-1 px-2 bg-[#fd9b4d] text-white rounded text-xs">Add Note</span>
                                             </div>
                                         </div>
                                         <ol className="relative border-s border-gray-200 dark:border-gray-700 mt-3">
