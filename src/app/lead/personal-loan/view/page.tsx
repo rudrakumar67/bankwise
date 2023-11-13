@@ -631,8 +631,8 @@ const View: NextPage = () => {
                                         </ol>
                                     </div>
                                     <div className={` ${followUpTab == 2 ? '' : 'hidden'} `}>
-                                        <div className="grid text-xs grid-cols-10 w-full py-1 px-2 rounded mt-2 min-h-max">
-                                            <div className="col-span-3 border-r h-screen pr-3">
+                                        <div className="grid text-xs grid-cols-12 w-full py-1 px-2 rounded mt-2 min-h-max">
+                                            <div className="col-span-4 border-r h-screen pr-3">
                                                 <div className="pt-2">
                                                     <span className="text-xs font-semibold">Add New Task</span>
                                                 </div>
@@ -654,7 +654,7 @@ const View: NextPage = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-span-7">
+                                            <div className="col-span-8">
                                                 <div className="pt-2 pl-4">
                                                     <span className="text-xs font-semibold">Upcomming Task</span>
                                                 </div>
@@ -669,7 +669,7 @@ const View: NextPage = () => {
                                                                 <span className="my-auto">February 2022</span>
                                                             </time>
                                                             <div className="mb-1">
-                                                                <select name="" id="" className="border rounded px-2 py-1 bg">
+                                                                <select name="" id="" className="border rounded px-6 py-1 bg">
                                                                     <option value="">
                                                                         Not Started
                                                                     </option>
